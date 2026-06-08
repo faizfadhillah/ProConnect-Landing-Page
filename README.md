@@ -53,28 +53,32 @@ Then open http://localhost:8000.
 └── .nojekyll               # Disables Jekyll on GitHub Pages
 ```
 
-## Pages
+## Pages & URLs
 
-The app is a single-page router (`App` in `index.html`) that swaps page components. A floating quick-nav (bottom right) jumps between the main sections. Available routes:
+Each page has its own URL. The `App` router in `index.html` maps a page to a path slug, updates the address bar via the History API (`pushState`/`popstate`), and sets a per-page `<title>`. Every slug also exists as a real directory with its own `index.html`, so deep links and refreshes return a native `200` on GitHub Pages (a `404.html` SPA fallback covers anything else). The floating quick-nav (bottom right) jumps between the main sections.
 
-| Key | Component | Description |
-|-----|-----------|-------------|
-| `home` | HomePage | Marketing homepage |
-| `features` | FeaturesPage | Platform features |
-| `pricing` | PricingPage | Plans and pricing |
-| `about` | AboutPage | Company / mission |
-| `solution` | SolutionPage | Solutions overview |
-| `jobs` | JobsPage | Public job board |
-| `login` | LoginPage | Sign in |
-| `forgot` | ForgotPasswordPage | Password reset |
-| `choose-role` | ChooseRolePage | Register: pick employer or candidate |
-| `register-employer` | EmployerRegister | Employer sign-up flow |
-| `register-candidate` | CandidateRegister | Candidate sign-up flow |
-| `employer` | MultiRoleDashboard | Employer dashboard |
-| `candidate` | CandidateDashboard | Candidate dashboard |
-| `tos` | TermsPage | Terms of Service |
-| `privacy` | PrivacyPage | Privacy Policy |
-| `contact` | ContactPage | Contact |
+Base URL: `https://faizfadhillah.github.io/proconnect-landing-page/`
+
+| Page key | URL (relative to base) | Component | Description |
+|----------|------------------------|-----------|-------------|
+| `home` | `/` | HomePage | Marketing homepage |
+| `features` | `/features/` | FeaturesPage | Platform features |
+| `pricing` | `/pricing/` | PricingPage | Plans and pricing |
+| `about` | `/about/` | AboutPage | Company / mission |
+| `solution` | `/solution/` | SolutionPage | Solutions overview |
+| `jobs` | `/jobs/` | JobsPage | Public job board |
+| `login` | `/login/` | LoginPage | Sign in |
+| `forgot` | `/forgot-password/` | ForgotPasswordPage | Password reset |
+| `choose-role` | `/register/` | ChooseRolePage | Register: pick employer or candidate |
+| `register-employer` | `/register/employer/` | EmployerRegister | Employer sign-up flow |
+| `register-candidate` | `/register/candidate/` | CandidateRegister | Candidate sign-up flow |
+| `employer` | `/dashboard/employer/` | MultiRoleDashboard | Employer dashboard |
+| `candidate` | `/dashboard/candidate/` | CandidateDashboard | Candidate dashboard |
+| `tos` | `/terms/` | TermsPage | Terms of Service |
+| `privacy` | `/privacy/` | PrivacyPage | Privacy Policy |
+| `contact` | `/contact/` | ContactPage | Contact |
+
+> **Note:** routing uses a `<base href="/proconnect-landing-page/">` tag so the same `index.html` resolves its scripts and assets correctly from any slug directory. If the repo is renamed or served from a different path, update both `BASE` (in `index.html`) and the `<base>` tag.
 
 ## Brand
 
