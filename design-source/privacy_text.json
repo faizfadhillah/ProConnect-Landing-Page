@@ -1,0 +1,386 @@
+[
+ {
+  "y": 29,
+  "x": 2669,
+  "s": 14,
+  "t": "Features"
+ },
+ {
+  "y": 29,
+  "x": 2759,
+  "s": 14,
+  "t": "Pricing"
+ },
+ {
+  "y": 29,
+  "x": 2838,
+  "s": 14,
+  "t": "Browse Jobs"
+ },
+ {
+  "y": 29,
+  "x": 2956,
+  "s": 14,
+  "t": "Solution"
+ },
+ {
+  "y": 29,
+  "x": 3044,
+  "s": 14,
+  "t": "About us"
+ },
+ {
+  "y": 29,
+  "x": 3137,
+  "s": 14,
+  "t": "Contact Us"
+ },
+ {
+  "y": 29,
+  "x": 3338,
+  "s": 14,
+  "t": "Request Demo"
+ },
+ {
+  "y": 29,
+  "x": 3514,
+  "s": 14,
+  "t": "Sign Up Free"
+ },
+ {
+  "y": 116,
+  "x": 2584,
+  "s": 48,
+  "t": "ProConnect Privacy Policy"
+ },
+ {
+  "y": 184,
+  "x": 2584,
+  "s": 18,
+  "t": "Effective Date: 16 January 2025"
+ },
+ {
+  "y": 290,
+  "x": 2635,
+  "s": 24,
+  "t": "INTRODUCTION"
+ },
+ {
+  "y": 342,
+  "x": 2635,
+  "s": 18,
+  "t": "PLEASE READ THE ENTIRE PRIVACY POLICY CAREFULLY AND CAREFULLY BEFORE USING THE SERVICES AVAILABLE ON ProConnect."
+ },
+ {
+  "y": 414,
+  "x": 2635,
+  "s": 18,
+  "t": "At ProConnect, we value your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we collect, use, and protect your information when you use our mobile application, ProConnect Job Matching & Employment. This Policy applies to Advertisers, Registered Users, and the terms herein may be updated, revised, varied and/or changed from time to time. "
+ },
+ {
+  "y": 564,
+  "x": 2635,
+  "s": 18,
+  "t": "By registering and/or using our services, you:\nAcknowledge that you have read and understand this Policy and agree to its provisions,\nGives its consent to ProConnect to collect, use and/or process your data for the purposes as described below,\nGives its consent to ProConnect to transfer your personal data in the situations mentioned below, as well as to any transfer of your personal data outside your country, and\nGives its consent to ProConnect to share your data internally and between Electronic Platforms and disclose your data to service providers or third parties for the purposes described below."
+ },
+ {
+  "y": 890,
+  "x": 2635,
+  "s": 24,
+  "t": "1. DEFINITION"
+ },
+ {
+  "y": 942,
+  "x": 2635,
+  "s": 18,
+  "t": "Advertiser means a user or company that places job vacancy advertisements or promotes job-related activities on the ProConnect Electronic Platform."
+ },
+ {
+  "y": 1014,
+  "x": 2635,
+  "s": 18,
+  "t": "Registered User means every user as a prospective employee who has registered on the ProConnect Electronic Platform."
+ },
+ {
+  "y": 1086,
+  "x": 2635,
+  "s": 18,
+  "t": "ProConnect means the company that operates the relevant ProConnect Electronic Platform for the country in which the User resides or the country in which the User's business or the User's head office is located."
+ },
+ {
+  "y": 1184,
+  "x": 2635,
+  "s": 18,
+  "t": "ProConnect Electronic Platform refers to all ProConnect websites and mobile applications"
+ },
+ {
+  "y": 1276,
+  "x": 2635,
+  "s": 24,
+  "t": "2. INFORMATION WE COLLECT"
+ },
+ {
+  "y": 1328,
+  "x": 2635,
+  "s": 18,
+  "t": "We collect information to provide, personalist, and improve our services."
+ },
+ {
+  "y": 1394,
+  "x": 2635,
+  "s": 24,
+  "t": "3. HOW WE USE YOUR DATA"
+ },
+ {
+  "y": 1446,
+  "x": 2635,
+  "s": 18,
+  "t": "We process your personal data for the following:\nAccount Management: To create and maintain your user profile.\nJob Matching: To recommend job opportunities aligned with your preferences and qualifications.\nService Improvement: To enhance app functionality, fix bugs, and improve user experiences.\nPersonalisations: To tailor job recommendations, notifications, and app content based on your preferences.\nAnalytics and Research: To analyst usage trends and develop insights to improve the app.\nSecurity and Compliance: To detect fraud, enforce policies, and comply with legal obligations."
+ },
+ {
+  "y": 1798,
+  "x": 2635,
+  "s": 24,
+  "t": "4. HOW WE SHARE INFORMATION"
+ },
+ {
+  "y": 1850,
+  "x": 2635,
+  "s": 18,
+  "t": "We share your data only in limited circumstances:\nWith Service Providers: Trusted third parties that provide services like data hosting, analytics, and customer support. These providers are bound by confidentiality obligations.\nWith Employers or Partners: With your consent, relevant profile information may be shared with potential employers or recruitment partners.\nFor Legal and Security Reasons: When required by law, court orders, or to protect our users and systems.\nBusiness Transfers: In the event of a merger, acquisition, or sale of assets, your data may be transferred as part of the transaction.\nWe do not sell your personal data to third parties for advertising or marketing purposes."
+ },
+ {
+  "y": 2202,
+  "x": 2635,
+  "s": 24,
+  "t": "5. DATA RETENTION"
+ },
+ {
+  "y": 2254,
+  "x": 2635,
+  "s": 18,
+  "t": "We retain personal data based on its purpose and applicable legal requirements:"
+ },
+ {
+  "y": 2300,
+  "x": 2635,
+  "s": 18,
+  "t": "5.1. Active Account Retention\nPersonal data is retained for as long as your account is active, enabling you to use the app effectively.\nJob application history and activity logs are stored for reference and personalised recommendations.\n5.2. Suspicious Activity on User Account\nIf the User sees suspicious activity on the User's account, or accidentally does the following:\nReceive and/or reply to suspicious emails.\nClicking on suspicious links.\nReceive and open attachments you didn't expect.\nVisiting suspicious websites.\n5.2.1. Prevention Measures\nSeveral steps that Users can take to help protect themselves:\nRun a virus scan on your computer.\nChange your ProConnect account password.\nIf you have used this password on other websites, please change this password as well (do not reuse the same password when doing so).\nChange the password for the email address that User uses to log in to User's ProConnect account.\n5.2.2. Change Password Precaution\nAs an additional precaution, we recommend changing the password for each account that the User uses with the same email address that you use to log in to the User's ProConnect account.\nPlease contact our Customer Service if User believes User's ProConnect account has been compromised, so that we can investigate further.\n5.2.3. Responding to Suspicious Activity and Protecting Your Information\nIf ProConnect has contacted a User regarding our concerns regarding suspicious activity, please immediately cease communications with that party. If personal details have been provided, in addition to the steps above that Users can take, see the information below:\nBank details: if the User has provided the User's bank details, please contact the User's financial institution immediately.\nFraud and identity theft: If the User feels that the User's identity has been compromised, please contact the local police station. ProConnect will cooperate with the police if they request any details.\n5.3. Account Deletion\nUser-Initiated Deletion: When you delete your account, we deactivate it and begin the data removal process.\nRetention Period:\nBasic account data is retained for 30 days to allow recovery if requested.\nData that must comply with legal or contractual obligations may be retained for up to 7 years (e.g., tax records or legal disputes).\n5.4. Aggregated or Anonymized Data\nEven after the account has been deleted by the User and after the User's personal data is no longer needed, we will securely delete or anonymize it. We may retain such anonymous data for research, analytics and application improvement purposes, ensuring it cannot identify individual users."
+ },
+ {
+  "y": 3588,
+  "x": 2635,
+  "s": 24,
+  "t": "6. DATA SECURITY"
+ },
+ {
+  "y": 3640,
+  "x": 2635,
+  "s": 18,
+  "t": "We implement industry-standard practices to safeguard your personal data:\n6.1 Encryption\nSensitive data, such as login credentials, is encrypted during transmission and storage using secure protocols (e.g., HTTPS and AES encryption).\n6.2 Access Controls\nAccess to personal data is restricted to authorised personnel who need it for app functionality or compliance purposes.\n6.3 Monitoring and Incident Response\nSystems are regularly monitored for vulnerabilities, unauthorised access, or breaches.\nIn the event of a data breach, affected users will be notified within 72 hours or 3 x 24 hours (three times twenty-four hours), as required by applicable laws. \nWe cannot fully guarantee that Personal Data will not be intercepted, accessed, disclosed, altered or destroyed by unauthorized third parties, due to factors beyond our control.\nProConnect will notify the User in writing in the event of a Personal Information Protection failure within 72 hours or 3 x 24 hours (three times twenty-four hours).\nNotification will be provided to User via electronic mail (e-mail).\n6.4 User Responsibility\nUsers are encouraged to use strong passwords and enable additional security features like two-factor authentication if available. \nUsers are responsible for maintaining the confidentiality of User account details and Users are obliged not to share User account details, including your password and One Time Password (OTP) with anyone, and Users must always maintain and be responsible for the security of the device that Users use.\nUsers are advised that Users always update the ProConnect application and/or User software."
+ },
+ {
+  "y": 4382,
+  "x": 2635,
+  "s": 24,
+  "t": "7. COOKIES AND TRACKING TECHNOLOGIES"
+ },
+ {
+  "y": 4434,
+  "x": 2635,
+  "s": 18,
+  "t": "We use cookies and similar technologies for functionality and personalisation:\n7.1 Types of Cookies Used\nEssential Cookies: Necessary for the app to function, such as maintaining your session.\nPerformance Cookies: Collect data on app usage to help us improve functionality.\nTargeting Cookies: Personalize job recommendations and advertisements based on user behaviour.\n7.2 Managing Cookies\nYou can manage cookie preferences through your app settings or device settings.\nDisabling cookies may impact certain features of the app.\n7.3 Third-Party Tracking\nWe work with analytics providers (e.g., Google Analytics) to track app performance and user interactions."
+ },
+ {
+  "y": 4812,
+  "x": 2635,
+  "s": 24,
+  "t": "8. CROSS-BORDER DATA TRANSFERS"
+ },
+ {
+  "y": 4864,
+  "x": 2635,
+  "s": 18,
+  "t": "As a global platform, your data may be processed in countries outside of your residence. When we transfer a User's personal data from a User's home country, or city to another country, or another city, we will comply with our legal and regulatory obligations with respect to the User's personal data, including having a lawful basis for transferring the User's personal data and implementing appropriate safeguards to ensure an adequate level of protection for Users' personal data. We will also ensure that the recipient of the information is obliged to protect the User's personal data with a standard of protection that is comparable to protection under applicable law.\n8.1 Data Transfer Standards\nTransfers comply with data protection laws within Indonesia.\nStandard Contractual Clauses (SCCs) are used to ensure data protection during international transfers.\n8.2 User Choices\nYou can request more details about data transfer mechanisms or object to specific cross-border data processing activities by contacting our support team.\n"
+ },
+ {
+  "y": 5320,
+  "x": 2635,
+  "s": 24,
+  "t": "9. CHILDREN’S PRIVACY"
+ },
+ {
+  "y": 5372,
+  "x": 2635,
+  "s": 18,
+  "t": "ProConnect is not intended for users under the age of 17:\nIf we discover that a user under 17 has provided personal data, we will delete it immediately."
+ },
+ {
+  "y": 5490,
+  "x": 2635,
+  "s": 24,
+  "t": "10. UPDATES TO THIS PRIVACY POLICY "
+ },
+ {
+  "y": 5542,
+  "x": 2635,
+  "s": 18,
+  "t": "We reserve the right to change the Privacy Policy at any time, by notification via announcement on the ProConnect Electronic Platform or other means deemed reasonable to reflect new features, legal requirements, or changes in business practices:\n10.1 Notification of Changes\nSignificant updates will be communicated via email or in-app notifications at least 30 days before implementation.\nMinor updates may be reflected in the policy immediately, with the new effective date displayed at the top.\n10.2 User Acknowledgment\nContinued use of the app after updates constitutes acceptance of the revised policy.\nUsers are deemed to agree to the changes made to the Privacy Policy by continuing to access and use the Service."
+ },
+ {
+  "y": 5946,
+  "x": 2635,
+  "s": 24,
+  "t": "11. PROTECTION FROM JOB VACANCY FRAUD "
+ },
+ {
+  "y": 5998,
+  "x": 2635,
+  "s": 18,
+  "t": "Be wary of advertisers or employers who ask for the following:\nUpfront costs (e.g. for things like ‘processing’ job applications). Genuine advertisers or employers WILL NOT ask for money or bank or credit card details.\nReceipt of money transfers that you can save some of as 'payment'.\nBank or credit card details.\nCopy of driver's license or passport information as part of the job application process.\nTaxpayer number. This information should only be provided after you have received a genuine job offer.\nPersonal information that is not work-related, such as appearance or marital status.\nProConnect username and password.\nOther personally identifiable information."
+ },
+ {
+  "y": 6330,
+  "x": 2635,
+  "s": 18,
+  "t": "Always check the legitimacy of any job advertisements, email, or company that seems suspicious before you respond. For example, large, well-known companies typically do not include Hotmail or other free email addresses in their advertising. If you have any problems, contact the company directly to verify."
+ },
+ {
+  "y": 6474,
+  "x": 2635,
+  "s": 24,
+  "t": "12. CONTACT INFORMATION"
+ },
+ {
+  "y": 6526,
+  "x": 2635,
+  "s": 18,
+  "t": "If you have questions, concerns, or complaints regarding this privacy policy, please contact us through any of the following:\nEmail: Send email to “cs@ProConnectcareer.com”\nIn-App Contact/Feedback Form: Available under the \"Profile\" section in the app and click on “Feedback”.\n12.1 Complaints Handling\nIf we cannot resolve your complaint, you may file a complaint with the Personal Data Protection Authority of Indonesia or other relevant authorities."
+ },
+ {
+  "y": 6774,
+  "x": 2635,
+  "s": 24,
+  "t": "13. COMPLIANCE WITH LAW AND REGULATIONS"
+ },
+ {
+  "y": 6826,
+  "x": 2635,
+  "s": 18,
+  "t": "This Privacy Policy is governed by and complies with Indonesian laws and regulations, including but not limited to:\nLaw No. 27 of 2022 on Personal Data Protection (PDP Law):\nEnsuring the lawful collection, use, and sharing of personal data.\nGranting users the right to access, update, and delete their personal data.\nElectronic Information and Transactions Law (EIT Law):\nRegulating the use of electronic systems for data storage and transactions.\nGovernment Regulation No. 71 of 2019:\nGoverning the operation of electronic systems and ensuring data protection.\nProConnect is committed to adhering to these regulations and ensuring that your personal data is handled securely and transparently."
+ },
+ {
+  "y": 7379,
+  "x": 2431,
+  "s": 16,
+  "t": "Connecting employers and candidates across ASEAN's hospitality & tourism industry. Backed by ASEANTA and the Indonesian Ministry of Tourism."
+ },
+ {
+  "y": 7379,
+  "x": 3043,
+  "s": 16,
+  "t": "COMPANY"
+ },
+ {
+  "y": 7379,
+  "x": 3247,
+  "s": 16,
+  "t": "SOLUTIONS"
+ },
+ {
+  "y": 7379,
+  "x": 3451,
+  "s": 16,
+  "t": "PLATFORM"
+ },
+ {
+  "y": 7431,
+  "x": 3043,
+  "s": 16,
+  "t": "About Us"
+ },
+ {
+  "y": 7431,
+  "x": 3247,
+  "s": 16,
+  "t": "For Employers"
+ },
+ {
+  "y": 7431,
+  "x": 3451,
+  "s": 16,
+  "t": "Features"
+ },
+ {
+  "y": 7467,
+  "x": 3043,
+  "s": 16,
+  "t": "Contact Us"
+ },
+ {
+  "y": 7467,
+  "x": 3247,
+  "s": 16,
+  "t": "For Schools"
+ },
+ {
+  "y": 7467,
+  "x": 3451,
+  "s": 16,
+  "t": "Pricing"
+ },
+ {
+  "y": 7503,
+  "x": 3043,
+  "s": 16,
+  "t": "Blog"
+ },
+ {
+  "y": 7503,
+  "x": 3247,
+  "s": 16,
+  "t": "For Job Seekers"
+ },
+ {
+  "y": 7503,
+  "x": 3451,
+  "s": 16,
+  "t": "Browse Jobs"
+ },
+ {
+  "y": 7539,
+  "x": 3043,
+  "s": 16,
+  "t": "Terms of Service"
+ },
+ {
+  "y": 7539,
+  "x": 3247,
+  "s": 16,
+  "t": "Freelancing Module"
+ },
+ {
+  "y": 7539,
+  "x": 3451,
+  "s": 16,
+  "t": "Skill Passport"
+ },
+ {
+  "y": 7539,
+  "x": 3451,
+  "s": 16,
+  "t": "API Docs"
+ },
+ {
+  "y": 7575,
+  "x": 3043,
+  "s": 16,
+  "t": "Privacy Policy"
+ },
+ {
+  "y": 7835,
+  "x": 2431,
+  "s": 16,
+  "t": "© 2026 ProConnect. All rights reserved."
+ }
+]

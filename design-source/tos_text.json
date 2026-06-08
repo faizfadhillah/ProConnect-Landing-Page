@@ -1,0 +1,548 @@
+[
+ {
+  "y": 29,
+  "x": 348,
+  "w": 500,
+  "s": 14,
+  "t": "Features"
+ },
+ {
+  "y": 29,
+  "x": 438,
+  "w": 500,
+  "s": 14,
+  "t": "Pricing"
+ },
+ {
+  "y": 29,
+  "x": 517,
+  "w": 500,
+  "s": 14,
+  "t": "Browse Jobs"
+ },
+ {
+  "y": 29,
+  "x": 635,
+  "w": 500,
+  "s": 14,
+  "t": "Solution"
+ },
+ {
+  "y": 29,
+  "x": 745,
+  "w": 500,
+  "s": 14,
+  "t": "About us"
+ },
+ {
+  "y": 29,
+  "x": 838,
+  "w": 500,
+  "s": 14,
+  "t": "Contact Us"
+ },
+ {
+  "y": 29,
+  "x": 1027,
+  "w": 600,
+  "s": 14,
+  "t": "Request Demo"
+ },
+ {
+  "y": 29,
+  "x": 1203,
+  "w": 600,
+  "s": 14,
+  "t": "Sign Up Free"
+ },
+ {
+  "y": 116,
+  "x": 273,
+  "w": 700,
+  "s": 48,
+  "t": "ProConnect Terms of Service"
+ },
+ {
+  "y": 184,
+  "x": 273,
+  "w": 500,
+  "s": 18,
+  "t": "Effective Date: 16 January 2025"
+ },
+ {
+  "y": 290,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "INTRODUCTION"
+ },
+ {
+  "y": 342,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "PLEASE READ THE ENTIRE TERMS OF SERVICE CAREFULLY AND CAREFULLY BEFORE USING THE SERVICES AVAILABLE ON ProConnect."
+ },
+ {
+  "y": 414,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "The following Service Terms applies to Advertisers, Registered Users, and the terms herein may be updated, revised, varied and/or changed from time to time. By registering and/or using our services, you agree to the terms of this document."
+ },
+ {
+  "y": 532,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "1. DEFINITION"
+ },
+ {
+  "y": 584,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Advertiser means a user or company that places job vacancy advertisements or promotes job-related activities on the ProConnect Electronic Platform."
+ },
+ {
+  "y": 656,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Registered User means every user as a prospective employee who has registered on the ProConnect Electronic Platform."
+ },
+ {
+  "y": 728,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "ProConnect means the company that operates the relevant ProConnect Electronic Platform for the country in which the User resides or the country in which the User's business or the User's head office is located."
+ },
+ {
+  "y": 826,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "ProConnect Electronic Platform refers to all ProConnect websites and mobile applications"
+ },
+ {
+  "y": 918,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "2. ACCEPTANCE OF TERMS"
+ },
+ {
+  "y": 970,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "By downloading, installing, or using ProConnect Electronic Platform, you agree to abide by these Terms of Service and our Privacy Policy. If you do not agree to these terms, you may not use the App."
+ },
+ {
+  "y": 1088,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "3. USER REGISTRATION"
+ },
+ {
+  "y": 1140,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "To use the ProConnect Electronic Platform, you must create an account by providing accurate and up-to-date information. You are responsible for maintaining the confidentiality of your account and password, and for all activities that occur under your account."
+ },
+ {
+  "y": 1264,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "You agree to:\nProvide accurate, current, and complete information during the registration process.\nUpdate your account information as necessary.\nProtect your login credentials and ensure they are not shared with others."
+ },
+ {
+  "y": 1434,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "4. USE OF THE ProConnect ELECTRONIC PLATFORM"
+ },
+ {
+  "y": 1486,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "You may use ProConnect Electronic Platform solely for personal, non-commercial purposes in accordance with these Terms of Service. You agree not to use the App for any unlawful or prohibited activities, including but not limited to:"
+ },
+ {
+  "y": 1584,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Using the App for fraudulent purposes.\nPosting or transmitting offensive or inappropriate content.\nViolating any applicable local, state, or international law."
+ },
+ {
+  "y": 1702,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "5. USER RESPONSIBILITIES"
+ },
+ {
+  "y": 1754,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "You are responsible for all actions performed through your account. You agree to:"
+ },
+ {
+  "y": 1800,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Not impersonate another person or entity.\nNot engage in any activity that interferes with or disrupts the functioning of the App.\nEnsure the information you provide is accurate, truthful, and up to date.\nNot to use the App to violate the rights of others, including their privacy or intellectual property."
+ },
+ {
+  "y": 1996,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "6. ACCOUNT TERMINATION"
+ },
+ {
+  "y": 2048,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "You may terminate your account at any time by deleting your profile or contacting customer support. If you violate these Terms of Service, we may suspend or terminate your account without prior notice."
+ },
+ {
+  "y": 2146,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Upon termination, you lose access to all features of the ProConnect Electronic Platform, and we may delete your data in accordance with our Privacy Policy."
+ },
+ {
+  "y": 2238,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "7. DATA COLLECTION AND PRIVACY"
+ },
+ {
+  "y": 2290,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "By using the App, you consent to the collection and use of your personal data in accordance with our Privacy Policy. We respect your privacy and take reasonable steps to protect your data, but you acknowledge that no security system is 100% secure."
+ },
+ {
+  "y": 2408,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "8. THIRD-PARTY SERVICES"
+ },
+ {
+  "y": 2460,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "ProConnect Electronic Platform may contain links or connections to third-party services, including social media platforms (Google Login, Apple Login, Including linked profile information). These third parties have their own terms and privacy policies, and we do not assume any responsibility or liability for their practices."
+ },
+ {
+  "y": 2604,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "9. INTELLECTUAL PROPERTY"
+ },
+ {
+  "y": 2656,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "All content and materials available through the App, including but not limited to text, logos, graphics, images, and software, are the property of ProConnect or its licensors and are protected by intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the App or its contents without prior written permission."
+ },
+ {
+  "y": 2826,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "10. LIMITATION OF LIABILITY"
+ },
+ {
+  "y": 2878,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "To the fullest extent permitted by law, ProConnect will not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or related to your use of ProConnect Electronic Platform, including but not limited to loss of data, loss of profits, or any other damages resulting from the use or inability to use the ProConnect Electronic Platform."
+ },
+ {
+  "y": 3048,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "11. WARRANTY INFORMATION"
+ },
+ {
+  "y": 3100,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "ProConnect Electronic Platform is provided \"as is\" and \"as available,\" without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee that ProConnect Electronic Platform will be error-free, secure, or continuously available."
+ },
+ {
+  "y": 3270,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "12. MODIFICATIONS TO THE TERMS OF SERVICE"
+ },
+ {
+  "y": 3322,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "ProConnect reserve the right to change these Terms of Service at any time, by notification via announcement on the ProConnect Electronic Platform or other means deemed reasonable to reflect new features, legal requirements, or changes in business practices"
+ },
+ {
+  "y": 3466,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "13. CHOICE OF LAW AND DISPUTE RESOLUTION"
+ },
+ {
+  "y": 3518,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "These terms of service are subject to and therefore must be interpreted based on the provisions of the laws of the Republic of Indonesia."
+ },
+ {
+  "y": 3590,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "If a dispute arises regarding the interpretation and/or implementation of the Terms of Service, it will be resolved by deliberation to reach a consensus."
+ },
+ {
+  "y": 3662,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "If the above dispute cannot be resolved amicably and/or by deliberation to reach consensus, then the dispute will be resolved through the District Court (based on ProConnect’s domicile)"
+ },
+ {
+  "y": 3780,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "14. CONTACT INFORMATION"
+ },
+ {
+  "y": 3832,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "If you have any questions, concerns, or feedback about these Terms of Service, please contact us at:\nEmail: Send email to “cs@ProConnectcareer.com”\nIn-App Contact/Feedback Form: Available under the \"Profile\" section in the app and click on “Feedback”."
+ },
+ {
+  "y": 4002,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "15. WAIVER OF INDEMNIFICATION"
+ },
+ {
+  "y": 4054,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "You declare that ProConnect, its directors, commissioners, employees, partners, affiliates, and/or representatives are not responsible and/or cannot be held liable for claims, demands, lawsuits, losses (whether direct or indirect, material or immaterial) and obligations in any form. by you and/or any party resulting from or in connection with:\n\nMaterial\nServices\nYour failure to comply with the Terms of Service, \ninformation, statements and others provided by you are assessed or found to be incorrect, \nuse of your Account by other parties, \ndisruption and/or operational failure of the ProConnect Electronic Platform, \nyour visit and/or use of the ProConnect Electronic Platform, or \nyour actions that are not in accordance with laws and regulations."
+ },
+ {
+  "y": 4484,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "16. SEVERABILITY"
+ },
+ {
+  "y": 4536,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "If any part of these Terms of Service is deemed legally invalid and/or invalid and/or unenforceable, the remaining parts will remain valid and enforceable."
+ },
+ {
+  "y": 4628,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "17. FORCE MAJEURE "
+ },
+ {
+  "y": 4680,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Each Party will not be deemed to have violated these Terms of Service if there is a total or partial failure of duties and obligations under these Terms of Service caused by fire, government or state action, war, riot, rebellion, earthquake, tsunami, embargo, labor dispute, terrorism, strikes, computer failures, unlawful security breaches (hacking), occurring now or in the future which are beyond the control of such Party."
+ },
+ {
+  "y": 4856,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "Each Party is not responsible for any losses incurred in connection with a Force Majeure Event by the other Party."
+ },
+ {
+  "y": 4948,
+  "x": 324,
+  "w": 700,
+  "s": 24,
+  "t": "18. ENTIRE AGREEMENT"
+ },
+ {
+  "y": 5000,
+  "x": 324,
+  "w": 500,
+  "s": 18,
+  "t": "These Terms of Service, together with our Privacy Policy, constitute the entire agreement between you and ProConnect with respect to your use of the App. If any provision of these terms is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect."
+ },
+ {
+  "y": 5371,
+  "x": 120,
+  "w": 500,
+  "s": 16,
+  "t": "Connecting employers and candidates across ASEAN's hospitality & tourism industry. Backed by ASEANTA and the Indonesian Ministry of Tourism."
+ },
+ {
+  "y": 5371,
+  "x": 732,
+  "w": 700,
+  "s": 16,
+  "t": "COMPANY"
+ },
+ {
+  "y": 5371,
+  "x": 936,
+  "w": 700,
+  "s": 16,
+  "t": "SOLUTIONS"
+ },
+ {
+  "y": 5371,
+  "x": 1140,
+  "w": 700,
+  "s": 16,
+  "t": "PLATFORM"
+ },
+ {
+  "y": 5423,
+  "x": 732,
+  "w": 500,
+  "s": 16,
+  "t": "About Us"
+ },
+ {
+  "y": 5423,
+  "x": 936,
+  "w": 500,
+  "s": 16,
+  "t": "For Employers"
+ },
+ {
+  "y": 5423,
+  "x": 1140,
+  "w": 500,
+  "s": 16,
+  "t": "Features"
+ },
+ {
+  "y": 5459,
+  "x": 732,
+  "w": 500,
+  "s": 16,
+  "t": "Contact Us"
+ },
+ {
+  "y": 5459,
+  "x": 936,
+  "w": 500,
+  "s": 16,
+  "t": "For Schools"
+ },
+ {
+  "y": 5459,
+  "x": 1140,
+  "w": 500,
+  "s": 16,
+  "t": "Pricing"
+ },
+ {
+  "y": 5495,
+  "x": 732,
+  "w": 500,
+  "s": 16,
+  "t": "Blog"
+ },
+ {
+  "y": 5495,
+  "x": 936,
+  "w": 500,
+  "s": 16,
+  "t": "For Job Seekers"
+ },
+ {
+  "y": 5495,
+  "x": 1140,
+  "w": 500,
+  "s": 16,
+  "t": "Browse Jobs"
+ },
+ {
+  "y": 5531,
+  "x": 732,
+  "w": 500,
+  "s": 16,
+  "t": "Terms of Service"
+ },
+ {
+  "y": 5531,
+  "x": 936,
+  "w": 500,
+  "s": 16,
+  "t": "Freelancing Module"
+ },
+ {
+  "y": 5531,
+  "x": 1140,
+  "w": 500,
+  "s": 16,
+  "t": "Skill Passport"
+ },
+ {
+  "y": 5531,
+  "x": 1140,
+  "w": 500,
+  "s": 16,
+  "t": "API Docs"
+ },
+ {
+  "y": 5567,
+  "x": 732,
+  "w": 500,
+  "s": 16,
+  "t": "Privacy Policy"
+ },
+ {
+  "y": 5827,
+  "x": 120,
+  "w": 500,
+  "s": 16,
+  "t": "© 2026 ProConnect. All rights reserved."
+ }
+]

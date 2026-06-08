@@ -1,0 +1,29 @@
+5.1. Active Account Retention
+Personal data is retained for as long as your account is active, enabling you to use the app effectively.
+Job application history and activity logs are stored for reference and personalised recommendations.
+5.2. Suspicious Activity on User Account
+If the User sees suspicious activity on the User's account, or accidentally does the following:
+Receive and/or reply to suspicious emails.
+Clicking on suspicious links.
+Receive and open attachments you didn't expect.
+Visiting suspicious websites.
+5.2.1. Prevention Measures
+Several steps that Users can take to help protect themselves:
+Run a virus scan on your computer.
+Change your ProConnect account password.
+If you have used this password on other websites, please change this password as well (do not reuse the same password when doing so).
+Change the password for the email address that User uses to log in to User's ProConnect account.
+5.2.2. Change Password Precaution
+As an additional precaution, we recommend changing the password for each account that the User uses with the same email address that you use to log in to the User's ProConnect account.
+Please contact our Customer Service if User believes User's ProConnect account has been compromised, so that we can investigate further.
+5.2.3. Responding to Suspicious Activity and Protecting Your Information
+If ProConnect has contacted a User regarding our concerns regarding suspicious activity, please immediately cease communications with that party. If personal details have been provided, in addition to the steps above that Users can take, see the information below:
+Bank details: if the User has provided the User's bank details, please contact the User's financial institution immediately.
+Fraud and identity theft: If the User feels that the User's identity has been compromised, please contact the local police station. ProConnect will cooperate with the police if they request any details.
+5.3. Account Deletion
+User-Initiated Deletion: When you delete your account, we deactivate it and begin the data removal process.
+Retention Period:
+Basic account data is retained for 30 days to allow recovery if requested.
+Data that must comply with legal or contractual obligations may be retained for up to 7 years (e.g., tax records or legal disputes).
+5.4. Aggregated or Anonymized Data
+Even after the account has been deleted by the User and after the User's personal data is no longer needed, we will securely delete or anonymize it. We may retain such anonymous data for research, analytics and application improvement purposes, ensuring it cannot identify individual users.

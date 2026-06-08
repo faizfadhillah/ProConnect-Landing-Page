@@ -1,0 +1,232 @@
+[FRAME] "Desktop - 1" | size: 1440x7099 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+  [FRAME] "Frame 1171277044" | size: 1440x6983 | 
+    [FRAME] "Frame 1171277015" | size: 1200x474 | 
+      [FRAME] "Frame 1171277014" | size: 583x402 | 
+        [FRAME] "Frame 1171277013" | size: 583x314 | 
+          [TEXT] "Work Beyond Borders" | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "Access the Asean Best Jobs From ProConnect" | font: Montserrat 48px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "AI-powered matching, built-in ATS, and ASEAN-MRA-TP verified credentials. The only hiring platform built specifically for hospitality & tourism across Southeast Asia." | font: Montserrat 16px | color: {"r":0.572549045085907,"g":0.5764706134796143,"b":0.5764706134796143,"a":1}
+          [FRAME] "Frame 1171277014" | size: 583x70 | 
+        [FRAME] "Frame 1171277006" | size: 500x48 | 
+          [INSTANCE] "01 Button" | size: 240x48 | 
+          [INSTANCE] "01 Button" | size: 240x48 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+      [FRAME] "Frame 1171277058" | size: 571x474 | 
+        [RECTANGLE] "Rectangle 31" | size: 390x474 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"STRETCH","imageRef":"c63bf3278469176c9352e890e458f9729f2ba876","imageTransform":[[0.9176469445228577,0,0],[0,0.7442050576210022,0.12789732217788696]]}
+        [FRAME] "Frame 1171277027" | size: 280x252 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [TEXT] "Hire Verified Hospitality Talent Across ASEAN" | font: Montserrat 18px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [FRAME] "Frame 1171277042" | size: 164x32 | 
+          [TEXT] "10,000+ candidates verified across ASEAN" | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [FRAME] "Frame 1171277056" | size: 128x48 | 
+    [FRAME] "Frame 1171277024" | size: 1200x224 | 
+      [TEXT] "Explore ProConnect Top Jobs" | font: Montserrat 36px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [FRAME] "Frame 1171277023" | size: 1200x152 | 
+        [FRAME] "Frame 1171277021" | size: 1200x64 | 
+          [FRAME] "Frame 1171277018" | size: 282x64 | 
+          [FRAME] "Frame 1171277020" | size: 282x64 | 
+          [FRAME] "Frame 1171277021" | size: 282x64 | 
+          [FRAME] "Frame 1171277022" | size: 282x64 | 
+        [FRAME] "Frame 1171277022" | size: 1200x64 | 
+          [FRAME] "Frame 1171277018" | size: 282x64 | 
+          [FRAME] "Frame 1171277020" | size: 282x64 | 
+          [FRAME] "Frame 1171277021" | size: 282x64 | 
+          [FRAME] "Frame 1171277022" | size: 282x64 | 
+    [FRAME] "Frame 1171277034" | size: 1200x548 | 
+      [FRAME] "Frame 1171277032" | size: 588x548 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.9725490212440491,"g":0.9764705896377563,"b":0.9764705896377563,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:f9b82e5392339041cc20021467c801be884e8733/40009911:1"}}}
+        [RECTANGLE] "image 24" | size: 588x320 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.8509804010391235,"g":0.8509804010391235,"b":0.8509804010391235,"a":1}}
+        [FRAME] "Frame 1171277013" | size: 588x172 | 
+          [FRAME] "Frame 1171277057" | size: 524x92 | 
+          [INSTANCE] "01 Button" | size: 252x48 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+      [FRAME] "Frame 1171277034" | size: 588x548 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.9725490212440491,"g":0.9764705896377563,"b":0.9764705896377563,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:f9b82e5392339041cc20021467c801be884e8733/40009911:1"}}}
+        [RECTANGLE] "image 23" | size: 588x320 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"4def7817e7a1a02146fb0e29cf41ce5c1a961fad"}
+        [FRAME] "Frame 1171277014" | size: 588x172 | 
+          [FRAME] "Frame 1171277057" | size: 524x92 | 
+          [INSTANCE] "01 Button" | size: 252x48 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+    [FRAME] "Frame 1171277035" | size: 1440x960 | 
+      [FRAME] "Frame 1171277031" | size: 1440x172 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+        [FRAME] "Frame 1171277007" | size: 282x92 | 
+          [TEXT] "10" | font: Montserrat 48px | color: {"r":1,"g":1,"b":1,"a":1}
+          [TEXT] "ASEAN Countries" | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+        [FRAME] "Frame 1171277008" | size: 282x92 | 
+          [TEXT] "250+" | font: Montserrat 48px | color: {"r":1,"g":1,"b":1,"a":1}
+          [TEXT] "Partner Schools" | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+        [FRAME] "Frame 1171277010" | size: 282x92 | 
+          [TEXT] "95%" | font: Montserrat 48px | color: {"r":1,"g":1,"b":1,"a":1}
+          [TEXT] "Cost Savings vs Agents" | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+        [FRAME] "Frame 1171277009" | size: 282x92 | 
+          [TEXT] "15M+" | font: Montserrat 48px | color: {"r":1,"g":1,"b":1,"a":1}
+          [TEXT] "Hospitality Workers in ASEAN" | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+      [FRAME] "Frame 1171277025" | size: 1440x788 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.9333333373069763,"g":0.9803921580314636,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:180ecd4e9ad15961d12bfaa9b228ab647a4345c6/40009603:1147"}}}
+        [VECTOR] "Vector 51"
+        [VECTOR] "Vector 52"
+        [VECTOR] "Vector 53"
+        [VECTOR] "Vector 54"
+        [VECTOR] "Vector 55"
+        [TEXT] "Everything You Need to Hire in Hospitality" | font: Montserrat 36px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+        [FRAME] "Frame 1171277030" | size: 1200x476 | 
+          [FRAME] "Frame 1171277028" | size: 1200x226 | 
+          [FRAME] "Frame 1171277029" | size: 1200x226 | 
+    [FRAME] "Frame 1171277036" | size: 1200x820 | 
+      [TEXT] "Pro Recruitment with ProConnect" | font: Montserrat 36px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [RECTANGLE] "Rectangle 32" | size: 1200x500 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"62d31a6716d1243cb8f958020b4931e07ea80a19"}
+      [FRAME] "Frame 1171277029" | size: 1200x200 | 
+        [FRAME] "Frame 1171277023" | size: 384x200 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.9725490212440491,"g":0.9764705896377563,"b":0.9764705896377563,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:f9b82e5392339041cc20021467c801be884e8733/40009911:1"}}}
+          [RECTANGLE] "image 45" | size: 200x200 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"f6d3666c9461b50509ed0bf7fb4ed46d67873eda"}
+          [TEXT] "Connected Throughout ASEAN" | font: Montserrat 24px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "It’s super hard to qualify—extreme quality standards ensure every single team member is at the top of their game." | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+        [FRAME] "Frame 1171277026" | size: 384x200 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.9725490212440491,"g":0.9764705896377563,"b":0.9764705896377563,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:f9b82e5392339041cc20021467c801be884e8733/40009911:1"}}}
+          [RECTANGLE] "image 44" | size: 200x200 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"066f1eef417c0838edca835aa1c48092da2c1787"}
+          [TEXT] "Premium Pay for Premium Talent" | font: Montserrat 24px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "Over 50% of new hires double or triple their previous pay. Why? Because that’s what the best person in the world is worth." | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+        [FRAME] "Frame 1171277027" | size: 384x200 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.9725490212440491,"g":0.9764705896377563,"b":0.9764705896377563,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:f9b82e5392339041cc20021467c801be884e8733/40009911:1"}}}
+          [RECTANGLE] "image 44" | size: 200x200 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"a90be65afc99f5f3818cbe1525f1abc823a32eac"}
+          [TEXT] "Shortlist by Skills,
+Not Bias" | font: Montserrat 24px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "We don’t care where you went to school or whether we can pronounce your name. Just prove you’ve got the skills." | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [FRAME] "Frame 1171277017" | size: 64x64 | fill: {"opacity":0.10000000149011612,"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:b94fb8821bd88e0442ba9a5cbb3b810bcb93a241/40009603:1396"}}}
+        [FRAME] "play-03" | size: 40x40 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [VECTOR] "Icon"
+    [FRAME] "Frame 1171277037" | size: 1200x312 | 
+      [TEXT] "Companies That Trust ProConnect" | font: Montserrat 36px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [FRAME] "Frame 1171277040" | size: 1200x232 | 
+        [FRAME] "Frame 1171277038" | size: 1200x104 | 
+          [FRAME] "Frame 1171277018" | size: 180x104 | 
+          [FRAME] "Frame 1171277030" | size: 180x104 | 
+          [FRAME] "Frame 1171277031" | size: 180x104 | 
+          [FRAME] "Frame 1171277032" | size: 180x104 | 
+          [FRAME] "Frame 1171277033" | size: 180x104 | 
+          [FRAME] "Frame 1171277034" | size: 180x104 | 
+        [FRAME] "Frame 1171277039" | size: 996x104 | 
+          [FRAME] "Frame 1171277018" | size: 180x104 | 
+          [FRAME] "Frame 1171277030" | size: 180x104 | 
+          [FRAME] "Frame 1171277031" | size: 180x104 | 
+          [FRAME] "Frame 1171277032" | size: 180x104 | 
+          [FRAME] "Frame 1171277034" | size: 180x104 | 
+    [FRAME] "Frame 1171277025" | size: 1440x642 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+      [VECTOR] "Vector 51"
+      [VECTOR] "Vector 52"
+      [VECTOR] "Vector 53"
+      [VECTOR] "Vector 54"
+      [VECTOR] "Vector 55"
+      [TEXT] "Built for Every Stakeholder in Hospitality Hiring" | font: Montserrat 36px | color: {"r":1,"g":1,"b":1,"a":1}
+      [FRAME] "Frame 1171277029" | size: 1200x330 | 
+        [FRAME] "Frame 1171277027" | size: 384x330 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [RECTANGLE] "image 38" | size: 90x90 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"51d1d85190dc97d4a49ed80fcce5c7128ecd6b2e"}
+          [TEXT] "For Job Seekers" | font: Montserrat 24px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "Hospitality professionals at every level. Build a verified Skill Passport that travels with you across all 10 ASEAN countries." | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [FRAME] "Frame 1171277041" | size: 344x24 | 
+        [FRAME] "Frame 1171277026" | size: 384x330 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [RECTANGLE] "image 41" | size: 90x90 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"bedc3bb272e5441f7c4cc762132768216337c451"}
+          [TEXT] "For Schools" | font: Montserrat 24px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "Hospitality schools and vocational centers. Replace $250K+ in annual agent fees and actually earn money from graduate. " | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [FRAME] "Frame 1171277041" | size: 344x24 | 
+        [FRAME] "Frame 1171277023" | size: 384x330 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [RECTANGLE] "image 36" | size: 90x90 | fill: {"blendMode":"NORMAL","type":"IMAGE","scaleMode":"FILL","imageRef":"ca855fbc620df8c46836d0a55bb0b5df3231b5b5"}
+          [TEXT] "For Employers" | font: Montserrat 24px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [TEXT] "Replace expensive agents with verified, skill-matched candidates at a fraction of the cost." | font: Montserrat 16px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+          [FRAME] "Frame 1171277041" | size: 344x24 | 
+    [FRAME] "Frame 1171277038" | size: 1200x860 | 
+      [ELLIPSE] "Ellipse 18"
+      [ELLIPSE] "Ellipse 17"
+      [ELLIPSE] "Ellipse 16"
+      [TEXT] "Trusted Across ASEAN Hospitality" | font: Montserrat 36px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [FRAME] "Frame 1171277046" | size: 1200x780 | 
+        [FRAME] "Frame 1171277029" | size: 1200x378 | 
+          [FRAME] "Frame 1171277023" | size: 384x378 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [FRAME] "Frame 1171277028" | size: 384x378 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [FRAME] "Frame 1171277029" | size: 384x378 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+        [FRAME] "Frame 1171277030" | size: 1200x378 | 
+          [FRAME] "Frame 1171277023" | size: 384x378 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [FRAME] "Frame 1171277028" | size: 384x378 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [FRAME] "Frame 1171277029" | size: 384x378 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+    [FRAME] "Frame 1171277032" | size: 1200x356 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+      [VECTOR] "Vector 49"
+      [VECTOR] "Vector 50"
+      [VECTOR] "Vector 48"
+      [FRAME] "Frame 1171277013" | size: 544x140 | 
+        [TEXT] "Ready to Transform Your Hospitality Hiring?" | font: Montserrat 36px | color: {"r":1,"g":1,"b":1,"a":1}
+        [TEXT] "Join hundreds of employers and schools across ASEAN who are hiring smarter, faster, and 95% cheaper." | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+      [FRAME] "Frame 1171277045" | size: 544x48 | 
+        [INSTANCE] "01 Button" | size: 252x48 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+          [INSTANCE] "image-03" | size: 24x24 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [TEXT] "Contact Us" | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+          [INSTANCE] "arrow-right" | size: 24x24 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+        [INSTANCE] "01 Button" | size: 252x48 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [INSTANCE] "image-03" | size: 24x24 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [TEXT] "Start Free Trial" | font: Montserrat 16px | color: {"r":0.01568627543747425,"g":0.14901961386203766,"b":0.2823529541492462,"a":1}
+          [INSTANCE] "arrow-right" | size: 24x24 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+      [RECTANGLE] "image 49" | size: 389x341 | fill: {"blendMode":"NORMAL","visible":false,"type":"IMAGE","scaleMode":"FILL","imageRef":"bba7a1e1f0c107222b85fa05d459ae675e3acc1a"}
+    [INSTANCE] "Footer" | size: 1440x707 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.07058823853731155,"g":0.07058823853731155,"b":0.07058823853731155,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:277077d4f6bc261ef40be574e85725c4e3aef755/40009603:1397"}}}
+      [INSTANCE] "01 Logo Brand" | size: 282x43 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+        [VECTOR] "Vector"
+        [VECTOR] "Vector"
+        [VECTOR] "Vector"
+        [GROUP] "Clip path group"
+          [GROUP] "clip0_46_518"
+          [GROUP] "Group"
+      [FRAME] "Frame 1171277031" | size: 1200x220 | 
+        [FRAME] "Frame 1171277037" | size: 486x220 | 
+          [TEXT] "Connecting employers and candidates across ASEAN's hospitality & tourism industry. Backed by ASEANTA" | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+          [INSTANCE] "03 Logo partner" | size: 180x60 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+        [FRAME] "Frame 1171277030" | size: 588x220 | 
+          [FRAME] "Frame 1171277029" | size: 180x220 | 
+          [FRAME] "Frame 1171277028" | size: 180x184 | 
+          [FRAME] "Frame 1171277027" | size: 180x148 | 
+      [FRAME] "Frame 1171277037" | size: 1200x44 | 
+        [FRAME] "Frame 1171277035" | size: 172x44 | 
+          [FRAME] "Frame 1171277033" | size: 44x44 | 
+          [FRAME] "Frame 1171277034" | size: 44x44 | 
+          [FRAME] "Frame 1171277035" | size: 44x44 | 
+        [FRAME] "Frame 1171277038" | size: 150x44 | 
+          [RECTANGLE] "Rectangle 1" | size: 150x44 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+          [VECTOR] "path16"
+          [GROUP] "Group"
+          [GROUP] "g48"
+          [GROUP] "g66"
+          [GROUP] "g80"
+          [GROUP] "g90"
+      [LINE] "Line 1"
+      [TEXT] "© 2026 ProConnect. All rights reserved." | font: Montserrat 16px | color: {"r":1,"g":1,"b":1,"a":1}
+  [INSTANCE] "Navigation" | size: 1440x76 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:5221d56def79c8068f584798c787370abe6b8a3c/40009900:0"}}}
+    [INSTANCE] "01 Logo Brand" | size: 140x21 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+      [VECTOR] "Vector"
+      [VECTOR] "Vector"
+      [VECTOR] "Vector"
+      [GROUP] "Clip path group"
+        [GROUP] "clip0_46_533"
+          [VECTOR] "Vector"
+        [GROUP] "Group"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+          [VECTOR] "Vector"
+    [FRAME] "Frame 1171277005" | size: 568x18 | 
+      [TEXT] "Features" | font: Montserrat 14px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [TEXT] "Pricing" | font: Montserrat 14px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [TEXT] "Browse Jobs" | font: Montserrat 14px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [FRAME] "Frame 1171277007" | size: 82x18 | 
+        [TEXT] "Solution" | font: Montserrat 14px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+        [INSTANCE] "chevron-down" | size: 18x18 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [VECTOR] "Vector"
+      [TEXT] "About us" | font: Montserrat 14px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+      [TEXT] "Contact Us" | font: Montserrat 14px | color: {"r":0.16078431904315948,"g":0.16078431904315948,"b":0.16078431904315948,"a":1}
+    [FRAME] "Frame 1171277006" | size: 317x40 | 
+      [INSTANCE] "01 Button" | size: 156x40 | 
+        [INSTANCE] "image-03" | size: 20x20 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [VECTOR] "Icon"
+        [TEXT] "Request Demo" | font: Montserrat 14px | color: {"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1}
+        [INSTANCE] "image-03" | size: 20x20 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [VECTOR] "Icon"
+      [INSTANCE] "01 Button" | size: 141x40 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+        [INSTANCE] "image-03" | size: 20x20 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [VECTOR] "Icon"
+        [TEXT] "Sign Up Free" | font: Montserrat 14px | color: {"r":1,"g":1,"b":1,"a":1}
+        [INSTANCE] "image-03" | size: 20x20 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+          [VECTOR] "Icon"
+  [FRAME] "Frame 1171277034" | size: 60x60 | fill: {"blendMode":"NORMAL","type":"SOLID","color":{"r":0.08235294371843338,"g":0.3764705955982208,"b":0.7411764860153198,"a":1},"boundVariables":{"color":{"type":"VARIABLE_ALIAS","id":"VariableID:25fa27e55f3e8fa170e405120895a3988bb41f30/40009911:2"}}}
+    [INSTANCE] "message-chat-01" | size: 28x28 | fill: {"blendMode":"NORMAL","visible":false,"type":"SOLID","color":{"r":1,"g":1,"b":1,"a":1}}
+      [VECTOR] "Icon"

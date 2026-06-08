@@ -1,0 +1,1807 @@
+[CANVAS] "    ✅  Final Design - Multi Role"  
+  [FRAME] "Frame" 360x800 bg:rgb(248,249,249)
+    [FRAME] "Frame 1618873612" 328x52 
+      [TEXT:20px/700] "Hello Arufa"
+      [TEXT:14px/400] "Get Started Finding Something"
+    [FRAME] "Frame 1618873629" 360x1672 
+      [FRAME] "Frame 1618873661" 328x160 
+        [FRAME] "Frame 1618873656" 328x74 
+        [FRAME] "Frame 1618873657" 328x74 
+      [FRAME] "Frame 1618873622" 360x396 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x60 
+        [FRAME] "Frame 1618873629" 328x264 
+      [FRAME] "Frame 1618873599" 360x310 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x80 
+        [FRAME] "Frame 1618873607" 328x158 
+      [INSTANCE] "Ads" 328x60 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873604" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873602" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "luggage-04" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873605" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "user-profile-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [INSTANCE] "Ads" 300x250 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+    [RECTANGLE] "Rectangle 13390" 360x800 bg:rgb(13,59,115)
+    [INSTANCE] "Sidebar" 320x845 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Startup Colorbox"
+        [INSTANCE] "chevron-down" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x186 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "Frame 1618873535" 264x40 bg:rgb(248,249,249)
+        [FRAME] "Frame 1618873537" 264x50 bg:rgb(238,250,255)
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1171276969" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873338" 288x148 bg:rgb(238,250,255)
+        [FRAME] "Frame 1618873336" 264x78 
+        [INSTANCE] "01 Button" 264x34 bg:rgb(21,96,189)
+      [FRAME] "Frame 1618873536" 288x107 
+        [TEXT:14px/600] "ProConnect © 2026"
+        [TEXT:14px/600] "Supported by"
+        [INSTANCE] "03 Logo partner" 178x59 bg:rgb(255,255,255)
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 188x24 
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 16x18 
+      [FRAME] "Frame 1171277004" 27x20 bg:rgb(232,64,64)
+        [TEXT:10px/600] "999"
+  [FRAME] "Desktop - 87" 1440x800 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 204x40 
+        [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1171277004" 31x20 bg:rgb(232,64,64)
+    [FRAME] "Frame 1618873612" 1088x60 
+      [TEXT:24px/700] "Hello Arufa"
+      [TEXT:16px/400] "Get Started Finding Something"
+    [INSTANCE] "Sidebar" 320x845 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Startup Colorbox"
+        [INSTANCE] "chevron-down" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x186 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "Frame 1618873535" 264x40 bg:rgb(248,249,249)
+        [FRAME] "Frame 1618873537" 264x50 bg:rgb(238,250,255)
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1171276969" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873338" 288x148 bg:rgb(238,250,255)
+        [FRAME] "Frame 1618873336" 264x78 
+        [INSTANCE] "01 Button" 264x34 bg:rgb(21,96,189)
+      [FRAME] "Frame 1618873536" 288x107 
+        [TEXT:14px/600] "ProConnect © 2026"
+        [TEXT:14px/600] "Supported by"
+        [INSTANCE] "03 Logo partner" 178x59 bg:rgb(255,255,255)
+    [INSTANCE] "Ads" 300x250 
+      [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+        [INSTANCE] "x-02" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873663" 1088x974 
+      [FRAME] "Frame 1618873656" 1088x106 
+        [FRAME] "Frame 1618873614" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873613" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873615" 260x106 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873622" 1088x206 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873629" 1024x68 
+      [FRAME] "Frame 1618873599" 1088x182 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873607" 1024x44 
+      [INSTANCE] "Ads" 970x90 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873662" 1088x326 
+        [FRAME] "Frame 1618873658" 720x326 
+        [INSTANCE] "Ads" 300x250 
+  [FRAME] "Frame" 360x800 bg:rgb(248,249,249)
+    [FRAME] "Frame 1618873612" 328x52 
+      [TEXT:20px/700] "Hello Arufa"
+      [TEXT:14px/400] "Get Started Finding Something"
+    [FRAME] "Frame 1618873629" 360x1672 
+      [FRAME] "Frame 1618873661" 328x160 
+        [FRAME] "Frame 1618873656" 328x74 
+        [FRAME] "Frame 1618873657" 328x74 
+      [FRAME] "Frame 1618873622" 360x396 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x60 
+        [FRAME] "Frame 1618873629" 328x264 
+      [FRAME] "Frame 1618873599" 360x310 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x80 
+        [FRAME] "Frame 1618873607" 328x158 
+      [INSTANCE] "Ads" 328x60 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873604" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873602" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "luggage-04" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873605" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "user-profile-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [INSTANCE] "Ads" 300x250 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+    [RECTANGLE] "Rectangle 13390" 360x800 bg:rgb(13,59,115)
+    [INSTANCE] "Sidebar" 320x845 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Startup Colorbox"
+        [INSTANCE] "chevron-up" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x186 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "Frame 1618873535" 264x40 bg:rgb(248,249,249)
+        [FRAME] "Frame 1618873537" 264x50 bg:rgb(238,250,255)
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1171276969" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873338" 288x148 bg:rgb(238,250,255)
+        [FRAME] "Frame 1618873336" 264x78 
+        [INSTANCE] "01 Button" 264x34 bg:rgb(21,96,189)
+      [FRAME] "Frame 1618873536" 288x107 
+        [TEXT:14px/600] "ProConnect © 2026"
+        [TEXT:14px/600] "Supported by"
+        [INSTANCE] "03 Logo partner" 178x59 bg:rgb(255,255,255)
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 188x24 
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 16x18 
+      [FRAME] "Frame 1171277004" 27x20 bg:rgb(232,64,64)
+        [TEXT:10px/600] "999"
+    [FRAME] "05 Dropdown" 288x330 bg:rgb(255,255,255)
+      [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [TEXT:14px/400] "Search here..."
+      [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Switch account"
+        [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x54 bg:rgb(238,250,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 198x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x90 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873665" 240x34 
+        [FRAME] "Frame 1618873666" 234x26 
+      [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Create company account"
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [ELLIPSE] "Ellipse 102" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+  [FRAME] "Desktop - 88" 1440x800 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 204x40 
+        [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1171277004" 31x20 bg:rgb(232,64,64)
+    [FRAME] "Frame 1618873612" 1088x60 
+      [TEXT:24px/700] "Hello Arufa"
+      [TEXT:16px/400] "Get Started Finding Something"
+    [INSTANCE] "Sidebar" 320x845 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Startup Colorbox"
+        [INSTANCE] "chevron-up" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x186 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "Frame 1618873535" 264x40 bg:rgb(248,249,249)
+        [FRAME] "Frame 1618873537" 264x50 bg:rgb(238,250,255)
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1171276969" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873338" 288x148 bg:rgb(238,250,255)
+        [FRAME] "Frame 1618873336" 264x78 
+        [INSTANCE] "01 Button" 264x34 bg:rgb(21,96,189)
+      [FRAME] "Frame 1618873536" 288x107 
+        [TEXT:14px/600] "ProConnect © 2026"
+        [TEXT:14px/600] "Supported by"
+        [INSTANCE] "03 Logo partner" 178x59 bg:rgb(255,255,255)
+    [INSTANCE] "Ads" 300x250 
+      [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+        [INSTANCE] "x-02" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873663" 1088x974 
+      [FRAME] "Frame 1618873656" 1088x106 
+        [FRAME] "Frame 1618873614" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873613" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873615" 260x106 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873622" 1088x206 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873629" 1024x68 
+      [FRAME] "Frame 1618873599" 1088x182 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873607" 1024x44 
+      [INSTANCE] "Ads" 970x90 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873662" 1088x326 
+        [FRAME] "Frame 1618873658" 720x326 
+        [INSTANCE] "Ads" 300x250 
+    [FRAME] "05 Dropdown" 288x240 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Switch account"
+        [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [TEXT:14px/400] "Search here..."
+      [FRAME] "Option" 288x54 bg:rgb(238,250,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 198x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Create company account"
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [ELLIPSE] "Ellipse 102" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+  [FRAME] "Frame" 360x800 bg:rgb(248,249,249)
+    [FRAME] "Frame 1618873612" 328x52 
+      [TEXT:20px/700] "Hello Arufa"
+      [TEXT:14px/400] "Get Started Finding Something"
+    [FRAME] "Frame 1618873629" 360x1672 
+      [FRAME] "Frame 1618873661" 328x160 
+        [FRAME] "Frame 1618873656" 328x74 
+        [FRAME] "Frame 1618873657" 328x74 
+      [FRAME] "Frame 1618873622" 360x396 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x60 
+        [FRAME] "Frame 1618873629" 328x264 
+      [FRAME] "Frame 1618873599" 360x310 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x80 
+        [FRAME] "Frame 1618873607" 328x158 
+      [INSTANCE] "Ads" 328x60 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873604" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873602" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "luggage-04" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873605" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "user-profile-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [INSTANCE] "Ads" 300x250 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+    [RECTANGLE] "Rectangle 13390" 360x800 bg:rgb(13,59,115)
+    [INSTANCE] "Sidebar" 320x845 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Startup Colorbox"
+        [INSTANCE] "chevron-up" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x186 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "Frame 1618873535" 264x40 bg:rgb(248,249,249)
+        [FRAME] "Frame 1618873537" 264x50 bg:rgb(238,250,255)
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1171276969" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873338" 288x148 bg:rgb(238,250,255)
+        [FRAME] "Frame 1618873336" 264x78 
+        [INSTANCE] "01 Button" 264x34 bg:rgb(21,96,189)
+      [FRAME] "Frame 1618873536" 288x107 
+        [TEXT:14px/600] "ProConnect © 2026"
+        [TEXT:14px/600] "Supported by"
+        [INSTANCE] "03 Logo partner" 178x59 bg:rgb(255,255,255)
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 188x24 
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 16x18 
+      [FRAME] "Frame 1171277004" 27x20 bg:rgb(232,64,64)
+        [TEXT:10px/600] "999"
+    [FRAME] "05 Dropdown" 288x240 bg:rgb(255,255,255)
+      [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [TEXT:14px/400] "Search here..."
+      [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Switch account"
+        [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x54 bg:rgb(238,250,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 198x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Create company account"
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [ELLIPSE] "Ellipse 102" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+    [RECTANGLE] "Rectangle 13391" 360x800 bg:rgb(13,59,115)
+    [FRAME] "Modal" 328x278 
+      [FRAME] "Header" 328x62 bg:rgb(255,255,255)
+        [TEXT:18px/700] "Delete Confirmation"
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+      [FRAME] "Content" 328x88 bg:rgb(255,255,255)
+        [TEXT:14px/400] "Are you sure you want to delete This Progress from your role"
+      [FRAME] "Footer" 328x128 bg:rgb(255,255,255)
+        [INSTANCE] "01 Button" 304x40 bg:rgb(232,64,64)
+        [INSTANCE] "01 Button" 304x40 
+  [FRAME] "Desktop - 90" 1440x800 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 204x40 
+        [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1171277004" 31x20 bg:rgb(232,64,64)
+    [FRAME] "Frame 1618873612" 1088x60 
+      [TEXT:24px/700] "Hello Arufa"
+      [TEXT:16px/400] "Get Started Finding Something"
+    [INSTANCE] "Sidebar" 320x845 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Startup Colorbox"
+        [INSTANCE] "chevron-up" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x186 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "Frame 1618873535" 264x40 bg:rgb(248,249,249)
+        [FRAME] "Frame 1618873537" 264x50 bg:rgb(238,250,255)
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1171276969" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873338" 288x148 bg:rgb(238,250,255)
+        [FRAME] "Frame 1618873336" 264x78 
+        [INSTANCE] "01 Button" 264x34 bg:rgb(21,96,189)
+      [FRAME] "Frame 1618873536" 288x107 
+        [TEXT:14px/600] "ProConnect © 2026"
+        [TEXT:14px/600] "Supported by"
+        [INSTANCE] "03 Logo partner" 178x59 bg:rgb(255,255,255)
+    [INSTANCE] "Ads" 300x250 
+      [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+        [INSTANCE] "x-02" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873663" 1088x974 
+      [FRAME] "Frame 1618873656" 1088x106 
+        [FRAME] "Frame 1618873614" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873613" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 260x106 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873615" 260x106 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873622" 1088x206 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873629" 1024x68 
+      [FRAME] "Frame 1618873599" 1088x182 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873607" 1024x44 
+      [INSTANCE] "Ads" 970x90 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873662" 1088x326 
+        [FRAME] "Frame 1618873658" 720x326 
+        [INSTANCE] "Ads" 300x250 
+    [FRAME] "05 Dropdown" 288x240 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Switch account"
+        [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [TEXT:14px/400] "Search here..."
+      [FRAME] "Option" 288x54 bg:rgb(238,250,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 198x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Create company account"
+      [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+        [ELLIPSE] "Ellipse 102" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 168x34 
+        [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+    [RECTANGLE] "Rectangle 13390" 1440x802 bg:rgb(13,59,115)
+    [FRAME] "Modal" 588x220 
+      [FRAME] "Header" 588x64 bg:rgb(255,255,255)
+        [TEXT:20px/700] "Cancel Confirmation"
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+      [FRAME] "Content" 588x72 bg:rgb(255,255,255)
+        [TEXT:16px/400] "Are you sure you want to delete This Progress from your role"
+      [FRAME] "Footer" 588x84 bg:rgb(255,255,255)
+        [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "01 Button" 160x48 bg:rgb(232,64,64)
+  [CONNECTOR] "Connector line" 344x483 
+  [FRAME] "05 Dropdown" 288x176 bg:rgb(255,255,255)
+    [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+      [TEXT:14px/600] "Switch account"
+      [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 15x15 
+    [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+      [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 17x17 bg:rgb(255,255,255)
+      [TEXT:14px/400] "Search here..."
+    [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+      [RECTANGLE] "image" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 198x34 
+        [TEXT:14px/500] "Startup Colorbox"
+        [TEXT:12px/500] "PT AMBURAN JA... (Owner)"
+    [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+      [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 12x12 
+      [TEXT:14px/600] "Create company account"
+    [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+      [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 12x12 
+      [TEXT:14px/600] "Add personal account"
+  [FRAME] "05 Dropdown" 288x330 bg:rgb(255,255,255)
+    [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+      [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 17x17 bg:rgb(255,255,255)
+      [TEXT:14px/400] "Search here..."
+    [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+      [TEXT:14px/600] "Switch account"
+      [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 15x15 
+    [FRAME] "Option" 288x54 bg:rgb(238,250,255)
+      [RECTANGLE] "image" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 198x34 
+        [TEXT:14px/500] "Startup Colorbox"
+        [TEXT:12px/500] "PT AMBURAN JA... (Owner)"
+    [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+      [RECTANGLE] "image" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 198x34 
+        [TEXT:14px/500] "Indah Studio"
+        [TEXT:12px/500] "PT Indah Perti... (Member)"
+    [FRAME] "Option" 288x90 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873665" 240x34 
+        [RECTANGLE] "image" 32x32 bg:IMAGE
+        [FRAME] "Frame 1618873664" 198x34 
+      [FRAME] "Frame 1618873666" 234x26 
+        [INSTANCE] "Badge" 156x24 bg:rgb(252,242,210)
+        [INSTANCE] "01 Button" 66x26 
+    [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+      [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 12x12 
+      [TEXT:14px/600] "Create company account"
+    [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+      [ELLIPSE] "Ellipse 102" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 198x34 
+        [TEXT:14px/500] "Arufa Dhiarma Putu..."
+        [TEXT:12px/500] "Personal Acc... (Candidate)"
+  [FRAME] "05 Dropdown" 288x240 bg:rgb(255,255,255)
+    [FRAME] "Dropdown Item" 576x38 bg:rgb(255,255,255)
+      [INSTANCE] "search-01" 18x18 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 17x17 bg:rgb(255,255,255)
+      [TEXT:14px/400] "Search here..."
+    [FRAME] "Option" 288x34 bg:rgb(255,255,255)
+      [TEXT:14px/600] "Switch account"
+      [INSTANCE] "information-circle-contained" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 15x15 
+    [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+      [RECTANGLE] "image" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 168x34 
+        [TEXT:14px/500] "Startup Colorbox"
+        [TEXT:12px/500] "PT AMBURAN JA... (Owner)"
+      [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 15x15 
+    [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+      [RECTANGLE] "image" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 198x34 
+        [TEXT:14px/500] "Indah Studio"
+        [TEXT:12px/500] "PT Indah Perti... (Member)"
+    [FRAME] "Option" 288x44 bg:rgb(255,255,255)
+      [INSTANCE] "plus-01" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 12x12 
+      [TEXT:14px/600] "Create company account"
+    [FRAME] "Option" 288x54 bg:rgb(255,255,255)
+      [ELLIPSE] "Ellipse 102" 32x32 bg:IMAGE
+      [FRAME] "Frame 1618873664" 198x34 
+        [TEXT:14px/500] "Arufa Dhiarma Putu..."
+        [TEXT:12px/500] "Personal Acc... (Candidate)"
+    [INSTANCE] "Tooltip" 280x78 
+      [FRAME] "Frame 7133" 280x8 
+        [RECTANGLE] "Rectangle 1539" 246x8 
+        [VECTOR] "Polygon 1" 12x8 bg:rgb(18,18,18)
+        [RECTANGLE] "Rectangle 1538" 22x8 
+      [FRAME] "Main Box" 280x70 bg:rgb(18,18,18)
+        [INSTANCE] "information-circle-contained" 24x24 bg:rgb(255,255,255)
+        [TEXT:14px/500] "You can join another company if you have an invitation"
+        [INSTANCE] "x-02" 24x24 bg:rgb(255,255,255)
+  [FRAME] "Desktop - 89" 1440x800 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 204x40 
+        [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277003" 40x40 
+        [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1171277004" 31x20 bg:rgb(232,64,64)
+    [FRAME] "Frame 1618873612" 1088x60 
+      [TEXT:24px/700] "Hello Arufa"
+      [TEXT:16px/400] "Get Started Finding Jobs Here!"
+    [INSTANCE] "Sidebar" 320x704 bg:rgb(255,255,255)
+      [FRAME] "01 Button" 288x40 bg:rgb(255,255,255)
+        [RECTANGLE] "image" 20x20 bg:IMAGE
+        [TEXT:14px/600] "Personal Account"
+        [INSTANCE] "chevron-down" 20x20 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873337" 288x214 
+        [FRAME] "Frame 1618873336" 264x64 
+        [FRAME] "gateway" 264x48 
+        [INSTANCE] "01 Button" 264x34 
+      [FRAME] "Frame 1618873338" 288x248 
+        [FRAME] "menu section label" 288x28 
+        [INSTANCE] "Menu" 288x44 bg:rgb(238,250,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+        [INSTANCE] "Menu" 288x44 bg:rgb(255,255,255)
+      [RECTANGLE] "image 57" 288x122 bg:IMAGE
+    [INSTANCE] "Ads" 300x250 
+      [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+        [INSTANCE] "x-02" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873663" 1088x940 
+      [INSTANCE] "Field Input" 1088x48 bg:rgb(255,255,255)
+        [FRAME] "Frame 8999" 350x20 
+        [FRAME] "Text Field" 1088x48 
+        [TEXT:12px/500] "Input helper text"
+      [FRAME] "Frame 1618873601" 1088x110 bg:rgb(73,90,255)
+        [FRAME] "Frame 1618873635" 996x70 
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873622" 1088x378 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 1024x66 
+        [FRAME] "Frame 1618873629" 1024x68 
+        [FRAME] "Frame 1618873630" 1024x56 
+        [FRAME] "Frame 1618873631" 1024x68 
+      [INSTANCE] "Ads" 970x90 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873662" 1088x250 
+        [FRAME] "Frame 1618873658" 720x218 
+        [INSTANCE] "Ads" 300x250 
+    [INSTANCE] "Toast" 1088x48 bg:rgb(32,143,79)
+      [INSTANCE] "check-contained" 24x24 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 18x18 
+      [TEXT:16px/600] "Success change role"
+      [INSTANCE] "x-02" 24x24 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 12x12 
+      [FRAME] "Frame 1708" 41x24 
+        [LINE] "Line 67" 0x24 
+        [TEXT:16px/600] "Text"
+  [CONNECTOR] "Connector line" 1517x592 
+  [CONNECTOR] "Connector line" 325x3040 
+  [FRAME] "Frame" 360x800 bg:rgb(248,249,249)
+    [FRAME] "Frame 1618873612" 328x52 
+      [TEXT:20px/700] "Hello Arufa"
+      [TEXT:14px/400] "Get Started Finding Something"
+    [FRAME] "Frame 1618873629" 360x1772 
+      [FRAME] "Frame 1618873664" 360x166 
+        [INSTANCE] "Field Input" 328x48 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x102 bg:rgb(73,90,255)
+      [FRAME] "Frame 1618873622" 360x816 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873601" 328x60 
+        [FRAME] "Frame 1618873629" 328x684 
+      [INSTANCE] "Ads" 328x60 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873604" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "search-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873602" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "luggage-04" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [FRAME] "Frame 1618873605" 360x128 bg:rgb(255,255,255)
+        [INSTANCE] "user-profile-01" 24x24 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873571" 170x80 
+        [INSTANCE] "01 Button" 110x34 
+      [INSTANCE] "Ads" 300x250 
+        [FRAME] "Frame 1" 32x32 bg:rgb(255,255,255)
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [FRAME] "Frame 1171277002" 188x24 
+        [INSTANCE] "menu-01" 24x24 bg:rgb(255,255,255)
+        [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+      [INSTANCE] "bell-02" 24x24 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 16x18 
+      [FRAME] "Frame 1171277004" 27x20 bg:rgb(232,64,64)
+        [TEXT:10px/600] "999"
+    [INSTANCE] "Toast" 328x40 bg:rgb(32,143,79)
+      [INSTANCE] "check-contained" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 15x15 
+      [TEXT:14px/600] "Success change role"
+      [INSTANCE] "x-02" 20x20 bg:rgb(255,255,255)
+        [VECTOR] "Icon" 10x10 
+      [FRAME] "Frame 1713" 37x20 
+        [LINE] "Line 67" 0x20 
+        [TEXT:14px/600] "Text"
+  [FRAME] "Frame" 360x800 bg:rgb(248,249,249)
+    [INSTANCE] "world-map-frame 2" 1079x745 
+      [RECTANGLE] "world-map-frame 1" 1079x745 bg:IMAGE
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+        [VECTOR] "Vector" 20x21 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 22x16 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 2x2 bg:rgb(21,96,189)
+        [GROUP] "Clip path group" 108x17 
+      [INSTANCE] "01 Button" 66x26 
+        [INSTANCE] "image-03" 18x18 bg:rgb(255,255,255)
+        [TEXT:12px/600] "Cancel"
+        [INSTANCE] "image-03" 18x18 bg:rgb(255,255,255)
+    [FRAME] "Action Buttons" 360x80 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Back"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 bg:rgb(21,96,189)
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Next"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Form Fields" 360x1160 
+      [FRAME] "Frame 1171276964" 360x18 
+        [FRAME] "Frame 1171276963" 256x8 bg:rgb(225,225,225)
+        [TEXT:12px/500] "Step 1 of 10"
+      [FRAME] "Frame 1171276967" 360x1094 bg:rgb(255,255,255)
+        [FRAME] "Frame 1171276965" 328x52 
+        [FRAME] "Profile Section" 328x88 
+        [FRAME] "Frame 1171276969" 328x858 
+  [FRAME] "Desktop - 19" 1440x800 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+        [VECTOR] "Vector" 20x21 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 22x16 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 2x2 bg:rgb(21,96,189)
+        [GROUP] "Clip path group" 108x17 
+      [INSTANCE] "01 Button" 97x40 
+        [INSTANCE] "image-03" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Cancel"
+        [INSTANCE] "image-03" 20x20 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873336" 304x1000 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/700] "Personal Details"
+        [VECTOR] "Line 1" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Career History"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Education History"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Licenses / Certifications"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Skills & Languanges"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Work Preferences"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Right to Work"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Interest"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Salary Expectation"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Skill Passport (MRA-TP Standard)"
+        [VECTOR] "Line 2" 0x35 
+    [FRAME] "Form Container" 720x1226 bg:rgb(255,255,255)
+      [FRAME] "Title" 656x60 
+        [TEXT:24px/700] "Personal Details"
+        [TEXT:16px/400] "Tell me about yourself."
+      [FRAME] "Profile Section" 656x80 
+        [FRAME] "profile pic frame" 80x80 bg:rgb(181,182,182)
+        [FRAME] "Container" 544x72 
+      [FRAME] "Frame 1171276968" 656x942 
+        [INSTANCE] "Field Input" 656x70 
+        [INSTANCE] "Field Input" 656x70 
+        [INSTANCE] "Field Input" 656x70 
+        [INSTANCE] "Field Input" 656x70 
+        [INSTANCE] "Field Input" 656x70 
+        [FRAME] "toggle" 656x24 
+        [INSTANCE] "Field Input" 656x70 
+        [INSTANCE] "Field Input" 656x70 
+        [INSTANCE] "Text box" 656x142 
+        [INSTANCE] "Field Input" 656x70 
+    [FRAME] "Action Buttons" 1440x84 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 bg:rgb(21,96,189)
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Next"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+  [CONNECTOR] "Connector line" 1517x1744 
+  [FRAME] "label" 1840x104 bg:rgb(248,249,249)
+    [TEXT:48px/700] "Create personal account"
+  [FRAME] "label" 3980x104 bg:rgb(248,249,249)
+    [TEXT:48px/700] "Create company account (case continue step 3)"
+  [FRAME] "label" 1840x104 bg:rgb(248,249,249)
+    [TEXT:48px/700] "Dashboard Candidate"
+  [FRAME] "label" 3838x104 bg:rgb(248,249,249)
+    [TEXT:48px/700] "Change role flow"
+  [FRAME] "Title" 358x133 bg:rgb(242,201,76)
+    [TEXT:24px/700] "Note"
+    [TEXT:16px/500] "When user have multi role and logout, all role should be log"
+  [FRAME] "Title" 358x109 bg:rgb(242,201,76)
+    [TEXT:24px/700] "Note"
+    [TEXT:16px/500] "Add CTA to cancel the process"
+  [FRAME] "Frame" 360x680 bg:rgb(248,249,249)
+    [INSTANCE] "world-map-frame 2" 1079x745 
+      [RECTANGLE] "world-map-frame 1" 1079x745 bg:IMAGE
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+        [VECTOR] "Vector" 20x21 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 22x16 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 2x2 bg:rgb(21,96,189)
+        [GROUP] "Clip path group" 108x17 
+      [INSTANCE] "01 Button" 66x26 
+        [INSTANCE] "image-03" 18x18 bg:rgb(255,255,255)
+        [TEXT:12px/600] "Cancel"
+        [INSTANCE] "image-03" 18x18 bg:rgb(255,255,255)
+    [FRAME] "Form Fields" 360x496 
+      [FRAME] "Frame 1171276964" 360x18 
+        [FRAME] "Frame 1171276963" 258x8 bg:rgb(225,225,225)
+        [TEXT:12px/500] "Step 2 of 4"
+      [FRAME] "Frame 1171276967" 360x430 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873566" 360x240 
+        [FRAME] "Frame 1618873549" 1088x118 
+    [FRAME] "Action Buttons" 360x80 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Back"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 bg:rgb(21,96,189)
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Next"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+  [FRAME] "Desktop - 21" 1440x680 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+        [VECTOR] "Vector" 20x21 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 22x16 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 2x2 bg:rgb(21,96,189)
+        [GROUP] "Clip path group" 108x17 
+      [INSTANCE] "01 Button" 97x40 
+        [INSTANCE] "image-03" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Cancel"
+        [INSTANCE] "image-03" 20x20 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873336" 304x400 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Business Profile Details"
+        [VECTOR] "Line 1" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Company Representative Info"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/700] "Headquarters and Branch Information"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Team Management"
+        [VECTOR] "Line 2" 0x35 
+    [FRAME] "Action Buttons" 1440x84 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Back"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 bg:rgb(21,96,189)
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Next"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Form Container" 1088x395 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873543" 1088x85 
+        [FRAME] "Title" 764x85 
+        [INSTANCE] "01 Button" 220x48 
+      [FRAME] "Filter" 1088x48 
+        [INSTANCE] "Field Input" 319x48 
+        [FRAME] "Frame 1618873544" 596x48 
+      [FRAME] "Frame 1618873548" 1088x118 
+        [FRAME] "Frame 1618873545" 1088x50 
+        [FRAME] "Frame 1618873546" 1088x68 
+        [FRAME] "Frame 1618873547" 1088x50 
+  [FRAME] "Frame" 360x680 bg:rgb(248,249,249)
+    [INSTANCE] "world-map-frame 2" 1079x745 
+      [RECTANGLE] "world-map-frame 1" 1079x745 bg:IMAGE
+    [INSTANCE] "Navigation" 360x64 bg:rgb(255,255,255)
+      [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+        [VECTOR] "Vector" 20x21 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 22x16 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 2x2 bg:rgb(21,96,189)
+        [GROUP] "Clip path group" 108x17 
+      [INSTANCE] "01 Button" 66x26 
+        [INSTANCE] "image-03" 18x18 bg:rgb(255,255,255)
+        [TEXT:12px/600] "Cancel"
+        [INSTANCE] "image-03" 18x18 bg:rgb(255,255,255)
+    [FRAME] "Form Fields" 360x496 
+      [FRAME] "Frame 1171276964" 360x18 
+        [FRAME] "Frame 1171276963" 258x8 bg:rgb(225,225,225)
+        [TEXT:12px/500] "Step 2 of 4"
+      [FRAME] "Frame 1171276967" 360x430 bg:rgb(255,255,255)
+        [FRAME] "Frame 1618873566" 360x240 
+        [FRAME] "Frame 1618873549" 1088x118 
+    [FRAME] "Action Buttons" 360x80 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Back"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 bg:rgb(21,96,189)
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Next"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+    [RECTANGLE] "Rectangle 13390" 360x745 bg:rgb(13,59,115)
+    [FRAME] "Modal" 328x278 
+      [FRAME] "Header" 328x62 bg:rgb(255,255,255)
+        [TEXT:18px/700] "Delete Confirmation"
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+      [FRAME] "Content" 328x88 bg:rgb(255,255,255)
+        [TEXT:14px/400] "Are you sure you want to delete This Progress from your role"
+      [FRAME] "Footer" 328x128 bg:rgb(255,255,255)
+        [INSTANCE] "01 Button" 304x40 bg:rgb(232,64,64)
+        [INSTANCE] "01 Button" 304x40 
+  [FRAME] "Desktop - 91" 1440x680 bg:rgb(248,249,249)
+    [INSTANCE] "Navigation" 1440x76 bg:rgb(255,255,255)
+      [INSTANCE] "01 Logo Brand" 140x21 bg:rgb(255,255,255)
+        [VECTOR] "Vector" 20x21 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 22x16 bg:rgb(21,96,189)
+        [VECTOR] "Vector" 2x2 bg:rgb(21,96,189)
+        [GROUP] "Clip path group" 108x17 
+      [INSTANCE] "01 Button" 97x40 
+        [INSTANCE] "image-03" 20x20 bg:rgb(255,255,255)
+        [TEXT:14px/600] "Cancel"
+        [INSTANCE] "image-03" 20x20 bg:rgb(255,255,255)
+    [FRAME] "Frame 1618873336" 304x400 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Business Profile Details"
+        [VECTOR] "Line 1" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Company Representative Info"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/700] "Headquarters and Branch Information"
+        [VECTOR] "Line 1" 0x35 
+        [VECTOR] "Line 2" 0x35 
+      [INSTANCE] "Stepper" 304x100 
+        [FRAME] "Frame 1" 36x36 
+        [TEXT:16px/600] "Team Management"
+        [VECTOR] "Line 2" 0x35 
+    [FRAME] "Action Buttons" 1440x84 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Back"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+      [INSTANCE] "01 Button" 160x48 bg:rgb(21,96,189)
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+        [TEXT:16px/600] "Next"
+        [INSTANCE] "image-03" 24x24 bg:rgb(255,255,255)
+    [FRAME] "Form Container" 1088x395 bg:rgb(255,255,255)
+      [FRAME] "Frame 1618873543" 1088x85 
+        [FRAME] "Title" 764x85 
+        [INSTANCE] "01 Button" 220x48 
+      [FRAME] "Filter" 1088x48 
+        [INSTANCE] "Field Input" 319x48 
+        [FRAME] "Frame 1618873544" 596x48 
+      [FRAME] "Frame 1618873548" 1088x118 
+        [FRAME] "Frame 1618873545" 1088x50 
+        [FRAME] "Frame 1618873546" 1088x68 
+        [FRAME] "Frame 1618873547" 1088x50 
+    [RECTANGLE] "Rectangle 13390" 1440x745 bg:rgb(13,59,115)
+    [FRAME] "Modal" 588x220 
+      [FRAME] "Header" 588x64 bg:rgb(255,255,255)
+        [TEXT:20px/700] "Cancel Confirmation"
+        [INSTANCE] "x-01" 24x24 bg:rgb(255,255,255)
+      [FRAME] "Content" 588x72 bg:rgb(255,255,255)
+        [TEXT:16px/400] "Are you sure you want to delete This Progress from your role"
+      [FRAME] "Footer" 588x84 bg:rgb(255,255,255)
+        [INSTANCE] "01 Button" 160x48 
+        [INSTANCE] "01 Button" 160x48 bg:rgb(232,64,64)
+  [CONNECTOR] "Connector line" 288x341 
+  [CONNECTOR] "Connector line" 1517x743 
+  [CONNECTOR] "Connector line" 8356x471 
+
+
+TEXTS:
+[20px/700] "Hello Arufa"
+[14px/400] "Get Started Finding Something"
+[12px/500] "Total Country"
+[20px/700] "1"
+[12px/500] "Total Branch"
+[20px/700] "2"
+[12px/500] "Total Member"
+[20px/700] "14"
+[12px/500] "Total Active Jobs"
+[20px/700] "0"
+[16px/700] "Profile Completion"
+[14px/400] "4 of 4 steps completed"
+[12px/600] "Edit"
+[12px/700] "Business Profile Details"
+[12px/700] "Company Representative Info"
+[12px/700] "Headquarters and Branch Information"
+[12px/700] "Team Management"
+[16px/700] "You’re on Trial Plan"
+[14px/400] "Upgrade to unlock more features"
+[12px/600] "Add seat"
+[12px/700] "Find Candidates"
+[12px/500] "Directly Find the Ideal Candidates for Your Business"
+[12px/600] "Find Now"
+[12px/700] "Manage Jobs"
+[12px/500] "Post Jobs and Manage Candidate Recruitment for Your Business"
+[12px/600] "Manage Now"
+[12px/700] "Manage Profile"
+[12px/500] "View and Manage Your Business
+Profile Details"
+[12px/600] "Manage Now"
+[14px/600] "Startup Colorbox"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/400] "PT AMBURAN JAKARTA"
+[12px/600] "Current Seats"
+[12px/500] "Verify Phone Number"
+[12px/600] "Verify"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Candidate"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Internal Jobs"
+[10px/600] "10"
+[14px/600] "Freelance Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Staff Management"
+[10px/600] "49"
+[14px/600] "Billing"
+[10px/600] "49"
+[14px/600] "Plan"
+[10px/600] "Free Seats"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/600] "You’re on a free trial"
+[12px/400] "Your trial ends in 6 days"
+[12px/600] "Upgrade Plan Now"
+[14px/600] "ProConnect © 2026"
+[14px/600] "Supported by"
+[10px/600] "999"
+[12px/600] "999"
+[24px/700] "Hello Arufa"
+[16px/400] "Get Started Finding Something"
+[14px/600] "Startup Colorbox"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/400] "PT AMBURAN JAKARTA"
+[12px/600] "Current Seats"
+[12px/500] "Verify Phone Number"
+[12px/600] "Verify"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Candidate"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Internal Jobs"
+[10px/600] "10"
+[14px/600] "Freelance Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Staff Management"
+[10px/600] "49"
+[14px/600] "Billing"
+[10px/600] "49"
+[14px/600] "Plan"
+[10px/600] "Free Seats"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/600] "You’re on a free trial"
+[12px/400] "Your trial ends in 6 days"
+[12px/600] "Upgrade Plan Now"
+[14px/600] "ProConnect © 2026"
+[14px/600] "Supported by"
+[14px/500] "Total Country"
+[24px/700] "2"
+[14px/500] "Total Branch"
+[24px/700] "2"
+[14px/500] "Total Member"
+[24px/700] "14"
+[14px/500] "Total Active Jobs"
+[24px/700] "0"
+[18px/700] "Profile Completion"
+[16px/400] "4 of 4 steps completed"
+[14px/600] "Edit"
+[14px/700] "Business Profile Details"
+[14px/700] "Company Representative Info"
+[14px/700] "Headquarters and Branch Information"
+[14px/700] "Team Management"
+[18px/700] "You’re on Plan"
+[16px/400] "Upgrade to unlock more features"
+[14px/600] "Add seat"
+[20px/700] "Hello Arufa"
+[14px/400] "Get Started Finding Something"
+[12px/500] "Total Country"
+[20px/700] "1"
+[12px/500] "Total Branch"
+[20px/700] "2"
+[12px/500] "Total Member"
+[20px/700] "14"
+[12px/500] "Total Active Jobs"
+[20px/700] "0"
+[16px/700] "Profile Completion"
+[14px/400] "4 of 4 steps completed"
+[12px/600] "Edit"
+[12px/700] "Business Profile Details"
+[12px/700] "Company Representative Info"
+[12px/700] "Headquarters and Branch Information"
+[12px/700] "Team Management"
+[16px/700] "You’re on Trial Plan"
+[14px/400] "Upgrade to unlock more features"
+[12px/600] "Add seat"
+[12px/700] "Find Candidates"
+[12px/500] "Directly Find the Ideal Candidates for Your Business"
+[12px/600] "Find Now"
+[12px/700] "Manage Jobs"
+[12px/500] "Post Jobs and Manage Candidate Recruitment for Your Business"
+[12px/600] "Manage Now"
+[12px/700] "Manage Profile"
+[12px/500] "View and Manage Your Business
+Profile Details"
+[12px/600] "Manage Now"
+[14px/600] "Startup Colorbox"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/400] "PT AMBURAN JAKARTA"
+[12px/600] "Current Seats"
+[12px/500] "Verify Phone Number"
+[12px/600] "Verify"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Candidate"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Internal Jobs"
+[10px/600] "10"
+[14px/600] "Freelance Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Staff Management"
+[10px/600] "49"
+[14px/600] "Billing"
+[10px/600] "49"
+[14px/600] "Plan"
+[10px/600] "Free Seats"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/600] "You’re on a free trial"
+[12px/400] "Your trial ends in 6 days"
+[12px/600] "Upgrade Plan Now"
+[14px/600] "ProConnect © 2026"
+[14px/600] "Supported by"
+[10px/600] "999"
+[14px/400] "Search here..."
+[14px/600] "Switch account"
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/500] "Indah Studio"
+[12px/500] "PT Indah Perti... (Member)"
+[14px/500] "Superjoy"
+[12px/500] "PT Super Joy Semest... (Owner)"
+[10px/600] "Registration is incomplete"
+[12px/600] "Cancel"
+[14px/600] "Create company account"
+[14px/500] "Arufa Dhiarma Putu..."
+[12px/500] "Personal Acc... (Candidate)"
+[12px/600] "999"
+[24px/700] "Hello Arufa"
+[16px/400] "Get Started Finding Something"
+[14px/600] "Startup Colorbox"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/400] "PT AMBURAN JAKARTA"
+[12px/600] "Current Seats"
+[12px/500] "Verify Phone Number"
+[12px/600] "Verify"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Candidate"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Internal Jobs"
+[10px/600] "10"
+[14px/600] "Freelance Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Staff Management"
+[10px/600] "49"
+[14px/600] "Billing"
+[10px/600] "49"
+[14px/600] "Plan"
+[10px/600] "Free Seats"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/600] "You’re on a free trial"
+[12px/400] "Your trial ends in 6 days"
+[12px/600] "Upgrade Plan Now"
+[14px/600] "ProConnect © 2026"
+[14px/600] "Supported by"
+[14px/500] "Total Country"
+[24px/700] "2"
+[14px/500] "Total Branch"
+[24px/700] "2"
+[14px/500] "Total Member"
+[24px/700] "14"
+[14px/500] "Total Active Jobs"
+[24px/700] "0"
+[18px/700] "Profile Completion"
+[16px/400] "4 of 4 steps completed"
+[14px/600] "Edit"
+[14px/700] "Business Profile Details"
+[14px/700] "Company Representative Info"
+[14px/700] "Headquarters and Branch Information"
+[14px/700] "Team Management"
+[18px/700] "You’re on Plan"
+[16px/400] "Upgrade to unlock more features"
+[14px/600] "Add seat"
+[14px/600] "Switch account"
+[14px/400] "Search here..."
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/500] "Indah Studio"
+[12px/500] "PT Indah Perti... (Member)"
+[14px/600] "Create company account"
+[14px/500] "Arufa Dhiarma Putu..."
+[12px/500] "Personal Acc... (Candidate)"
+[20px/700] "Hello Arufa"
+[14px/400] "Get Started Finding Something"
+[12px/500] "Total Country"
+[20px/700] "1"
+[12px/500] "Total Branch"
+[20px/700] "2"
+[12px/500] "Total Member"
+[20px/700] "14"
+[12px/500] "Total Active Jobs"
+[20px/700] "0"
+[16px/700] "Profile Completion"
+[14px/400] "4 of 4 steps completed"
+[12px/600] "Edit"
+[12px/700] "Business Profile Details"
+[12px/700] "Company Representative Info"
+[12px/700] "Headquarters and Branch Information"
+[12px/700] "Team Management"
+[16px/700] "You’re on Trial Plan"
+[14px/400] "Upgrade to unlock more features"
+[12px/600] "Add seat"
+[12px/700] "Find Candidates"
+[12px/500] "Directly Find the Ideal Candidates for Your Business"
+[12px/600] "Find Now"
+[12px/700] "Manage Jobs"
+[12px/500] "Post Jobs and Manage Candidate Recruitment for Your Business"
+[12px/600] "Manage Now"
+[12px/700] "Manage Profile"
+[12px/500] "View and Manage Your Business
+Profile Details"
+[12px/600] "Manage Now"
+[14px/600] "Startup Colorbox"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/400] "PT AMBURAN JAKARTA"
+[12px/600] "Current Seats"
+[12px/500] "Verify Phone Number"
+[12px/600] "Verify"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Candidate"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Internal Jobs"
+[10px/600] "10"
+[14px/600] "Freelance Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Staff Management"
+[10px/600] "49"
+[14px/600] "Billing"
+[10px/600] "49"
+[14px/600] "Plan"
+[10px/600] "Free Seats"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/600] "You’re on a free trial"
+[12px/400] "Your trial ends in 6 days"
+[12px/600] "Upgrade Plan Now"
+[14px/600] "ProConnect © 2026"
+[14px/600] "Supported by"
+[10px/600] "999"
+[14px/400] "Search here..."
+[14px/600] "Switch account"
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/500] "Indah Studio"
+[12px/500] "PT Indah Perti... (Member)"
+[14px/600] "Create company account"
+[14px/500] "Arufa Dhiarma Putu..."
+[12px/500] "Personal Acc... (Candidate)"
+[18px/700] "Delete Confirmation"
+[14px/400] "Are you sure you want to delete This Progress from your role?"
+[14px/600] "Yes, I'm sure"
+[14px/600] "Cancel"
+[12px/600] "999"
+[24px/700] "Hello Arufa"
+[16px/400] "Get Started Finding Something"
+[14px/600] "Startup Colorbox"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/400] "PT AMBURAN JAKARTA"
+[12px/600] "Current Seats"
+[12px/500] "Verify Phone Number"
+[12px/600] "Verify"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Candidate"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Internal Jobs"
+[10px/600] "10"
+[14px/600] "Freelance Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Staff Management"
+[10px/600] "49"
+[14px/600] "Billing"
+[10px/600] "49"
+[14px/600] "Plan"
+[10px/600] "Free Seats"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/600] "You’re on a free trial"
+[12px/400] "Your trial ends in 6 days"
+[12px/600] "Upgrade Plan Now"
+[14px/600] "ProConnect © 2026"
+[14px/600] "Supported by"
+[14px/500] "Total Country"
+[24px/700] "2"
+[14px/500] "Total Branch"
+[24px/700] "2"
+[14px/500] "Total Member"
+[24px/700] "14"
+[14px/500] "Total Active Jobs"
+[24px/700] "0"
+[18px/700] "Profile Completion"
+[16px/400] "4 of 4 steps completed"
+[14px/600] "Edit"
+[14px/700] "Business Profile Details"
+[14px/700] "Company Representative Info"
+[14px/700] "Headquarters and Branch Information"
+[14px/700] "Team Management"
+[18px/700] "You’re on Plan"
+[16px/400] "Upgrade to unlock more features"
+[14px/600] "Add seat"
+[14px/600] "Switch account"
+[14px/400] "Search here..."
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/500] "Indah Studio"
+[12px/500] "PT Indah Perti... (Member)"
+[14px/600] "Create company account"
+[14px/500] "Arufa Dhiarma Putu..."
+[12px/500] "Personal Acc... (Candidate)"
+[20px/700] "Cancel Confirmation"
+[16px/400] "Are you sure you want to delete This Progress from your role?"
+[16px/600] "Cancel"
+[16px/600] "Yes, I'm sure"
+[14px/600] "Switch account"
+[14px/400] "Search here..."
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/600] "Create company account"
+[14px/600] "Add personal account"
+[14px/400] "Search here..."
+[14px/600] "Switch account"
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/500] "Indah Studio"
+[12px/500] "PT Indah Perti... (Member)"
+[14px/500] "Superjoy"
+[12px/500] "PT Super Joy Semest... (Owner)"
+[10px/600] "Registration is incomplete"
+[12px/600] "Cancel"
+[14px/600] "Create company account"
+[14px/500] "Arufa Dhiarma Putu..."
+[12px/500] "Personal Acc... (Candidate)"
+[14px/400] "Search here..."
+[14px/600] "Switch account"
+[14px/500] "Startup Colorbox"
+[12px/500] "PT AMBURAN JA... (Owner)"
+[14px/500] "Indah Studio"
+[12px/500] "PT Indah Perti... (Member)"
+[14px/600] "Create company account"
+[14px/500] "Arufa Dhiarma Putu..."
+[12px/500] "Personal Acc... (Candidate)"
+[14px/500] "You can join another company if you have an invitation"
+[12px/600] "999"
+[24px/700] "Hello Arufa"
+[16px/400] "Get Started Finding Jobs Here!"
+[14px/600] "Personal Account"
+[14px/600] "Arufa Dhiarma Putu Riordan Kevin Putra ..."
+[12px/500] "me@fullemailaddress.com"
+[12px/500] "081291028392"
+[12px/600] "Profile"
+[12px/700] "Main Menu"
+[14px/700] "Dashboard"
+[10px/600] "49"
+[14px/600] "Companies"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "49"
+[14px/600] "Jobs"
+[10px/600] "30"
+[14px/600] "Saved Jobs"
+[10px/600] "10"
+[14px/600] "Applied Jobs"
+[10px/600] "9"
+[14px/600] "Support"
+[10px/600] "49"
+[14px/600] "Feedback"
+[10px/600] "49"
+[14px/600] "Term of Service"
+[10px/600] "49"
+[14px/600] "Privacy Policy"
+[10px/600] "49"
+[14px/600] "Account Management"
+[10px/600] "49"
+[14px/600] "Delete Account"
+[10px/600] "49"
+[14px/600] "Reset Password"
+[10px/600] "49"
+[14px/600] "Sign Out"
+[10px/600] "49"
+[14px/400] "Label Regular"
+[14px/600] "*"
+[16px/500] "Find jobs & companies here"
+[16px/500] "Text"
+[12px/500] "Input helper text"
+[18px/700] "Profile Completion"
+[14px/600] "Complete Profile"
+[18px/700] "Profile Completion"
+[16px/400] "9 of 10 steps completed"
+[14px/600] "Edit"
+[14px/700] "Career History"
+[14px/700] "Personal Details"
+[14px/700] "Education History"
+[14px/700] "Licenses / Certification"
+[14px/700] "Skills & Languages"
+[14px/700] "Work Preferences"
+[14px/700] "Right to Work"
+[14px/700] "Interest"
+[14px/700] "Salary Expectations"
+[14px/700] "Skill Passport (MRA-TP Standart)"
+[16px/600] "Success change role"
+[16px/600] "Text"
+[20px/700] "Hello Arufa"
+[14px/400] "Get Started Finding Something"
+[16px/500] "Find jobs & companies here"
+[12px/500] "Input helper text"
+[18px/700] "Profile Completion"
+[16px/700] "Profile Completion"
+[14px/400] "4 of 4 steps completed"
+[12px/600] "Edit"
+[12px/700] "Business Profile Details"
+[12px/700] "Company Representative Info"
+[12px/700] "Headquarters and Branch Information"
+[12px/700] "Team Management"
+[12px/700] "Business Profile Details"
+[12px/700] "Company Representative Info"
+[12px/700] "Headquarters and Branch Information"
+[12px/700] "Team Management"
+[12px/700] "Headquarters and Branch Information"
+[12px/700] "Team Management"
+[12px/700] "Find Candidates"
+[12px/500] "Directly Find the Ideal Candidates for Your Business"
+[12px/600] "Find Now"
+[12px/700] "Manage Jobs"
+[12px/500] "Post Jobs and Manage Candidate Recruitment for Your Business"
+[12px/600] "Manage Now"
+[12px/700] "Manage Profile"
+[12px/500] "View and Manage Your Business
+Profile Details"
+[12px/600] "Manage Now"
+[10px/600] "999"
+[14px/600] "Success change role"
+[14px/600] "Text"
+[12px/600] "Cancel"
+[16px/600] "Back"
+[16px/600] "Next"
+[12px/500] "Step 1 of 10"
+[14px/700] "Personal Details"
+[14px/400] "Tell me about yourself."
+[14px/400] "Size recommendation: 400 x 400px"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[16px/500] "Outside Indonesia?"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[10px/400] "Input helper text"
+[14px/600] "Cancel"
+[14px/600] "1"
+[16px/700] "Personal Details"
+[14px/600] "2"
+[16px/600] "Career History"
+[14px/600] "3"
+[16px/600] "Education History"
+[14px/600] "4"
+[16px/600] "Licenses / Certifications"
+[14px/600] "5"
+[16px/600] "Skills & Languanges"
+[14px/600] "6"
+[16px/600] "Work Preferences"
+[14px/600] "7"
+[16px/600] "Right to Work"
+[14px/600] "8"
+[16px/600] "Interest"
+[14px/600] "9"
+[16px/600] "Salary Expectation"
+[14px/600] "10"
+[16px/600] "Skill Passport (MRA-TP Standard)"
+[24px/700] "Personal Details"
+[16px/400] "Tell me about yourself."
+[14px/600] "Upload Photo"
+[16px/400] "Size recommendation: 400 x 400px"
+[16px/500] "Input your full name here"
+[12px/500] "Input helper text"
+[16px/500] "Select gender"
+[12px/500] "Input helper text"
+[16px/500] "Choose date"
+[12px/500] "Input helper text"
+[16px/600] "me@username.com"
+[12px/500] "Input helper text"
+[16px/500] "Input phone number"
+[12px/500] "Input helper text"
+[16px/500] "Outside Indonesia?"
+[16px/500] "Select city"
+[12px/500] "Input helper text"
+[16px/500] "Input postal code"
+[12px/500] "Input helper text"
+[16px/500] "Please state your address, city, and postal code (optional)"
+[12px/500] "Input helper text"
+[16px/500] "Upload Resume (max 5 mb)"
+[12px/500] "Input helper text"
+[16px/600] "Next"
+[48px/700] "Create personal account"
+[48px/700] "Create company account (case continue step 3)"
+[48px/700] "Dashboard Candidate"
+[48px/700] "Change role flow"
+[24px/700] "Note"
+[16px/500] "When user have multi role and logout, all role should be logout too"
+[24px/700] "Note"
+[16px/500] "Add CTA to cancel the process"
+[12px/600] "Cancel"
+[12px/500] "Step 2 of 4"
+[14px/600] "Add Branch"
+[16px/600] "Back"
+[16px/600] "Next"
+[14px/600] "Cancel"
+[16px/600] "Business Profile Details"
+[16px/600] "Company Representative Info"
+[14px/600] "3"
+[16px/700] "Headquarters and Branch Information"
+[14px/600] "4"
+[16px/600] "Team Management"
+[16px/600] "Back"
+[16px/600] "Next"
+[24px/700] "Headquarters and Branch Information"
+[16px/400] "Please enter the details of your company’s headquarters and branches. Ensure all fields are accurate for an updated company profile."
+[16px/600] "Invite New Member"
+[16px/500] "Search name or email..."
+[12px/500] "Please use first letter capital"
+[12px/500] "Please use first letter capital"
+[16px/600] "Apply"
+[12px/600] "No"
+[12px/600] "Branch"
+[12px/600] "Department"
+[12px/600] "Location"
+[12px/600] "Email"
+[12px/600] "Phone Number"
+[12px/600] "Action"
+[12px/500] "1"
+[12px/500] "Headquarter"
+[12px/500] "Maintenance, IT, HRD, Marketing, Finance, Legal, Operation"
+[12px/500] "Jakarta, Indonesia"
+[12px/500] "info@seruam.com"
+[12px/500] "081234567890"
+[12px/500] "2"
+[12px/500] "Bambang Setiawan (you)"
+[12px/500] "bambang@seruam.com"
+[12px/500] "Headquarters"
+[12px/500] "Human Resource"
+[12px/500] "HRD"
+[12px/500] "Role Status"
+[12px/600] "Cancel"
+[12px/500] "Step 2 of 4"
+[14px/600] "Add Branch"
+[16px/600] "Back"
+[16px/600] "Next"
+[18px/700] "Delete Confirmation"
+[14px/400] "Are you sure you want to delete This Progress from your role?"
+[14px/600] "Yes, I'm sure"
+[14px/600] "Cancel"
+[14px/600] "Cancel"
+[16px/600] "Business Profile Details"
+[16px/600] "Company Representative Info"
+[14px/600] "3"
+[16px/700] "Headquarters and Branch Information"
+[14px/600] "4"
+[16px/600] "Team Management"
+[16px/600] "Back"
+[16px/600] "Next"
+[24px/700] "Headquarters and Branch Information"
+[16px/400] "Please enter the details of your company’s headquarters and branches. Ensure all fields are accurate for an updated company profile."
+[16px/600] "Invite New Member"
+[16px/500] "Search name or email..."
+[12px/500] "Please use first letter capital"
+[12px/500] "Please use first letter capital"
+[16px/600] "Apply"
+[12px/600] "No"
+[12px/600] "Branch"
+[12px/600] "Department"
+[12px/600] "Location"
+[12px/600] "Email"
+[12px/600] "Phone Number"
+[12px/600] "Action"
+[12px/500] "1"
+[12px/500] "Headquarter"
+[12px/500] "Maintenance, IT, HRD, Marketing, Finance, Legal, Operation"
+[12px/500] "Jakarta, Indonesia"
+[12px/500] "info@seruam.com"
+[12px/500] "081234567890"
+[12px/500] "2"
+[12px/500] "Bambang Setiawan (you)"
+[12px/500] "bambang@seruam.com"
+[12px/500] "Headquarters"
+[12px/500] "Human Resource"
+[12px/500] "HRD"
+[12px/500] "Role Status"
+[20px/700] "Cancel Confirmation"
+[16px/400] "Are you sure you want to delete This Progress from your role?"
+[16px/600] "Cancel"
+[16px/600] "Yes, I'm sure"
