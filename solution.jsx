@@ -188,12 +188,6 @@ function SolSchools({ navigate }) {
     { title: 'You Earn Revenue', desc: "Receive 15-25% of the hiring employer's subscription fee. Automatic monthly or quarterly payments." },
     { title: 'Track Everything', desc: 'Real-time placement dashboards, employer relationship management, and accreditation-ready reports.' },
   ];
-  const tiers = [
-    { name: 'Starter', sub: 'Best for small schools (<200 students)', price: '$1,200', earn: 'Earn up to 25% per placement', bullets: ['Start generating revenue from placements', 'No upfront complexity'] },
-    { name: 'Professional', sub: 'For growing institutions (200-1,000 students)', price: '$3,600', earn: 'Earn up to 20% per placement', bullets: ['Scale placement volume', 'Better ROI as you grow'] },
-    { name: 'Enterprise', sub: 'For large institutions (1,000-3,000 students)', price: '$7,200', earn: 'Earn up to 18% per placement', bullets: ['Priority support', 'Strong ROI at scale'] },
-    { name: 'Flagship', sub: 'Maximum revenue potential (3,000+ students)', price: '$9,600', earn: 'Earn 15% + exclusive benefits', bullets: ['Premium exposure to employers', 'Custom partnership opportunities'] },
-  ];
   return (
     <div>
       <section style={{ background: '#fff', padding: mobile ? '36px 0' : '56px 0' }}>
@@ -244,32 +238,6 @@ function SolSchools({ navigate }) {
           <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 32px', textAlign: 'center' }}>Schools That Trust ProConnect</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
             {Array.from({ length: 11 }).map((_, i) => <div key={i} style={{ width: mobile ? 'calc(33% - 12px)' : 130, height: 60, borderRadius: 10, background: '#EFF1F2', border: `1px solid ${PC.border}` }} />)}
-          </div>
-        </div>
-      </section>
-
-      <section style={{ background: '#fff', padding: mobile ? '24px 0 48px' : '24px 0 64px' }}>
-        <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 8px', textAlign: 'center' }}>Education Partner Pricing</h2>
-          <p style={{ fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 36px', maxWidth: 620, marginLeft: 'auto', marginRight: 'auto' }}>Replace $250K–$2.5M in annual agent fees with a platform that costs 74–84% less, and actually pays you back through profit sharing.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: mobile ? '1fr' : 'repeat(4,1fr)', gap: 18 }}>
-            {tiers.map(t => (
-              <div key={t.name} style={{ border: `1px solid ${PC.border}`, borderRadius: 14, padding: 22 }}>
-                <div style={{ fontSize: 16, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat' }}>{t.name}</div>
-                <div style={{ fontSize: 11.5, color: PC.gray, fontFamily: 'Montserrat', margin: '4px 0 14px', minHeight: 30 }}>{t.sub}</div>
-                <div style={{ marginBottom: 6 }}><span style={{ fontSize: 26, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat' }}>{t.price}</span><span style={{ fontSize: 12, color: PC.gray }}>/yr</span></div>
-                <div style={{ fontSize: 12.5, fontWeight: 600, color: PC.green, fontFamily: 'Montserrat', marginBottom: 16 }}>{t.earn}</div>
-                <PCButton variant="secondary" size="md" fullWidth onClick={() => navigate('contact')} style={{ marginBottom: 16 }}>Contact Sales</PCButton>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                  {t.bullets.map(b => (
-                    <div key={b} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="8" cy="8" r="7" stroke={PC.gray} strokeWidth="1.3" /><path d="M5 8l2 2 4-4" stroke={PC.gray} strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                      <span style={{ fontSize: 12.5, color: PC.dark, fontFamily: 'Montserrat', lineHeight: 1.4 }}>{b}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
