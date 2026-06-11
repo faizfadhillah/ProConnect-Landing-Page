@@ -45,7 +45,7 @@ function SolEmployers({ navigate }) {
     { title: 'Transparent, Published Pricing', desc: 'No "contact us for pricing" games. See exactly what you pay from day one. From $23/month depending on your country.', icon: ic(<><circle cx="11" cy="11" r="3" stroke={PC.blue} strokeWidth="1.8" /><path d="M2 11s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke={PC.blue} strokeWidth="1.8" /></>) },
     { title: 'Built-in ATS Included', desc: 'Stop paying separately for Workable or Greenhouse. Our ATS is built into every recruiter seat at no extra charge.', icon: ic(<><path d="M4 16l8-8 2 2-8 8H4z" stroke={PC.blue} strokeWidth="1.8" strokeLinejoin="round" /><path d="M14 6l2-2 2 2-2 2z" stroke={PC.blue} strokeWidth="1.8" strokeLinejoin="round" /></>) },
     { title: 'Unlimited Job Postings', desc: 'Post as many jobs as you need. No per-post fees, no credit packs, no upsell traps. Unlimited means unlimited.', icon: ic(<path d="M7 11a3 3 0 100-2 3 3 0 100 2zm8 0a3 3 0 100-2 3 3 0 100 2z" stroke={PC.blue} strokeWidth="1.8" />) },
-    { title: 'Verified Candidates', desc: 'Accredited skill verification ensures every candidate is qualified before you interview.', icon: ic(<><circle cx="11" cy="11" r="8" stroke={PC.blue} strokeWidth="1.8" /><path d="M7 11l2.5 2.5L15 8" stroke={PC.blue} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></>) },
+    { title: 'Verified Candidates', desc: 'Candidates are verified by partner schools and accredited skill assessments, so every applicant is qualified before you interview.', icon: ic(<><circle cx="11" cy="11" r="8" stroke={PC.blue} strokeWidth="1.8" /><path d="M7 11l2.5 2.5L15 8" stroke={PC.blue} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></>) },
   ];
   const stepIcon = (t) => <span style={{ fontSize: 14, fontWeight: 800, color: '#fff', fontFamily: 'Montserrat' }}>{t}</span>;
   const steps2 = [
@@ -178,29 +178,29 @@ function SolEmployers({ navigate }) {
 function SolSchools({ navigate }) {
   const mobile = useMobile(820);
   const rows = [
-    ['Current agent cost (75 placements)', '-$520,000', PC.red],
-    ['ProConnect subscription', '-$3,600', PC.dark],
-    ['Profit share earned (38 placements)', '+$4,940', PC.green],
+    ['Cost to join', 'Free', PC.green],
+    ['Time to verify a graduate', '~5 min', PC.dark],
+    ['Boost in employer interest', '3–5×', PC.green],
   ];
   const works = [
-    { title: 'Verify Graduates', desc: '5 minutes per student. Confirm enrollment, diplomas, skills assessments, and references.' },
-    { title: 'Graduates Get Hired', desc: 'Employers trust "Verified by [Your School]" badges. Verified candidates get 3-5x more interest.' },
-    { title: 'You Earn Revenue', desc: "Receive 15-25% of the hiring employer's subscription fee. Automatic monthly or quarterly payments." },
-    { title: 'Track Everything', desc: 'Real-time placement dashboards, employer relationship management, and accreditation-ready reports.' },
+    { title: 'Join for Free', desc: 'Apply to become a verification partner. No subscription and no setup fees — we onboard your team in days.' },
+    { title: 'Verify Your Graduates', desc: 'Confirm enrollment, diplomas, and skills assessments in about 5 minutes per student. Each one earns a trusted Skill Passport.' },
+    { title: 'Graduates Get Hired', desc: 'Employers across ASEAN trust "Verified by [Your School]" badges. Verified candidates get 3-5x more interest.' },
+    { title: 'Track & Earn', desc: 'Follow placements on real-time dashboards and accreditation-ready reports — with an optional revenue share when your graduates are hired.' },
   ];
   return (
     <div>
       <section style={{ background: '#fff', padding: mobile ? '36px 0' : '56px 0' }}>
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: 44, alignItems: 'center' }}>
           <div>
-            <h1 style={{ fontSize: mobile ? 32 : 44, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.15 }}>Stop Paying Agents. Start Earning From Graduate Placements.</h1>
-            <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Replace $250K–$2.5M in annual agent fees with a platform that costs 74–84% less, and actually pays you back through profit sharing.</p>
+            <h1 style={{ fontSize: mobile ? 32 : 44, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.15 }}>Become a Verification Partner. Get Your Graduates Hired Across ASEAN.</h1>
+            <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Join ProConnect's education partner program — free for hospitality schools and training centres. Verify your students' skills, give them a trusted Skill Passport, and connect them directly with employers in all 10 ASEAN countries. No subscription. No agent fees.</p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <PCButton size="xl" onClick={() => navigate('contact')} style={{ background: PC.green, color: '#fff', border: 'none' }}>Become a Partner</PCButton>
             </div>
           </div>
           <div style={{ background: '#E6F6EC', borderRadius: 18, padding: mobile ? 20 : 28 }}>
-            <div style={{ fontSize: 16, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', textAlign: 'center', marginBottom: 18 }}>Example: Medium School (150 graduates/year)</div>
+            <div style={{ fontSize: 16, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', textAlign: 'center', marginBottom: 18 }}>Education Partner Program</div>
             {rows.map(([l, v, col]) => (
               <div key={l} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#fff', borderRadius: 10, padding: '14px 16px', marginBottom: 10 }}>
                 <span style={{ fontSize: 13, color: PC.dark, fontFamily: 'Montserrat' }}>{l}</span>
@@ -208,12 +208,12 @@ function SolSchools({ navigate }) {
               </div>
             ))}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#0E1726', borderRadius: 10, padding: '14px 16px', marginBottom: 12 }}>
-              <span style={{ fontSize: 13, color: '#fff', fontFamily: 'Montserrat', fontWeight: 600 }}>Net position with ProConnect</span>
-              <span style={{ fontSize: 14, fontWeight: 800, color: '#4ADE80', fontFamily: 'Montserrat' }}>+$715 PROFIT</span>
+              <span style={{ fontSize: 13, color: '#fff', fontFamily: 'Montserrat', fontWeight: 600 }}>Your verified graduates</span>
+              <span style={{ fontSize: 14, fontWeight: 800, color: '#4ADE80', fontFamily: 'Montserrat' }}>HIRED FASTER</span>
             </div>
             <div style={{ background: '#fff', borderRadius: 10, padding: '12px 14px', display: 'flex', alignItems: 'center', gap: 8 }}>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill={PC.green} /><path d="M5.5 9l2.2 2.2L12.5 6.5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              <span style={{ fontSize: 13, color: PC.dark, fontFamily: 'Montserrat' }}>Total savings vs agents: <b>$264,665 AUD per year</b></span>
+              <span style={{ fontSize: 13, color: PC.dark, fontFamily: 'Montserrat' }}>Optional <b>revenue share</b> when your verified graduates are placed.</span>
             </div>
           </div>
         </div>
@@ -242,7 +242,7 @@ function SolSchools({ navigate }) {
         </div>
       </section>
 
-      <CTABand title="Join 250+ Hospitality Schools Across ASEAN" desc="Schedule a call to see how the partnership works for your institution." bg={PC.green}
+      <CTABand title="Help Build ASEAN's Most Trusted Hospitality Talent Pool" desc="Partner with ProConnect to verify your graduates and connect them with employers — free to join." bg={PC.green}
         btns={<PCButton variant="light" size="xl" onClick={() => navigate('contact')} style={{ background: '#fff', color: PC.green, border: 'none' }}>Become a Partner</PCButton>} />
     </div>
   );
