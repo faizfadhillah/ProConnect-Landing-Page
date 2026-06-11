@@ -112,7 +112,8 @@ function FAQ() {
   { q: 'What exactly is a "seat"?', a: 'A seat is a paid license for one person who needs to post jobs and manage hiring. Everyone else in your company can be invited as a Member Profile for FREE to view the directory and apply for internal jobs.' },
   { q: 'Can I mix Full Recruiter and Department Head seats?', a: 'Yes. Buy any combination of Full Recruiter and Department Head seats. Add or remove seats anytime, and billing adjusts automatically.' },
   { q: 'Why are prices different in each country?', a: 'Pricing is purchasing-power adjusted so every ASEAN market pays a fair local rate rather than a single global price.' },
-  { q: 'Do I get charged per branch or location?', a: 'No. You are only charged per recruiter seat. Branches and locations are unlimited and included on every paid plan.' }];
+  { q: 'Do I get charged per branch or location?', a: 'No. You are only charged per recruiter seat. Branches and locations are unlimited and included on every paid plan.' },
+  { q: 'Is it free for job seekers and schools?', a: 'Yes. Job seekers always use ProConnect for free — search, profile, Skill Passport, and applications. Education partners also join free to verify their graduates; we monetise employers, not candidates or schools.' }];
 
   return (
     <section style={{ background: '#fff', padding: mobile ? '20px 0 48px' : '24px 0 72px' }}>
@@ -161,7 +162,7 @@ function PricingPage({ navigate }) {
       <section style={{ background: '#fff', padding: mobile ? '44px 0 24px' : '64px 0 40px', textAlign: 'center' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
           <h1 style={{ fontSize: mobile ? 32 : 46, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 16px' }}>Simple, Seat-Based Pricing.</h1>
-          <p style={{ fontSize: 16, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 28px', lineHeight: 1.7 }}>Only hiring managers pay. Regular employees get free profiles. Job postings can only be done by hiring managers either with Department Head or Full Recruiter Seat.</p>
+          <p style={{ fontSize: 16, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 28px', lineHeight: 1.7 }}>Only hiring managers pay. Regular employees get free profiles, and job seekers and education partners always join free. Job postings require a Department Head or Full Recruiter Seat.</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <PCButton variant="secondary" size="xl" onClick={() => {const el = document.getElementById('calc');if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' });}}>Calculate your cost</PCButton>
             <PCButton variant="primary" size="xl" onClick={() => navigate('contact')}>Request Demo</PCButton>

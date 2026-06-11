@@ -11,7 +11,7 @@ function AboutPage({ navigate }) {
     { img: 'about_p1', name: 'ASEANTA', desc: 'ASEAN Tourism Association official partner' },
     { img: 'kemenparekraf', name: 'Min. of Tourism', desc: 'Indonesian Ministry of Tourism backing' },
     { img: 'about_p3', name: '250+ Schools', desc: 'Hospitality schools across ASEAN' },
-    { img: 'about_p4', name: '85K+ SMEs', desc: 'Target for hospitality business' },
+    { img: 'about_p4', name: '85K+ SMEs', desc: 'Hospitality businesses across the ASEAN market' },
   ];
   const principles = [
     { tag: 'FIRST PRINCIPLES', title: 'No Problem is Too Hard', desc: 'We take on tough challenges and solve them with clear, logical thinking.' },
@@ -44,9 +44,9 @@ function AboutPage({ navigate }) {
                 <PCTag color="blue">Mission</PCTag>
                 <h2 style={{ fontSize: mobile ? 26 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '14px 0 16px' }}>Our Mission</h2>
                 <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', lineHeight: 1.75, margin: 0 }}>
-                  To improve workforce mobility and hiring quality in the hospitality sector by providing verified, skill-based job matching tools that benefit candidates, employers, and education institutions.
+                  To improve workforce mobility and hiring quality across ASEAN's hospitality sector by making skills verifiable and portable. Built on the ASEAN MRA-TP standard, our Skill Passport lets professionals prove their qualifications once and carry them across all 10 ASEAN countries — benefiting candidates, employers, and education partners alike.
                   <br /><br />
-                  Across ASEAN, the hospitality sector employs 15 million+ people. Yet hiring remains fragmented, expensive, and riddled with credential fraud. Recruiting agents charge $7,000–$12,000 per hire while schools spend up to $2.5M annually on placement services. ProConnect was built to fix this.
+                  Across ASEAN, the hospitality sector employs 15 million+ people. Yet hiring remains fragmented, expensive, and riddled with credential fraud. Recruiting agents charge $7,000–$12,000 per hire while schools spend heavily on placement services. ProConnect was built to fix this — with a built-in ATS, AI matching, and verified credentials in one platform.
                 </p>
               </div>
             </div>

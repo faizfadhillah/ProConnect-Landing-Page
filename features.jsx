@@ -16,8 +16,8 @@ function FeaturesPage({ navigate }) {
   ];
   const more = [
     { title: 'Resume Parsing', img: 'feat_resume', desc: 'Auto-extract candidate data from any resume. Multi-language support for ASEAN markets.' },
-    { title: 'Communication Tools', img: 'feat_comm', desc: 'Auto-extract candidate data from any resume. Multi-language support for ASEAN markets.' },
-    { title: 'Freelancing Module', img: 'feat_freelance', desc: 'Auto-extract candidate data from any resume. Multi-language support for ASEAN markets.' },
+    { title: 'Communication Tools', img: 'feat_comm', desc: 'Message candidates and coordinate interviews in-platform — real-time chat, templates, and automated status updates instead of scattered email.' },
+    { title: 'Freelancing Module', img: 'feat_freelance', desc: 'Hire on-demand hospitality staff for peak season and events. Post gigs, match nearby verified talent, and rate after each shift. (Coming soon)' },
     { title: 'Analytics & Reporting', img: 'feat_analytics', desc: 'Track time-to-hire, source effectiveness, and pipeline health. Export reports for leadership.' },
     { title: 'Employee Directory', img: 'feat_directory', desc: 'Free profiles for all employees. Internal transfers, org charts, and team management at no extra cost.' },
     { title: 'Integrations', img: 'feat_integrations', desc: 'Connect to Canvas, Blackboard, Moodle (education), and major HR systems. API access for enterprise.' },

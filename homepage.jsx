@@ -159,8 +159,8 @@ function HPJobCategories({ navigate }) {
 function HPFeatureCards({ navigate }) {
   const mobile = useMobile(820);
   const cards = [
-  { img: 'feat1', title: "Be the Headhunter's First Choice", desc: 'Manage your entire hiring pipeline from one dashboard. Custom workflows, team collaboration, and automated updates.', tab: 'employers' },
-  { img: 'feat2', title: 'A New Way to Get the Best Talent', desc: 'Manage your entire hiring pipeline from one dashboard. Custom workflows, team collaboration, and automated updates.', tab: 'jobseekers' }];
+  { img: 'feat1', title: 'Hire Verified Talent, Without the Agents', desc: 'Post unlimited jobs and manage your whole pipeline in a built-in ATS. Every candidate is benchmarked against ASEAN MRA-TP standards, so you interview with confidence.', tab: 'employers' },
+  { img: 'feat2', title: 'Build a Skill Passport That Travels With You', desc: 'Showcase ASEAN-MRA-TP verified skills, get AI-matched to hospitality jobs across all 10 ASEAN countries, and track every application in real time — free for job seekers.', tab: 'jobseekers' }];
 
   return (
     <section style={{ background: PC.bg, padding: mobile ? '40px 0' : '56px 0' }}>
@@ -292,7 +292,7 @@ function HPStakeholders({ navigate }) {
   const cards = [
   { title: 'For Job Seekers', desc: 'Hospitality professionals at every level. Build a verified Skill Passport that travels with you across all 10 ASEAN countries.', tab: 'jobseekers', bg: PC.orange,
     icon: <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="4" y="8" width="18" height="13" rx="2" stroke="#fff" strokeWidth="2" /><path d="M9 8V6a2 2 0 012-2h4a2 2 0 012 2v2" stroke="#fff" strokeWidth="2" /></svg> },
-  { title: 'For Schools', desc: 'Hospitality schools and vocational centers. Replace $250K+ in annual agent fees and actually earn money from graduates.', tab: 'schools', bg: PC.green,
+  { title: 'For Schools', desc: 'Hospitality schools and training centres. Join free as a verification partner — verify your graduates and connect them with employers across ASEAN.', tab: 'schools', bg: PC.green,
     icon: <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 5l10 4-10 4L3 9z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /><path d="M7 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" stroke="#fff" strokeWidth="2" /></svg> },
   { title: 'For Employers', desc: 'Replace expensive agents with verified, skill-matched candidates at a fraction of the cost.', tab: 'employers', bg: PC.blue,
     icon: <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="4" y="5" width="18" height="16" rx="2" stroke="#fff" strokeWidth="2" /><circle cx="13" cy="11" r="2.4" stroke="#fff" strokeWidth="2" /><path d="M8.5 18c0-2 2-3 4.5-3s4.5 1 4.5 3" stroke="#fff" strokeWidth="2" /></svg> }];
@@ -321,8 +321,8 @@ function HPTestimonials() {
   const mobile = useMobile(820);
   const base = [
   { quote: 'We replaced our recruiting agency contract and saved over $40,000 in the first year. The verified Skill Passports mean we know exactly what we\'re getting.', name: 'Wayan Dharma', country: 'Indonesia', role: 'HR Director, Bali Resort Group', img: 'av_h1' },
-  { quote: 'Our placement tracking went from spreadsheets to real-time dashboards. The profit-sharing model means ProConnect actually pays for itself.', name: 'Dr. Nadia Tan', country: 'Malaysia', role: 'Dean, ASEAN Hospitality Academy', img: 'av_h2' },
-  { quote: 'My Skill Passport helped me get a front office role in Singapore. The verified credentials meant the hotel trusted my qualifications from the Philippines.', name: 'Maria Santos', country: 'Cambodia', role: 'Front Office Manager, Marina Bay Hotel', img: 'av_h3' }];
+  { quote: 'As a verification partner, our graduates get verified and placed faster, and real-time dashboards replaced our spreadsheets. Joining is free, so it pays off from day one.', name: 'Dr. Nadia Tan', country: 'Malaysia', role: 'Dean, ASEAN Hospitality Academy', img: 'av_h2' },
+  { quote: 'My Skill Passport helped me get a front office role in Singapore. The verified credentials meant the hotel trusted my qualifications from the Philippines.', name: 'Maria Santos', country: 'Philippines', role: 'Front Office Manager, Marina Bay Hotel', img: 'av_h3' }];
 
   const items = base;
   return (
