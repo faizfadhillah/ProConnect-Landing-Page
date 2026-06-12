@@ -16,7 +16,7 @@ function FeaturesPage({ navigate }) {
   ];
   const more = [
     { title: 'Resume Parsing', img: 'feat_resume', desc: 'Auto-extract candidate data from any resume. Multi-language support for ASEAN markets.' },
-    { title: 'Communication Tools', img: 'feat_comm', desc: 'Message candidates and coordinate interviews in-platform — real-time chat, templates, and automated status updates instead of scattered email.' },
+    { title: 'Communication Tools', img: 'feat_comm', desc: 'Message candidates and coordinate interviews inside the platform. Real-time chat, templates, and automated status updates replace scattered email.' },
     { title: 'Freelancing Module', img: 'feat_freelance', desc: 'Hire on-demand hospitality staff for peak season and events. Post gigs, match nearby verified talent, and rate after each shift. (Coming soon)' },
     { title: 'Analytics & Reporting', img: 'feat_analytics', desc: 'Track time-to-hire, source effectiveness, and pipeline health. Export reports for leadership.' },
     { title: 'Employee Directory', img: 'feat_directory', desc: 'Free profiles for all employees. Internal transfers, org charts, and team management at no extra cost.' },
@@ -34,7 +34,7 @@ function FeaturesPage({ navigate }) {
       <section style={{ background: '#fff', padding: mobile ? '44px 0 24px' : '64px 0 36px', textAlign: 'center' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', padding: '0 24px' }}>
           <h1 style={{ fontSize: mobile ? 34 : 46, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.15 }}>
-            All the Tools You Need.<br />None of the Bloat.
+All the Tools You Need,<br />Without the Clutter.
           </h1>
           <p style={{ fontSize: 16, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>
             ProConnect combines an ATS, job board, AI matching, and credential verification in one hospitality-focused platform.

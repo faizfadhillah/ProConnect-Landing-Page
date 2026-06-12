@@ -44,9 +44,9 @@ function AboutPage({ navigate }) {
                 <PCTag color="blue">Mission</PCTag>
                 <h2 style={{ fontSize: mobile ? 26 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '14px 0 16px' }}>Our Mission</h2>
                 <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', lineHeight: 1.75, margin: 0 }}>
-                  To improve workforce mobility and hiring quality across ASEAN's hospitality sector by making skills verifiable and portable. Built on the ASEAN MRA-TP standard, our Skill Passport lets professionals prove their qualifications once and carry them across all 10 ASEAN countries — benefiting candidates, employers, and education partners alike.
+                  To improve workforce mobility and hiring quality across ASEAN's hospitality sector by making skills verifiable and portable. Built on the ASEAN MRA-TP standard, our Skill Passport lets professionals prove their qualifications once and carry them across all 10 ASEAN countries. This benefits candidates, employers, and education partners alike.
                   <br /><br />
-                  Across ASEAN, the hospitality sector employs 15 million+ people. Yet hiring remains fragmented, expensive, and riddled with credential fraud. Recruiting agents charge $7,000–$12,000 per hire while schools spend heavily on placement services. ProConnect was built to fix this — with a built-in ATS, AI matching, and verified credentials in one platform.
+                  Across ASEAN, the hospitality sector employs more than 15 million people. Yet hiring remains fragmented, expensive, and exposed to credential fraud. Recruiting agents charge $7,000 to $12,000 per hire, while schools spend heavily on placement services. ProConnect was built to fix this, with a built-in ATS, AI matching, and verified credentials in one platform.
                 </p>
               </div>
             </div>

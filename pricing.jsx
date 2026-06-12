@@ -66,7 +66,7 @@ function CostCalculator() {
     <section style={{ background: '#fff', padding: mobile ? '48px 0' : '72px 0' }}>
       <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px' }}>
         <h2 style={{ fontSize: mobile ? 26 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 8px', textAlign: 'center' }}>Calculate Your Monthly Cost</h2>
-        <p style={{ fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 36px' }}>Select country first to apply seats, it's to effect to price</p>
+        <p style={{ fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 36px' }}>Select your country first. Seat prices are set for each market.</p>
         <div style={{ background: '#fff', border: `1px solid ${PC.border}`, borderRadius: 16, padding: mobile ? 20 : 28, display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1.3fr 1fr', gap: 24, boxShadow: '0 10px 40px rgba(4,38,72,0.06)' }}>
           <div>
             <div style={{ position: 'relative', marginBottom: 16 }}>
@@ -113,7 +113,7 @@ function FAQ() {
   { q: 'Can I mix Full Recruiter and Department Head seats?', a: 'Yes. Buy any combination of Full Recruiter and Department Head seats. Add or remove seats anytime, and billing adjusts automatically.' },
   { q: 'Why are prices different in each country?', a: 'Pricing is purchasing-power adjusted so every ASEAN market pays a fair local rate rather than a single global price.' },
   { q: 'Do I get charged per branch or location?', a: 'No. You are only charged per recruiter seat. Branches and locations are unlimited and included on every paid plan.' },
-  { q: 'Is it free for job seekers and schools?', a: 'Yes. Job seekers always use ProConnect for free — search, profile, Skill Passport, and applications. Education partners also join free to verify their graduates; we monetise employers, not candidates or schools.' }];
+  { q: 'Is it free for job seekers and schools?', a: 'Yes. Job seekers always use ProConnect for free, including search, profile, Skill Passport, and applications. Education partners also join free to verify their graduates. We charge employers, not candidates or schools.' }];
 
   return (
     <section style={{ background: '#fff', padding: mobile ? '20px 0 48px' : '24px 0 72px' }}>

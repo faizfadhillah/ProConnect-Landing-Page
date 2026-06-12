@@ -95,7 +95,7 @@ function CandSalary({ items, setItems }) {
 // ════════════════ STEP 10 — Skill Passport (MRA-TP) ════════════════
 function CandSkillPassport({ data, set }) {
   return (
-    <RegCard title="Skill Passport (MRA-TP Standard)" subtitle="Provide your official ASEAN MRA-TP skill passport to fast-track verification. Otherwise you can skip this step – you can add it later from your profile.">
+    <RegCard title="Skill Passport (MRA-TP Standard)" subtitle="Provide your official ASEAN MRA-TP skill passport to speed up verification. Otherwise you can skip this step. You can add it later from your profile.">
       <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
         <RegField label="Skill Passport (MRA-TP Standard) Number"><RegInput placeholder="Input your ID number for Skill Passport" value={data.passportNo} onChange={e => set('passportNo', e.target.value)} /></RegField>
         <RegField label="Upload Document"><UploadField placeholder="Upload your skill passport (in PDF or jpg format)" label="Upload" /></RegField>

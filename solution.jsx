@@ -42,9 +42,9 @@ function SolEmployers({ navigate }) {
   ];
   const ic = (p) => <svg width="22" height="22" viewBox="0 0 22 22" fill="none">{p}</svg>;
   const why = [
-    { title: 'Transparent, Published Pricing', desc: 'No "contact us for pricing" games. See exactly what you pay from day one. From $23/month depending on your country.', icon: ic(<><circle cx="11" cy="11" r="3" stroke={PC.blue} strokeWidth="1.8" /><path d="M2 11s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke={PC.blue} strokeWidth="1.8" /></>) },
+    { title: 'Transparent, Published Pricing', desc: 'No hidden quotes or "contact us for pricing". You see exactly what you pay from day one, starting from $23 per month depending on your country.', icon: ic(<><circle cx="11" cy="11" r="3" stroke={PC.blue} strokeWidth="1.8" /><path d="M2 11s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z" stroke={PC.blue} strokeWidth="1.8" /></>) },
     { title: 'Built-in ATS Included', desc: 'Stop paying separately for Workable or Greenhouse. Our ATS is built into every recruiter seat at no extra charge.', icon: ic(<><path d="M4 16l8-8 2 2-8 8H4z" stroke={PC.blue} strokeWidth="1.8" strokeLinejoin="round" /><path d="M14 6l2-2 2 2-2 2z" stroke={PC.blue} strokeWidth="1.8" strokeLinejoin="round" /></>) },
-    { title: 'Unlimited Job Postings', desc: 'Post as many jobs as you need. No per-post fees, no credit packs, no upsell traps. Unlimited means unlimited.', icon: ic(<path d="M7 11a3 3 0 100-2 3 3 0 100 2zm8 0a3 3 0 100-2 3 3 0 100 2z" stroke={PC.blue} strokeWidth="1.8" />) },
+    { title: 'Unlimited Job Postings', desc: 'Post as many jobs as you need, with no per-post fees, credit packs, or hidden charges.', icon: ic(<path d="M7 11a3 3 0 100-2 3 3 0 100 2zm8 0a3 3 0 100-2 3 3 0 100 2z" stroke={PC.blue} strokeWidth="1.8" />) },
     { title: 'Verified Candidates', desc: 'Candidates are verified by partner schools and accredited skill assessments, so every applicant is qualified before you interview.', icon: ic(<><circle cx="11" cy="11" r="8" stroke={PC.blue} strokeWidth="1.8" /><path d="M7 11l2.5 2.5L15 8" stroke={PC.blue} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></>) },
   ];
   const stepIcon = (t) => <span style={{ fontSize: 14, fontWeight: 800, color: '#fff', fontFamily: 'Montserrat' }}>{t}</span>;
@@ -180,13 +180,13 @@ function SolSchools({ navigate }) {
   const rows = [
     ['Cost to join', 'Free', PC.green],
     ['Time to verify a graduate', '~5 min', PC.dark],
-    ['Boost in employer interest', '3–5×', PC.green],
+    ['Boost in employer interest', '3-5x', PC.green],
   ];
   const works = [
-    { title: 'Join for Free', desc: 'Apply to become a verification partner. No subscription and no setup fees — we onboard your team in days.' },
+    { title: 'Join for Free', desc: 'Apply to become a verification partner. No subscription and no setup fees. We onboard your team in days.' },
     { title: 'Verify Your Graduates', desc: 'Confirm enrollment, diplomas, and skills assessments in about 5 minutes per student. Each one earns a trusted Skill Passport.' },
     { title: 'Graduates Get Hired', desc: 'Employers across ASEAN trust "Verified by [Your School]" badges. Verified candidates get 3-5x more interest.' },
-    { title: 'Track & Earn', desc: 'Follow placements on real-time dashboards and accreditation-ready reports — with an optional revenue share when your graduates are hired.' },
+    { title: 'Track & Earn', desc: 'Follow placements on real-time dashboards and accreditation-ready reports. You can also earn an optional revenue share when your graduates are hired.' },
   ];
   return (
     <div>
@@ -194,7 +194,7 @@ function SolSchools({ navigate }) {
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: 44, alignItems: 'center' }}>
           <div>
             <h1 style={{ fontSize: mobile ? 32 : 44, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.15 }}>Become a Verification Partner. Get Your Graduates Hired Across ASEAN.</h1>
-            <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Join ProConnect's education partner program — free for hospitality schools and training centres. Verify your students' skills, give them a trusted Skill Passport, and connect them directly with employers in all 10 ASEAN countries. No subscription. No agent fees.</p>
+            <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Join ProConnect's education partner program, free for hospitality schools and training centres. Verify your students' skills, give them a trusted Skill Passport, and connect them directly with employers in all 10 ASEAN countries. No subscription. No agent fees.</p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <PCButton size="xl" onClick={() => navigate('contact')} style={{ background: PC.green, color: '#fff', border: 'none' }}>Become a Partner</PCButton>
             </div>
@@ -242,7 +242,7 @@ function SolSchools({ navigate }) {
         </div>
       </section>
 
-      <CTABand title="Help Build ASEAN's Most Trusted Hospitality Talent Pool" desc="Partner with ProConnect to verify your graduates and connect them with employers — free to join." bg={PC.green}
+      <CTABand title="Help Build ASEAN's Most Trusted Hospitality Talent Pool" desc="Partner with ProConnect to verify your graduates and connect them with employers. Free to join." bg={PC.green}
         btns={<PCButton variant="light" size="xl" onClick={() => navigate('contact')} style={{ background: '#fff', color: PC.green, border: 'none' }}>Become a Partner</PCButton>} />
     </div>
   );
@@ -255,8 +255,8 @@ function SolJobSeekers({ navigate }) {
   const ic = (p) => <svg width="22" height="22" viewBox="0 0 22 22" fill="none">{p}</svg>;
   const why = [
     { title: 'Anywhere in ASEAN', desc: 'Your Skill Passport is recognized by employers in all 10 ASEAN countries. No more re-proving your qualifications at every border.', icon: ic(<path d="M5 11a3 3 0 100-2 3 3 0 100 2zm8 0a3 3 0 100-2 3 3 0 100 2z" stroke={PC.orange} strokeWidth="1.8" />) },
-    { title: 'Get Matched, Not Lost', desc: 'Our AI matches you to relevant hospitality jobs based on your actual skills, not just keywords. Stop scrolling, start interviewing.', icon: ic(<><circle cx="9" cy="9" r="6" stroke={PC.orange} strokeWidth="1.8" /><path d="M13.5 13.5L18 18" stroke={PC.orange} strokeWidth="1.8" strokeLinecap="round" /></>) },
-    { title: 'Track Your Applications', desc: 'See the status of every application in real-time. No more "application black holes." You know exactly where you stand.', icon: ic(<><path d="M11 3a8 8 0 108 8" stroke={PC.orange} strokeWidth="1.8" strokeLinecap="round" /><circle cx="11" cy="11" r="2.4" stroke={PC.orange} strokeWidth="1.8" /></>) },
+    { title: 'Get Matched, Not Lost', desc: 'Our AI matches you to relevant hospitality jobs based on your actual skills, not just keywords, so you spend less time searching and more time interviewing.', icon: ic(<><circle cx="9" cy="9" r="6" stroke={PC.orange} strokeWidth="1.8" /><path d="M13.5 13.5L18 18" stroke={PC.orange} strokeWidth="1.8" strokeLinecap="round" /></>) },
+    { title: 'Track Your Applications', desc: 'Track the status of every application in real time, so you always know exactly where you stand.', icon: ic(<><path d="M11 3a8 8 0 108 8" stroke={PC.orange} strokeWidth="1.8" strokeLinecap="round" /><circle cx="11" cy="11" r="2.4" stroke={PC.orange} strokeWidth="1.8" /></>) },
   ];
   const flags = [['🇧🇳', 'Brunei'], ['🇲🇲', 'Myanmar'], ['🇱🇦', 'Laos'], ['🇰🇭', 'Cambodia'], ['🇻🇳', 'Vietnam'], ['🇵🇭', 'Philippines'], ['🇹🇭', 'Thailand'], ['🇲🇾', 'Malaysia'], ['🇸🇬', 'Singapore'], ['🇮🇩', 'Indonesia']];
   return (

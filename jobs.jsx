@@ -220,7 +220,7 @@ const COUNTRY_OF = {
 const CATEGORIES = ['All Categories', 'Front Office', 'Food & Beverage', 'Housekeeping', 'Culinary', 'Sales & Marketing', 'Spa & Wellness', 'Revenue'];
 const WORK_TYPES = ['All Types', 'Full-Time', 'Part-Time', 'Contract', 'Internship'];
 const ARRANGEMENTS = ['All Arrangements', 'Onsite', 'Hybrid', 'Remote'];
-const SORTS = ['Most Recent', 'Oldest', 'Title A–Z'];
+const SORTS = ['Most Recent', 'Oldest', 'Title A-Z'];
 
 function FilterPill({ label, value, options, onChange }) {
   const [open, setOpen] = React.useState(false);
@@ -374,7 +374,7 @@ function JobsPage({ navigate }) {
       const aMatch = arrangement === 'All Arrangements' || j.arrangement === arrangement;
       return qMatch && cMatch && tMatch && aMatch && catMatch(j);
     });
-    if (sort === 'Title A–Z') list = [...list].sort((a, b) => a.title.localeCompare(b.title));
+    if (sort === 'Title A-Z') list = [...list].sort((a, b) => a.title.localeCompare(b.title));
     else if (sort === 'Oldest') list = [...list].reverse();
     return list;
   }, [search, country, category, workType, arrangement, sort]);

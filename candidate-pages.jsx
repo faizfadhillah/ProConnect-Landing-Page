@@ -52,7 +52,7 @@ function CandFilterModal({ onClose, onApply, kind = 'company' }) {
 }
 
 // ── Companies grid ────────────────────────────────────────────────────────
-const SORT_OPTS = ['Relevant', 'Most open positions', 'Recently added', 'Alphabetical (A–Z)', 'Most popular'];
+const SORT_OPTS = ['Relevant', 'Most open positions', 'Recently added', 'Alphabetical (A-Z)', 'Most popular'];
 function CandCompaniesV2({ onOpenCompany }) {
   const mobile = useMobile(900);
   const [q, setQ] = React.useState('');
@@ -67,7 +67,7 @@ function CandCompaniesV2({ onOpenCompany }) {
     document.addEventListener('mousedown', h); return () => document.removeEventListener('mousedown', h);
   }, [sortOpen]);
   let list = COMPANIES.filter(c => !q || c.name.toLowerCase().includes(q.toLowerCase()));
-  if (sort === 'Alphabetical (A–Z)') list = [...list].sort((a, b) => a.name.localeCompare(b.name));
+  if (sort === 'Alphabetical (A-Z)') list = [...list].sort((a, b) => a.name.localeCompare(b.name));
   else if (sort === 'Most open positions') list = [...list].sort((a, b) => b.jobs - a.jobs);
 
   return (
@@ -175,7 +175,7 @@ function CandCompanyDetail({ company, onBack, onOpenJob }) {
             </div>
           </Card>
           <Card title="Location">
-            {[['Head Quarters', 'Jl. Bunga Mawar No.42, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410'], ['Branch — Malang', 'Jl. Bunga Mawar No.42, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410'], ['Branch — Bandung', 'Jl. Bunga Mawar No.42, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410']].map(([l, v]) => (
+            {[['Head Quarters', 'Jl. Bunga Mawar No.42, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410'], ['Branch - Malang', 'Jl. Bunga Mawar No.42, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410'], ['Branch - Bandung', 'Jl. Bunga Mawar No.42, Cipete Sel., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12410']].map(([l, v]) => (
               <div key={l} style={{ marginBottom: 16 }}><div style={{ fontSize: 15, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', marginBottom: 5 }}>{l}</div><div style={{ fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', lineHeight: 1.6 }}>{v}</div></div>
             ))}
           </Card>
