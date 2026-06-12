@@ -217,6 +217,69 @@ const COUNTRY_OF = {
   'Ho Chi Minh City': 'Vietnam', 'Nha Trang': 'Vietnam', Manila: 'Philippines',
 };
 
+// ── Live API (real job data) ─────────────────────────────────────────────────
+// Public, no-auth endpoint. Returns PUBLISHED jobs. Falls back to sample data
+// above if the request fails (e.g. before the API change is deployed).
+const API_BASE = 'https://api.proconnectcareer.com';
+
+function relativeTime(iso) {
+  if (!iso) return '';
+  const d = new Date(iso); if (isNaN(d.getTime())) return '';
+  const days = Math.floor((Date.now() - d.getTime()) / 86400000);
+  if (days <= 0) return 'Today';
+  if (days === 1) return '1 day ago';
+  if (days < 7) return days + ' days ago';
+  const weeks = Math.floor(days / 7);
+  if (days < 30) return weeks + ' week' + (weeks > 1 ? 's' : '') + ' ago';
+  const months = Math.floor(days / 30);
+  return months + ' month' + (months > 1 ? 's' : '') + ' ago';
+}
+const cap = s => (s || '').split(/[-_\s]+/).filter(Boolean).map(w => w[0].toUpperCase() + w.slice(1)).join('-');
+const ARR_MAP = { 'on-site': 'Onsite', 'onsite': 'Onsite', 'remote': 'Remote', 'hybrid': 'Hybrid' };
+const TYPE_MAP = { 'full-time': 'Full-Time', 'part-time': 'Part-Time', 'contract': 'Contract', 'internship': 'Internship', 'freelance': 'Freelance' };
+const INTERVAL_WORD = { monthly: 'month', yearly: 'year', weekly: 'week', daily: 'day', hourly: 'hour' };
+function buildPay(j) {
+  if (j.min_salary == null && j.max_salary == null) return '';
+  const cur = j.salary_currency ? j.salary_currency + ' ' : '';
+  const fmt = n => Number(n).toLocaleString('id-ID');
+  const lo = j.min_salary != null ? cur + fmt(j.min_salary) : '';
+  const hi = j.max_salary != null ? cur + fmt(j.max_salary) : '';
+  const range = lo && hi ? lo + ' - ' + hi : (lo || hi);
+  const interval = j.salary_pay_interval ? ' per ' + (INTERVAL_WORD[j.salary_pay_interval] || j.salary_pay_interval) : '';
+  return range + interval;
+}
+function resolveLogo(url) {
+  if (!url) return '';
+  return /^https?:\/\//.test(url) ? url : API_BASE + '/' + url.replace(/^\//, '');
+}
+function initialsOf(name) {
+  const w = (name || '?').trim().split(/\s+/);
+  return ((w[0] && w[0][0] || '') + (w[1] && w[1][0] || '')).toUpperCase() || '?';
+}
+function mapApiJob(j) {
+  const arr = Array.isArray(j.domicile_status) ? j.domicile_status : [];
+  const emp = Array.isArray(j.employment_status) ? j.employment_status : [];
+  return {
+    id: j.id,
+    title: j.title || 'Untitled role',
+    company: j.company_name || '',
+    legal: j.company_name || '',
+    loc: j.location || j.country || '',
+    country: j.country || '',
+    pay: buildPay(j),
+    ago: relativeTime(j.created_at),
+    posted: relativeTime(j.created_at),
+    logo: resolveLogo(j.company_logo_url),
+    logoFallback: jobLogo('#1B1B4B', '#FF5C8A', initialsOf(j.company_name)),
+    arrangement: ARR_MAP[(arr[0] || '').toLowerCase()] || (arr[0] ? cap(arr[0]) : ''),
+    type: TYPE_MAP[(emp[0] || '').toLowerCase()] || (emp[0] ? cap(emp[0]) : ''),
+    verified: false,
+    description: j.description || '',
+    location: j.location || '',
+    slug: j.slug || null,
+  };
+}
+
 const CATEGORIES = ['All Categories', 'Front Office', 'Food & Beverage', 'Housekeeping', 'Culinary', 'Sales & Marketing', 'Spa & Wellness', 'Revenue'];
 const WORK_TYPES = ['All Types', 'Full-Time', 'Part-Time', 'Contract', 'Internship'];
 const ARRANGEMENTS = ['All Arrangements', 'Onsite', 'Hybrid', 'Remote'];
@@ -261,7 +324,7 @@ function JobRow({ job, active, onClick }) {
         {job.pay && <div style={{ fontSize: 12.5, color: PC.gray, fontFamily: 'Montserrat', marginBottom: 4 }}>{job.pay}</div>}
         <div style={{ fontSize: 12, color: PC.medGray, fontFamily: 'Montserrat' }}>{job.ago}</div>
       </div>
-      <img src={job.logo} alt="" style={{ width: 44, height: 44, borderRadius: 8, flexShrink: 0 }} />
+      <img src={job.logo} alt="" onError={e => { if (job.logoFallback && e.currentTarget.src !== job.logoFallback) e.currentTarget.src = job.logoFallback; }} style={{ width: 44, height: 44, borderRadius: 8, flexShrink: 0 }} />
     </div>
   );
 }
@@ -287,6 +350,11 @@ function JobDetail({ job, onApply }) {
     </ul>
   );
   const Sub = ({ children }) => <div style={{ fontSize: 14.5, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 10px' }}>{children}</div>;
+  const Paragraphs = ({ text }) => {
+    const parts = String(text || '').split(/\n+/).map(s => s.trim()).filter(Boolean);
+    if (parts.length === 0) return <p style={{ fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', margin: 0 }}>No description provided.</p>;
+    return <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>{parts.map((p, i) => <p key={i} style={{ fontSize: 14, color: PC.dark, fontFamily: 'Montserrat', lineHeight: 1.6, margin: 0 }}>{p}</p>)}</div>;
+  };
   return (
     <div style={{ flex: 1, border: `1px solid ${PC.border}`, borderRadius: 14, padding: 28 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 16, marginBottom: 18 }}>
@@ -299,23 +367,33 @@ function JobDetail({ job, onApply }) {
           {job.pay && <div style={{ fontSize: 13, color: PC.gray, fontFamily: 'Montserrat' }}>{job.pay}</div>}
           <div style={{ fontSize: 12.5, color: PC.medGray, fontFamily: 'Montserrat', marginTop: 4 }}>{job.posted}</div>
         </div>
-        <img src={job.logo} alt="" style={{ width: 48, height: 48, borderRadius: 8, flexShrink: 0 }} />
+        <img src={job.logo} alt="" onError={e => { if (job.logoFallback && e.currentTarget.src !== job.logoFallback) e.currentTarget.src = job.logoFallback; }} style={{ width: 48, height: 48, borderRadius: 8, flexShrink: 0 }} />
       </div>
-      <div style={{ marginBottom: 18 }}><Chips items={[job.arrangement, job.type]} /></div>
+      <div style={{ marginBottom: 18 }}><Chips items={[job.arrangement, job.type].filter(Boolean)} /></div>
       <PCButton variant="primary" size="lg" fullWidth style={{ marginBottom: 26 }} onClick={onApply}>Apply</PCButton>
 
       <Section title="Job description">
-        <Sub>Job summary :</Sub>
-        <Bullets items={job.summary} />
-        <div style={{ height: 14 }} />
-        <Sub>Required skills :</Sub>
-        <Bullets items={job.skills_req} />
+        {job.summary ? (
+          <>
+            <Sub>Job summary :</Sub>
+            <Bullets items={job.summary} />
+            {job.skills_req && job.skills_req.length > 0 && (
+              <>
+                <div style={{ height: 14 }} />
+                <Sub>Required skills :</Sub>
+                <Bullets items={job.skills_req} />
+              </>
+            )}
+          </>
+        ) : (
+          <Paragraphs text={job.description} />
+        )}
       </Section>
-      <Section title="Right To Work"><Bullets items={job.rtw} /></Section>
-      <Section title="Location"><p style={{ fontSize: 14, color: PC.dark, fontFamily: 'Montserrat', margin: 0 }}>{job.location}</p></Section>
-      <Section title="Job Skills"><Chips items={job.jobSkills} /></Section>
-      <Section title="Interest"><Chips items={job.interests} /></Section>
-      <Section title="Language"><Chips items={job.languages} /></Section>
+      {job.rtw && job.rtw.length > 0 && <Section title="Right To Work"><Bullets items={job.rtw} /></Section>}
+      {job.location && <Section title="Location"><p style={{ fontSize: 14, color: PC.dark, fontFamily: 'Montserrat', margin: 0 }}>{job.location}</p></Section>}
+      {job.jobSkills && job.jobSkills.length > 0 && <Section title="Job Skills"><Chips items={job.jobSkills} /></Section>}
+      {job.interests && job.interests.length > 0 && <Section title="Interest"><Chips items={job.interests} /></Section>}
+      {job.languages && job.languages.length > 0 && <Section title="Language"><Chips items={job.languages} /></Section>}
     </div>
   );
 }
@@ -340,6 +418,7 @@ const PAGE_SIZE = 6;
 
 function JobsPage({ navigate }) {
   const mobile = useMobile(900);
+  const [jobs, setJobs] = React.useState(JOBS);
   const [activeId, setActiveId] = React.useState(JOBS[0].id);
   const [showDetail, setShowDetail] = React.useState(false);
   const [query, setQuery] = React.useState('');
@@ -350,6 +429,25 @@ function JobsPage({ navigate }) {
   const [arrangement, setArrangement] = React.useState('All Arrangements');
   const [sort, setSort] = React.useState('Most Recent');
   const [page, setPage] = React.useState(1);
+
+  // Fetch real jobs from the public API; keep the sample list as a fallback
+  // (e.g. before the public all-jobs API change is deployed, or if offline).
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`${API_BASE}/jobs/public?page=1&limit=50`, { headers: { Accept: 'application/json' } });
+        if (!res.ok) return;
+        const data = await res.json();
+        const items = Array.isArray(data && data.items) ? data.items : (Array.isArray(data) ? data : []);
+        if (cancelled || items.length === 0) return;
+        const mapped = items.map(mapApiJob);
+        setJobs(mapped);
+        setActiveId(mapped[0].id);
+      } catch (e) { /* keep sample fallback */ }
+    })();
+    return () => { cancelled = true; };
+  }, []);
 
   const catMatch = (job) => {
     if (category === 'All Categories') return true;
@@ -366,10 +464,10 @@ function JobsPage({ navigate }) {
   };
 
   const filtered = React.useMemo(() => {
-    let list = JOBS.filter(j => {
+    let list = jobs.filter(j => {
       const q = search.trim().toLowerCase();
       const qMatch = !q || j.title.toLowerCase().includes(q) || j.company.toLowerCase().includes(q) || j.loc.toLowerCase().includes(q);
-      const cMatch = !country || COUNTRY_OF[j.loc] === country;
+      const cMatch = !country || (j.country || COUNTRY_OF[j.loc]) === country;
       const tMatch = workType === 'All Types' || j.type === workType;
       const aMatch = arrangement === 'All Arrangements' || j.arrangement === arrangement;
       return qMatch && cMatch && tMatch && aMatch && catMatch(j);
@@ -377,7 +475,7 @@ function JobsPage({ navigate }) {
     if (sort === 'Title A-Z') list = [...list].sort((a, b) => a.title.localeCompare(b.title));
     else if (sort === 'Oldest') list = [...list].reverse();
     return list;
-  }, [search, country, category, workType, arrangement, sort]);
+  }, [jobs, search, country, category, workType, arrangement, sort]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const curPage = Math.min(page, totalPages);
@@ -389,7 +487,7 @@ function JobsPage({ navigate }) {
   }, [filtered, activeId]);
   React.useEffect(() => { setPage(1); }, [search, country, category, workType, arrangement, sort]);
 
-  const activeJob = JOBS.find(j => j.id === activeId) || filtered[0] || JOBS[0];
+  const activeJob = jobs.find(j => j.id === activeId) || filtered[0] || jobs[0];
   const runSearch = () => setSearch(query);
 
   return (
