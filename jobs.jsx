@@ -60,7 +60,7 @@ const JOBS = [
       'Mentor and build a high-performing brigade of chefs.',
     ],
     skills_req: [
-      'Culinary diploma from a recognised institution.',
+      'Culinary diploma from a recognized institution.',
       'Minimum 8 years experience, 3 as Executive/Head Chef in a 5-star property.',
       'Deep knowledge of HACCP and food safety.',
       'Proven menu engineering and cost-control skills.',
@@ -82,7 +82,7 @@ const JOBS = [
     skills_req: [
       'Vocational certificate in Hospitality or related field.',
       'At least 2 years housekeeping experience in a hotel.',
-      'Attention to detail and strong organisational skills.',
+      'Attention to detail and strong organizational skills.',
       'Working English; Thai language required.',
     ],
     rtw: ['Thailand - Thai Citizen', 'Thailand - Valid Work Permit holder'],

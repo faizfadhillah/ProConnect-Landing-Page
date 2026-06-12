@@ -168,7 +168,7 @@ function MultiRoleSidebar({ active, onNav, account, switcher, onUpgrade }) {
 
         })}
 
-        {/* Trial — sits directly below the menu */}
+        {/* Trial: sits directly below the menu */}
         <div style={{ margin: '16px 16px 0', background: PC.lightBlue, borderRadius: 12, padding: '16px', textAlign: 'center' }} data-comment-anchor="824929fc25-div-173-7">
           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" style={{ margin: '0 auto 8px', display: 'block' }}><path d="M13 4l9 16H4z" stroke={PC.blue} strokeWidth="1.6" strokeLinejoin="round" /><path d="M13 11v4M13 17.5v.5" stroke={PC.blue} strokeWidth="1.7" strokeLinecap="round" /></svg>
           <div style={{ fontSize: 14, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat' }}>You're on a free trial</div>

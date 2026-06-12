@@ -83,10 +83,10 @@ function HPHero({ navigate }) {
             <span style={{ fontSize: 14, fontWeight: 600, color: PC.blue, fontFamily: 'Montserrat' }}>Work Beyond Borders</span>
           </div>
           <h1 style={{ fontSize: mobile ? 34 : 50, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', lineHeight: 1.12, margin: '0 0 18px', letterSpacing: '-0.5px' }}>
-            Access the Best Jobs within the Hospitality and Tourism Industry with <span style={{ color: PC.blue }}>ProConnect</span>
+            The Hospitality and Tourism Hiring Platform for <span style={{ color: PC.blue }}>ASEAN</span>
           </h1>
           <p style={{ fontSize: 16, fontWeight: 500, color: PC.gray, fontFamily: 'Montserrat', lineHeight: 1.7, margin: '0 0 24px', maxWidth: 500 }}>
-            AI-powered matching, built-in ATS, and ASEAN-MRA-TP verified credentials. The only hiring platform built specifically for hospitality & tourism across Southeast Asia.
+            Hire verified talent with a built-in ATS and AI matching, or find your next role with a Skill Passport recognized in all 10 ASEAN countries. Free for job seekers.
           </p>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 26, flexWrap: 'wrap' }}>
             <span style={{ fontSize: 14, fontWeight: 600, color: PC.dark, fontFamily: 'Montserrat' }}>Trusted by:</span>
@@ -292,7 +292,7 @@ function HPStakeholders({ navigate }) {
   const cards = [
   { title: 'For Job Seekers', desc: 'Hospitality professionals at every level. Build a verified Skill Passport that travels with you across all 10 ASEAN countries.', tab: 'jobseekers', bg: PC.orange,
     icon: <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="4" y="8" width="18" height="13" rx="2" stroke="#fff" strokeWidth="2" /><path d="M9 8V6a2 2 0 012-2h4a2 2 0 012 2v2" stroke="#fff" strokeWidth="2" /></svg> },
-  { title: 'For Schools', desc: 'Hospitality schools and training centres. Join free as a verification partner. Verify your graduates and connect them with employers across ASEAN.', tab: 'schools', bg: PC.green,
+  { title: 'For Schools', desc: 'Hospitality schools and training centers. Join free as a verification partner. Verify your graduates and connect them with employers across ASEAN.', tab: 'schools', bg: PC.green,
     icon: <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M13 5l10 4-10 4L3 9z" stroke="#fff" strokeWidth="2" strokeLinejoin="round" /><path d="M7 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" stroke="#fff" strokeWidth="2" /></svg> },
   { title: 'For Employers', desc: 'Replace expensive agents with verified, skill-matched candidates at a fraction of the cost.', tab: 'employers', bg: PC.blue,
     icon: <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><rect x="4" y="5" width="18" height="16" rx="2" stroke="#fff" strokeWidth="2" /><circle cx="13" cy="11" r="2.4" stroke="#fff" strokeWidth="2" /><path d="M8.5 18c0-2 2-3 4.5-3s4.5 1 4.5 3" stroke="#fff" strokeWidth="2" /></svg> }];
@@ -359,7 +359,7 @@ function HPCTA({ navigate }) {
         <div style={{ background: PC.blue, borderRadius: 22, padding: mobile ? '40px 28px' : '52px 56px', display: 'flex', alignItems: 'center', gap: 32, position: 'relative', overflow: 'hidden' }}>
           <div style={{ flex: 1 }}>
             <h2 style={{ fontSize: mobile ? 28 : 38, fontWeight: 800, color: '#fff', fontFamily: 'Montserrat', margin: '0 0 14px', lineHeight: 1.2 }}>Ready to Transform Your Hospitality Hiring?</h2>
-            <p style={{ fontSize: 16, fontWeight: 500, color: 'rgba(255,255,255,0.85)', fontFamily: 'Montserrat', margin: '0 0 28px', maxWidth: 460 }}>Join hundreds of employers and schools across ASEAN who are hiring smarter, faster, and 95% cheaper.</p>
+            <p style={{ fontSize: 16, fontWeight: 500, color: 'rgba(255,255,255,0.85)', fontFamily: 'Montserrat', margin: '0 0 28px', maxWidth: 460 }}>Join hundreds of employers and schools across ASEAN hiring smarter and faster with verified talent. No credit card required to start.</p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <PCButton variant="secondary" size="xl" onClick={() => navigate('contact')} style={{ background: 'transparent', color: '#fff', borderColor: 'rgba(255,255,255,0.7)' }}>Contact Us</PCButton>
               <PCButton variant="light" size="xl" onClick={() => navigate('jobs')} style={{ background: '#fff', color: PC.blue, border: 'none' }}>Start Free Trial</PCButton>

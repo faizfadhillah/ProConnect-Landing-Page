@@ -194,7 +194,7 @@ function SolSchools({ navigate }) {
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: 44, alignItems: 'center' }}>
           <div>
             <h1 style={{ fontSize: mobile ? 32 : 44, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.15 }}>Become a Verification Partner. Get Your Graduates Hired Across ASEAN.</h1>
-            <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Join ProConnect's education partner program, free for hospitality schools and training centres. Verify your students' skills, give them a trusted Skill Passport, and connect them directly with employers in all 10 ASEAN countries. No subscription. No agent fees.</p>
+            <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Join ProConnect's education partner program, free for hospitality schools and training centers. Verify your students' skills, give them a trusted Skill Passport, and connect them directly with employers in all 10 ASEAN countries. No subscription. No agent fees.</p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
               <PCButton size="xl" onClick={() => navigate('contact')} style={{ background: PC.green, color: '#fff', border: 'none' }}>Become a Partner</PCButton>
             </div>

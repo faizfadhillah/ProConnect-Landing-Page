@@ -37,7 +37,7 @@ function FeaturesPage({ navigate }) {
 All the Tools You Need,<br />Without the Clutter.
           </h1>
           <p style={{ fontSize: 16, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>
-            ProConnect combines an ATS, job board, AI matching, and credential verification in one hospitality-focused platform.
+            ProConnect combines an ATS, job board, AI matching, and credential verification in one hospitality platform, so your team hires faster without paying for separate tools.
           </p>
           <PCButton variant="primary" size="xl" onClick={() => navigate('contact')}>Request Demo</PCButton>
         </div>
