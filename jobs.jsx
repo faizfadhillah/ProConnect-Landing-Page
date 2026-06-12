@@ -399,10 +399,6 @@ function JobsPage({ navigate }) {
       {/* Search header */}
       <div style={{ background: PC.navy, padding: mobile ? '24px 0' : '28px 0' }}>
         <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ marginBottom: mobile ? 18 : 22 }}>
-            <h1 style={{ fontSize: mobile ? 24 : 32, fontWeight: 800, color: '#fff', fontFamily: 'Montserrat', margin: '0 0 6px', lineHeight: 1.2 }}>Find Verified Hospitality Jobs Across ASEAN</h1>
-            <p style={{ fontSize: mobile ? 13 : 15, color: 'rgba(255,255,255,0.8)', fontFamily: 'Montserrat', margin: 0, lineHeight: 1.6 }}>Free for job seekers. Get matched to roles in all 10 ASEAN countries with your MRA-TP verified Skill Passport.</p>
-          </div>
           <div style={{ display: 'flex', flexDirection: mobile ? 'column' : 'row', gap: 16, alignItems: mobile ? 'stretch' : 'flex-end' }}>
             <div style={{ flex: 1 }}>
               <label style={{ display: 'block', fontSize: 15, fontWeight: 700, color: '#fff', fontFamily: 'Montserrat', marginBottom: 10 }}>Search jobs</label>
