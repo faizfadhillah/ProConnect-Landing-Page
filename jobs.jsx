@@ -252,6 +252,21 @@ function resolveLogo(url) {
   if (!url) return '';
   return /^https?:\/\//.test(url) ? url : API_BASE + '/' + url.replace(/^\//, '');
 }
+// Job descriptions are stored as Quill Delta (JSON). Convert to plain text.
+function quillToText(raw) {
+  if (raw == null) return '';
+  let s = typeof raw === 'string' ? raw.trim() : String(raw);
+  if (s && (s[0] === '[' || s[0] === '{')) {
+    try {
+      const o = JSON.parse(s);
+      const ops = Array.isArray(o) ? o : (o && o.ops);
+      if (Array.isArray(ops)) {
+        return ops.map(op => (op && typeof op.insert === 'string') ? op.insert : '').join('').trim();
+      }
+    } catch (e) { /* not JSON, fall through */ }
+  }
+  return s;
+}
 function initialsOf(name) {
   const w = (name || '?').trim().split(/\s+/);
   return ((w[0] && w[0][0] || '') + (w[1] && w[1][0] || '')).toUpperCase() || '?';
@@ -274,7 +289,7 @@ function mapApiJob(j) {
     arrangement: ARR_MAP[(arr[0] || '').toLowerCase()] || (arr[0] ? cap(arr[0]) : ''),
     type: TYPE_MAP[(emp[0] || '').toLowerCase()] || (emp[0] ? cap(emp[0]) : ''),
     verified: false,
-    description: j.description || '',
+    description: quillToText(j.description),
     location: j.location || '',
     slug: j.slug || null,
   };
@@ -436,7 +451,7 @@ function JobsPage({ navigate }) {
     let cancelled = false;
     (async () => {
       try {
-        const res = await fetch(`${API_BASE}/jobs/public?page=1&limit=50`, { headers: { Accept: 'application/json' } });
+        const res = await fetch(`${API_BASE}/jobs/public/all?page=1&limit=50`, { headers: { Accept: 'application/json' } });
         if (!res.ok) return;
         const data = await res.json();
         const items = Array.isArray(data && data.items) ? data.items : (Array.isArray(data) ? data : []);
