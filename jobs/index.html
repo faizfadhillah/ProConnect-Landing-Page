@@ -6,9 +6,11 @@
   <!-- Prototype: keep this site out of search engines. -->
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
-  <!-- All relative URLs (scripts, assets) resolve against this base, so the same
-       index.html works when served from any slug directory (e.g. /pricing/). -->
-  <base href="/proconnect-landing-page/" />
+  <!-- Resolve the project base path from the URL's first segment, so the site
+       works under any GitHub Pages repo name or capitalization, and from any
+       slug directory (e.g. /pricing/). All relative script/asset URLs resolve
+       against this base. -->
+  <script>(function(){var seg=location.pathname.split('/').filter(Boolean)[0]||'';document.write('<base href="/'+(seg?seg+'/':'')+'">');})();</script>
   <title>ProConnect: ASEAN Hospitality Hiring Platform</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
@@ -61,7 +63,12 @@
 
     // ---- Routing config -------------------------------------------------
     // Base path the site is served from (the GitHub Pages project subpath).
-    const BASE = '/proconnect-landing-page/';
+    // Derived from the URL's first segment so it matches the repo name/case
+    // automatically (keeps working if the repository is renamed).
+    const BASE = (function () {
+      var seg = location.pathname.split('/').filter(Boolean)[0] || '';
+      return seg ? '/' + seg + '/' : '/';
+    })();
 
     // Map each internal page key to a URL slug ('' = the site root).
     const PAGE_TO_SLUG = {

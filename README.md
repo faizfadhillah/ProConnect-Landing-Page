@@ -2,7 +2,7 @@
 
 Marketing site and interactive prototype for **ProConnect**, an ASEAN-focused hospitality & tourism hiring platform connecting employers with candidates across the region.
 
-🔗 **Live site:** https://faizfadhillah.github.io/proconnect-landing-page/
+🔗 **Live site:** https://faizfadhillah.github.io/ProConnect-Landing-Page/
 
 This is a self-contained, client-side prototype exported from Claude Design. It renders a multi-page React experience (homepage, features, pricing, registration flows, and employer/candidate dashboards) with no build step — React, ReactDOM, and Babel are loaded from a CDN and the `.jsx` files are transpiled in the browser.
 
@@ -57,7 +57,7 @@ Then open http://localhost:8000.
 
 Each page has its own URL. The `App` router in `index.html` maps a page to a path slug, updates the address bar via the History API (`pushState`/`popstate`), and sets a per-page `<title>`. Every slug also exists as a real directory with its own `index.html`, so deep links and refreshes return a native `200` on GitHub Pages (a `404.html` SPA fallback covers anything else). The floating quick-nav (bottom right) jumps between the main sections.
 
-Base URL: `https://faizfadhillah.github.io/proconnect-landing-page/`
+Base URL: `https://faizfadhillah.github.io/ProConnect-Landing-Page/`
 
 | Page key | URL (relative to base) | Component | Description |
 |----------|------------------------|-----------|-------------|

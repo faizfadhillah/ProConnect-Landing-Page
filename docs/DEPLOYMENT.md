@@ -4,7 +4,7 @@ The site is hosted on **GitHub Pages** directly from the repository — no build
 
 ## Live URL
 
-https://faizfadhillah.github.io/proconnect-landing-page/
+https://faizfadhillah.github.io/ProConnect-Landing-Page/
 
 ## How it's configured
 
