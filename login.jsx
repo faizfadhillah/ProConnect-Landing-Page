@@ -1,6 +1,30 @@
 
 // ProConnect — Auth pages (Sign In, Sign Up, OTP, Forgot Password)
 
+// ── Auth background: Southeast Asian city skylines ────────────────────────
+// One skyline is chosen when the auth flow is entered and held fixed while the
+// user moves between sign in, sign up, and forgot password. A new one is picked
+// only when entering the auth flow again from another page (see index.html
+// navigate()). Image credits: assets/skylines/CREDITS.md
+const AUTH_SKYLINES = [
+  'assets/skylines/singapore.jpg',
+  'assets/skylines/kuala-lumpur.jpg',
+  'assets/skylines/bangkok.jpg',
+  'assets/skylines/jakarta.jpg',
+  'assets/skylines/manila.jpg',
+  'assets/skylines/ho-chi-minh-city.jpg',
+  'assets/skylines/hanoi.jpg',
+];
+let _authBg = AUTH_SKYLINES[Math.floor(Math.random() * AUTH_SKYLINES.length)];
+function rotateAuthBg() {
+  if (AUTH_SKYLINES.length < 2) { _authBg = AUTH_SKYLINES[0]; return; }
+  var next = _authBg;
+  while (next === _authBg) next = AUTH_SKYLINES[Math.floor(Math.random() * AUTH_SKYLINES.length)];
+  _authBg = next;
+}
+function getAuthBg() { return _authBg; }
+if (typeof window !== 'undefined') { window.__rotateAuthBg = rotateAuthBg; }
+
 // ── Shared chrome ────────────────────────────────────────────────────────
 function AuthShell({ children, align = 'right', width = 440, solid = false, onBack }) {
   const mobile = useMobile(820);
@@ -8,7 +32,7 @@ function AuthShell({ children, align = 'right', width = 440, solid = false, onBa
   return (
     <div style={{
       minHeight: '100vh', maxHeight: '100vh', overflowY: 'auto', fontFamily: 'Montserrat, sans-serif',
-      backgroundImage: "url('assets/login_bg2.jpg')", backgroundSize: 'cover',
+      backgroundImage: `url('${getAuthBg()}')`, backgroundSize: 'cover',
       backgroundPosition: 'center 32%', backgroundAttachment: 'fixed',
       display: 'flex',
       justifyContent: mobile ? 'center' : (centered ? 'center' : 'flex-end'),

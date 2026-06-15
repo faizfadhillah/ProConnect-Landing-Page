@@ -115,6 +115,11 @@
       candidate:            'Candidate Dashboard | ProConnect',
     };
 
+    // Auth-flow page keys. Used to rotate the auth background only when ENTERING
+    // the flow from another page, so moving between sign in / sign up / forgot
+    // password / registration keeps the same skyline image.
+    const AUTH_PAGES = { login: 1, register: 1, forgot: 1, 'choose-role': 1, 'register-employer': 1, 'register-candidate': 1 };
+
     // Resolve the current page key from the browser's address bar.
     function pageFromLocation() {
       let path = window.location.pathname;
@@ -150,6 +155,8 @@
       }, []);
 
       const navigate = (p) => {
+        // Pick a fresh skyline only when entering the auth flow from outside it.
+        if (AUTH_PAGES[p] && !AUTH_PAGES[page] && window.__rotateAuthBg) window.__rotateAuthBg();
         const url = urlForPage(p);
         if (window.location.pathname !== url) {
           window.history.pushState({ page: p }, '', url);
