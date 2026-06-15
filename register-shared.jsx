@@ -235,32 +235,75 @@ function RegCard({ title, subtitle, action, children }) {
 // ── Choose Your Role ─────────────────────────────────────────────────────
 function ChooseRolePage({ navigate }) {
   const mobile = useMobile(820);
+  const go = (p) => { (navigate || (() => {}))(p); window.scrollTo(0, 0); };
+
+  // Dark "glass" role card, matching the Sign In / Sign Up auth theme.
   const card = (img, title, desc, cta, onClick, badge) => (
-    <div style={{ background: '#fff', borderRadius: 16, overflow: 'hidden', boxShadow: '0 6px 24px rgba(4,38,72,0.07)', border: `1px solid ${PC.border}`, display: 'flex', flexDirection: 'column' }}>
+    <div style={{
+      background: 'rgba(15,23,38,0.55)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)',
+      borderRadius: 22, overflow: 'hidden', border: '1px solid rgba(255,255,255,0.12)',
+      boxShadow: '0 24px 70px rgba(0,0,0,0.4)', display: 'flex', flexDirection: 'column',
+    }}>
       <div style={{ position: 'relative' }}>
-        <img src={img} alt={title} style={{ width: '100%', height: 200, objectFit: 'cover', display: 'block' }} />
-        {badge && <span style={{ position: 'absolute', bottom: 14, right: 14, background: '#FFE7C2', color: '#C77A14', fontSize: 12.5, fontWeight: 600, fontFamily: 'Montserrat', padding: '6px 14px', borderRadius: 20 }}>{badge}</span>}
+        <img src={img} alt={title} style={{ width: '100%', height: 188, objectFit: 'cover', display: 'block' }} />
+        {badge && <span style={{ position: 'absolute', bottom: 14, right: 14, background: 'rgba(255,119,17,0.95)', color: '#fff', fontSize: 12, fontWeight: 700, fontFamily: 'Montserrat', padding: '6px 14px', borderRadius: 20 }}>{badge}</span>}
       </div>
-      <div style={{ padding: '28px 30px 32px', textAlign: 'center', flex: 1, display: 'flex', flexDirection: 'column' }}>
-        <h3 style={{ fontSize: 24, fontWeight: 800, color: REG.text, fontFamily: 'Montserrat', margin: '0 0 12px' }}>{title}</h3>
-        <p style={{ fontSize: 15, color: '#6B7480', fontFamily: 'Montserrat', lineHeight: 1.6, margin: '0 0 26px', flex: 1 }}>{desc}</p>
-        <button onClick={onClick} style={{ border: `1.5px solid ${PC.blue}`, background: '#fff', color: PC.blue, fontWeight: 700, fontFamily: 'Montserrat', fontSize: 15, padding: '14px 20px', borderRadius: 8, cursor: 'pointer', transition: 'all 0.15s' }}
-          onMouseEnter={e => { e.currentTarget.style.background = PC.blue; e.currentTarget.style.color = '#fff'; }}
-          onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = PC.blue; }}>{cta}</button>
+      <div style={{ padding: '26px 28px 30px', textAlign: 'center', flex: 1, display: 'flex', flexDirection: 'column' }}>
+        <h3 style={{ fontSize: 22, fontWeight: 800, color: '#fff', fontFamily: 'Montserrat', margin: '0 0 10px' }}>{title}</h3>
+        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.78)', fontFamily: 'Montserrat', lineHeight: 1.6, margin: '0 0 24px', flex: 1 }}>{desc}</p>
+        <button onClick={onClick} style={{
+          width: '100%', height: 50, borderRadius: 8, border: 'none', background: PC.blue, color: '#fff',
+          fontSize: 15, fontWeight: 700, letterSpacing: '0.5px', fontFamily: 'Montserrat', cursor: 'pointer', transition: 'background 0.15s',
+        }}
+          onMouseEnter={e => e.currentTarget.style.background = PC.blueDark}
+          onMouseLeave={e => e.currentTarget.style.background = PC.blue}>{cta}</button>
       </div>
     </div>
   );
+
   return (
-    <div style={{ minHeight: '100vh', background: PC.bg, fontFamily: 'Montserrat, sans-serif', display: 'flex', flexDirection: 'column' }}>
-      <RegTopNav />
-      <div style={{ flex: 1, padding: mobile ? '40px 20px' : '60px 24px' }}>
-        <div style={{ textAlign: 'center', marginBottom: mobile ? 36 : 48 }}>
-          <h1 style={{ fontSize: mobile ? 34 : 46, fontWeight: 800, color: REG.text, fontFamily: 'Montserrat', margin: '0 0 10px' }}>Choose Your Role</h1>
-          <p style={{ fontSize: 16, color: '#6B7480', fontFamily: 'Montserrat', margin: 0 }}>Please select one from below:</p>
+    <div style={{
+      minHeight: '100vh', fontFamily: 'Montserrat, sans-serif',
+      backgroundImage: "url('assets/login_bg2.jpg')", backgroundSize: 'cover',
+      backgroundPosition: 'center 32%', backgroundAttachment: 'fixed',
+      display: 'flex', flexDirection: 'column',
+    }}>
+      {/* Dark scrim so the glass cards and white text stay legible over the photo. */}
+      <div style={{
+        flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center',
+        background: 'rgba(7,11,18,0.55)', padding: mobile ? '36px 20px' : '48px 24px', position: 'relative',
+      }}>
+        {/* Back to Sign In */}
+        <button onClick={() => (navigate.back ? navigate.back('login') : go('login'))} aria-label="Go back" style={{
+          position: 'absolute', top: mobile ? 18 : 26, left: mobile ? 18 : 30,
+          display: 'inline-flex', alignItems: 'center', gap: 7, background: 'none', border: 'none',
+          color: 'rgba(255,255,255,0.85)', fontFamily: 'Montserrat', fontSize: 13.5, fontWeight: 600, cursor: 'pointer', padding: 0,
+        }}
+          onMouseEnter={e => e.currentTarget.style.color = '#fff'} onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.85)'}>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11 4l-5 5 5 5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+          Back
+        </button>
+
+        {/* Logo */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: mobile ? 24 : 30 }}>
+          <img src="proconnect-logo.svg" alt="ProConnect" style={{ width: '100%', maxWidth: 200, height: 'auto', filter: 'brightness(0) invert(1)' }} />
         </div>
-        <div style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: 28 }}>
-          {card('assets/role_candidate.png', 'Candidate', 'Fresh graduate, mid-level employee, or an expert level currently looking for a new opportunity.', 'Continue as Candidate', () => navigate('register-candidate'))}
-          {card('assets/role_employer.png', 'Employer', 'HR Department or Company owner who seeks professional expertise to expand their business.', 'Continue as Employer', () => navigate('register-employer'), '*subscription needed')}
+
+        {/* Heading */}
+        <div style={{ textAlign: 'center', marginBottom: mobile ? 30 : 40 }}>
+          <h1 style={{ fontSize: mobile ? 30 : 40, fontWeight: 800, color: '#fff', fontFamily: 'Montserrat', margin: '0 0 10px' }}>Choose Your Role</h1>
+          <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.78)', fontFamily: 'Montserrat', margin: 0 }}>Please select one from below:</p>
+        </div>
+
+        {/* Role cards */}
+        <div style={{ maxWidth: 880, width: '100%', margin: '0 auto', display: 'grid', gridTemplateColumns: mobile ? '1fr' : '1fr 1fr', gap: 24 }}>
+          {card('assets/role_candidate.png', 'Candidate', 'Fresh graduate, mid-level employee, or an expert level currently looking for a new opportunity.', 'Continue as Candidate', () => go('register-candidate'))}
+          {card('assets/role_employer.png', 'Employer', 'HR Department or Company owner who seeks professional expertise to expand their business.', 'Continue as Employer', () => go('register-employer'), '*subscription needed')}
+        </div>
+
+        {/* Footer link back to Sign In */}
+        <div style={{ textAlign: 'center', marginTop: mobile ? 26 : 32 }}>
+          <a href="#" onClick={e => { e.preventDefault(); go('login'); }} style={{ fontSize: 14, fontWeight: 700, color: '#7FB3FF', fontFamily: 'Montserrat', textDecoration: 'none' }}>Already have an account? Sign In</a>
         </div>
       </div>
     </div>
