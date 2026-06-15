@@ -63,7 +63,11 @@ function PCButton({ children, variant = 'primary', size = 'md', onClick, fullWid
         display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 7,
         transition: 'all 0.15s', opacity: disabled ? 0.55 : 1,
         ...(fullWidth ? { width: '100%' } : {}),
-        ...s, backgroundColor: v.bg, color: v.color, border: v.border,
+        // Use the `background` shorthand (not `backgroundColor`) so a custom
+        // `background` from `style` overrides cleanly. Mixing the longhand here
+        // with a shorthand in `xtra` makes React's style diffing leave a stale
+        // hover color stuck on the button (it never reverts).
+        ...s, background: v.bg, color: v.color, border: v.border,
         ...xtra
       }}>
       {children}</button>);
