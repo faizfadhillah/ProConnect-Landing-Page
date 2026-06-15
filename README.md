@@ -78,7 +78,7 @@ Base URL: `https://faizfadhillah.github.io/ProConnect-Landing-Page/`
 | `privacy` | `/privacy/` | PrivacyPage | Privacy Policy |
 | `contact` | `/contact/` | ContactPage | Contact |
 
-> **Note:** routing uses a `<base href="/proconnect-landing-page/">` tag so the same `index.html` resolves its scripts and assets correctly from any slug directory. If the repo is renamed or served from a different path, update both `BASE` (in `index.html`) and the `<base>` tag.
+> **Note:** the base path is derived automatically from the URL's first path segment. An inline script writes the `<base>` tag and the router's `BASE` constant is computed the same way, so the site keeps working under any GitHub Pages repo name or capitalization, and from any slug directory. No manual update is needed if the repository is renamed.
 
 ## Brand
 
