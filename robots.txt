@@ -1,0 +1,7 @@
+# This site is an internal prototype and should not appear in search results.
+# Every page also sends <meta name="robots" content="noindex, nofollow">.
+# Crawling is intentionally allowed so search engines can read that noindex
+# directive and drop the pages from their index. Do NOT add "Disallow: /" here,
+# or crawlers won't see the noindex and the bare URL may still be listed.
+User-agent: *
+Allow: /
