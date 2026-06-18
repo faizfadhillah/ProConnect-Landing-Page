@@ -14,7 +14,7 @@ function AboutPage({ navigate }) {
     { img: 'about_p4', name: '85K+ SMEs', desc: 'Hospitality businesses across the ASEAN market' },
   ];
   const principles = [
-    { tag: 'FIRST PRINCIPLES', title: 'No Problem is Too Hard', desc: 'We take on tough challenges and solve them with clear, logical thinking.' },
+    { tag: 'PROBLEM SOLVING', title: 'No Problem is Too Hard', desc: 'We take on tough challenges and solve them with clear, logical thinking.' },
     { tag: 'FOCUS', title: 'People First', desc: 'We focus on what matters most and make intentional decisions to move forward.' },
     { tag: 'COMMITMENT', title: 'Design with Purpose', desc: 'We stay committed to our mission and build solutions that create real impact.' },
     { tag: 'FEEDBACK', title: 'Fast Frequent Feedback', desc: 'We share honest feedback openly to learn faster and improve together.' },
@@ -50,7 +50,7 @@ function AboutPage({ navigate }) {
                 </p>
               </div>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: mobile ? 'repeat(2,1fr)' : 'repeat(6,1fr)', gap: 12 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: mobile ? 'repeat(2,1fr)' : 'repeat(5,1fr)', gap: 12 }}>
               {countries.map(([flag, name]) => (
                 <div key={name} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 14px', borderRadius: 10, background: '#fff', border: `1px solid ${PC.border}` }}>
                   <span style={{ fontSize: 20 }}>{flag}</span>

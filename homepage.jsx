@@ -80,10 +80,10 @@ function HPHero({ navigate }) {
       <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 24px', display: 'flex', flexDirection: mobile ? 'column' : 'row', alignItems: 'center', gap: mobile ? 36 : 56 }}>
         <div style={{ flex: mobile ? 'none' : '0 0 540px', width: '100%' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.lightBlue, padding: '7px 16px', borderRadius: 24, marginBottom: 22 }}>
-            <span style={{ fontSize: 14, fontWeight: 600, color: PC.blue, fontFamily: 'Montserrat' }}>Work Beyond Borders</span>
+            <span style={{ fontSize: 14, fontWeight: 600, color: PC.blue, fontFamily: 'Montserrat' }}>Work and Hire Beyond Borders</span>
           </div>
           <h1 style={{ fontSize: mobile ? 34 : 50, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', lineHeight: 1.12, margin: '0 0 18px', letterSpacing: '-0.5px' }}>
-            The Hospitality and Tourism Hiring Platform for <span style={{ color: PC.blue }}>ASEAN</span>
+            The Hospitality and Tourism Job Platform for <span style={{ color: PC.blue }}>ASEAN</span>
           </h1>
           <p style={{ fontSize: 16, fontWeight: 500, color: PC.gray, fontFamily: 'Montserrat', lineHeight: 1.7, margin: '0 0 24px', maxWidth: 500 }}>
             Hire verified talent with a built-in ATS and AI matching, or find your next role with a Skill Passport recognized in all 10 ASEAN countries. Free for job seekers.
@@ -181,7 +181,7 @@ function HPFeatureCards({ navigate }) {
 // ── Stats ──────────────────────────────────────────────────────────────────
 function HPStats() {
   const mobile = useMobile(820);
-  const stats = [['10', 'ASEAN Countries'], ['250+', 'Partner Schools'], ['95%', 'Cost Savings vs Agents'], ['15M+', 'Hospitality Workers in ASEAN']];
+  const stats = [['10', 'ASEAN Countries'], ['250+', 'Partner Schools'], ['10K+', 'Verified Candidates'], ['15M+', 'Hospitality Workers in ASEAN']];
   return (
     <section style={{ background: PC.blue, padding: mobile ? '40px 0' : '52px 0' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', display: 'grid', gridTemplateColumns: mobile ? '1fr 1fr' : 'repeat(4,1fr)', gap: 28 }}>
@@ -239,10 +239,10 @@ function HPRecruitment() {
   return (
     <section style={{ background: '#fff', padding: mobile ? '48px 0' : '72px 0' }}>
       <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 24px' }}>
-        <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 36px', textAlign: 'center' }}>Pro Recruitment with ProConnect</h2>
+        <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 36px', textAlign: 'center' }}>Recruit Smarter with ProConnect</h2>
         <div style={{ position: 'relative', borderRadius: 18, overflow: 'hidden', marginBottom: 36, aspectRatio: '1200/500', background: '#0B0B0B' }} data-comment-anchor="db0925d18d-div-241-11">
           {playing ?
-          <iframe src={`https://drive.google.com/file/d/${DRIVE_ID}/preview`} allow="autoplay; fullscreen" allowFullScreen title="Pro Recruitment with ProConnect"
+          <iframe src={`https://drive.google.com/file/d/${DRIVE_ID}/preview`} allow="autoplay; fullscreen" allowFullScreen title="Recruit Smarter with ProConnect"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }} /> :
 
           <button onClick={() => setPlaying(true)} aria-label="Play video" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', padding: 0, border: 'none', cursor: 'pointer', background: 'none' }}>

@@ -164,7 +164,7 @@ function PricingPage({ navigate }) {
           <h1 style={{ fontSize: mobile ? 32 : 46, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 16px' }}>Simple, Seat-Based Pricing.</h1>
           <p style={{ fontSize: 16, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 28px', lineHeight: 1.7 }}>Only hiring managers pay. Regular employees get free profiles, and job seekers and education partners always join free. Job postings require a Department Head or Full Recruiter Seat.</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <PCButton variant="secondary" size="xl" onClick={() => {const el = document.getElementById('calc');if (el) window.scrollTo({ top: el.offsetTop - 40, behavior: 'smooth' });}}>Calculate your cost</PCButton>
+            <PCButton variant="secondary" size="xl" onClick={() => navigate('contact')}>Contact Sales</PCButton>
             <PCButton variant="primary" size="xl" onClick={() => navigate('contact')}>Request Demo</PCButton>
           </div>
         </div>
@@ -206,7 +206,6 @@ function PricingPage({ navigate }) {
         </div>
       </section>
 
-      <div id="calc"><CostCalculator /></div>
       <FAQ />
 
       {/* CTA */}

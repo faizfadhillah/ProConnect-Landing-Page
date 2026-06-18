@@ -55,7 +55,7 @@ function SolEmployers({ navigate }) {
     { icon: stepIcon('4'), title: 'Hire', desc: 'Manage interviews, offers, and onboarding from one platform.' },
   ];
   const works = [
-    { title: '1 Post Jobs in Minutes', desc: 'Create and publish job openings across your organization with no posting limits.' },
+    { title: 'Post Jobs in Minutes', desc: 'Create and publish job openings across your organization with no posting limits.' },
     { title: 'Get Matched with Verified Talent', desc: 'Receive candidates with verified skills and credentials from trusted institutions.' },
     { title: 'Manage Hiring in One Platform', desc: 'Track applicants, schedule interviews, and collaborate with your team using built-in ATS tools.' },
     { title: 'Hire Faster, with Confidence', desc: 'Reduce time-to-hire and eliminate reliance on costly intermediaries.' },
@@ -133,7 +133,7 @@ function SolEmployers({ navigate }) {
       {/* 4 steps */}
       <section style={{ background: '#fff', padding: mobile ? '48px 0' : '64px 0' }}>
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 40px', textAlign: 'center' }}>Get Hiring in 4 Simple Steps</h2>
+          <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 40px', textAlign: 'center' }}>Hire in 4 Simple Steps</h2>
           <div style={{ display: 'grid', gridTemplateColumns: mobile ? '1fr' : 'repeat(4,1fr)', gap: 18 }}>
             {steps2.map((s, i) => (
               <div key={i} style={{ background: PC.bg, borderRadius: 14, padding: '22px 20px' }}>

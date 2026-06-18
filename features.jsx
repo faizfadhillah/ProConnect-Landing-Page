@@ -17,7 +17,7 @@ function FeaturesPage({ navigate }) {
   const more = [
     { title: 'Resume Parsing', img: 'feat_resume', desc: 'Auto-extract candidate data from any resume. Multi-language support for ASEAN markets.' },
     { title: 'Communication Tools', img: 'feat_comm', desc: 'Message candidates and coordinate interviews inside the platform. Real-time chat, templates, and automated status updates replace scattered email.' },
-    { title: 'Freelancing Module', img: 'feat_freelance', desc: 'Hire on-demand hospitality staff for peak season and events. Post gigs, match nearby verified talent, and rate after each shift. (Coming soon)' },
+    { title: 'Freelancing Module', img: 'feat_freelance', desc: 'Hire on-demand hospitality staff for peak season and events. Post gigs, match nearby verified talent, and rate after each shift.' },
     { title: 'Analytics & Reporting', img: 'feat_analytics', desc: 'Track time-to-hire, source effectiveness, and pipeline health. Export reports for leadership.' },
     { title: 'Employee Directory', img: 'feat_directory', desc: 'Free profiles for all employees. Internal transfers, org charts, and team management at no extra cost.' },
     { title: 'Integrations', img: 'feat_integrations', desc: 'Connect to Canvas, Blackboard, Moodle (education), and major HR systems. API access for enterprise.' },
@@ -27,6 +27,12 @@ function FeaturesPage({ navigate }) {
       <img src={`assets/${img}.png`} alt="" style={{ width: '42%', maxWidth: 170, display: 'block' }} />
     </div>
   );
+  // Features still on the roadmap. Everything else is treated as available today.
+  // TODO: confirm this list against the real product status before a demo push.
+  const SOON = ['Freelancing Module', 'Integrations'];
+  const StatusBadge = ({ title }) => SOON.includes(title)
+    ? <PCTag color="yellow">Coming soon</PCTag>
+    : <PCTag color="green">Available</PCTag>;
 
   return (
     <InnerPage navigate={navigate} activePage="features">
@@ -50,7 +56,10 @@ All the Tools You Need,<br />Without the Clutter.
             const imgFirst = i % 2 === 1;
             const text = (
               <div key="t">
-                <PCTag color={['blue', 'green', 'orange'][i]}>{f.tag}</PCTag>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                  <PCTag color={['blue', 'green', 'orange'][i]}>{f.tag}</PCTag>
+                  <StatusBadge title={f.title} />
+                </div>
                 <h2 style={{ fontSize: mobile ? 24 : 28, fontWeight: 700, fontFamily: 'Montserrat', color: PC.dark, margin: '14px 0 14px', lineHeight: 1.25 }}>{f.title}</h2>
                 <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 22px', lineHeight: 1.7 }}>{f.desc}</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
@@ -80,6 +89,7 @@ All the Tools You Need,<br />Without the Clutter.
           <div style={{ display: 'grid', gridTemplateColumns: mobile ? '1fr' : 'repeat(3,1fr)', gap: 24 }}>
             {more.map(f => (
               <div key={f.title} style={{ background: '#fff', borderRadius: 14, padding: 22, border: `1px solid ${PC.border}` }}>
+                <div style={{ marginBottom: 10 }}><StatusBadge title={f.title} /></div>
                 <h3 style={{ fontSize: 17, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 8px' }}>{f.title}</h3>
                 <p style={{ fontSize: 13.5, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.6 }}>{f.desc}</p>
                 <Illu img={f.img} />
