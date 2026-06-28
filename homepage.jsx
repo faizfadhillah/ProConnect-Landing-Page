@@ -13,6 +13,31 @@ const navStars = (n = 5, size = 16) =>
 
 
 // ── Navigation ─────────────────────────────────────────────────────────────
+// Desktop nav dropdown (hover to open)
+function NavDropdown({ label, items, go, activePage }) {
+  const [open, setOpen] = React.useState(false);
+  const active = items.some((it) => it.page === activePage);
+  return (
+    <div style={{ position: 'relative' }} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+      <span style={{ fontSize: 14, fontWeight: active ? 700 : 500, color: active || open ? PC.blue : PC.dark, fontFamily: 'Montserrat', display: 'flex', alignItems: 'center', gap: 5, cursor: 'pointer' }}>
+        {label}<span style={{ fontSize: 9, opacity: 0.6, transform: open ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s' }}>▼</span>
+      </span>
+      {open &&
+      <div style={{ position: 'absolute', top: '100%', left: 0, paddingTop: 12, zIndex: 200 }}>
+          <div style={{ background: '#fff', border: `1px solid ${PC.border}`, borderRadius: 12, boxShadow: '0 12px 32px rgba(0,0,0,0.14)', overflow: 'hidden', minWidth: 170 }}>
+            {items.map((it) =>
+          <a key={it.label} href="#" onClick={(e) => {e.preventDefault();go(it.page);}}
+          style={{ display: 'block', padding: '12px 18px', fontSize: 14, fontWeight: activePage === it.page ? 700 : 500, color: activePage === it.page ? PC.blue : PC.dark, fontFamily: 'Montserrat', textDecoration: 'none', whiteSpace: 'nowrap' }}
+          onMouseEnter={(e) => e.currentTarget.style.background = PC.bg}
+          onMouseLeave={(e) => e.currentTarget.style.background = '#fff'}>{it.label}</a>
+          )}
+          </div>
+        </div>
+      }
+    </div>);
+
+}
+
 function HPNav({ navigate, activePage = 'home' }) {
   const mobile = useMobile(1000);
   const [open, setOpen] = React.useState(false);
@@ -21,9 +46,7 @@ function HPNav({ navigate, activePage = 'home' }) {
   { label: 'Pricing', page: 'pricing' },
   { label: 'Browse Jobs', page: 'jobs' },
   { label: 'Solution', page: 'solution', caret: true },
-  { label: 'About us', page: 'about' },
-  { label: 'FAQ', page: 'faq' },
-  { label: 'Contact Us', page: 'contact' }];
+  { label: 'Company', dropdown: [{ label: 'About us', page: 'about' }, { label: 'FAQ', page: 'faq' }] }];
 
   const go = (p) => {navigate(p);setOpen(false);window.scrollTo(0, 0);};
   return (
@@ -33,6 +56,7 @@ function HPNav({ navigate, activePage = 'home' }) {
         {!mobile &&
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 26 }}>
             {links.map((l) => {
+            if (l.dropdown) return <NavDropdown key={l.label} label={l.label} items={l.dropdown} go={go} activePage={activePage} />;
             const active = activePage === l.page;
             return (
               <a key={l.label} href="#" onClick={(e) => {e.preventDefault();go(l.page);}}
@@ -63,7 +87,7 @@ function HPNav({ navigate, activePage = 'home' }) {
       </div>
       {mobile && open &&
       <div style={{ borderTop: `1px solid ${PC.border}`, padding: '12px 24px 18px', display: 'flex', flexDirection: 'column', gap: 4 }}>
-          {links.map((l) =>
+          {links.flatMap((l) => l.dropdown ? l.dropdown : [l]).map((l) =>
         <a key={l.label} href="#" onClick={(e) => {e.preventDefault();go(l.page);}}
         style={{ padding: '11px 4px', fontSize: 15, fontWeight: activePage === l.page ? 700 : 500, color: activePage === l.page ? PC.blue : PC.dark, textDecoration: 'none', fontFamily: 'Montserrat', borderBottom: `1px solid ${PC.bg}` }}>{l.label}</a>
         )}
