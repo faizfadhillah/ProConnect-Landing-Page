@@ -414,7 +414,7 @@ function HPFooter({ navigate }) {
   const cols = [
   { head: 'COMPANY', links: [['About Us', 'about'], ['Contact Us', 'contact'], ['Blog', 'contact'], ['Terms of Service', 'tos'], ['Privacy Policy', 'privacy']] },
   { head: 'SOLUTIONS', links: [['For Employers', 'employer'], ['For Schools', 'solution'], ['For Job Seekers', 'jobs']] },
-  { head: 'PLATFORM', links: [['Features', 'features'], ['Pricing', 'pricing'], ['Browse Jobs', 'jobs']] }];
+  { head: 'PLATFORM', links: [['Features', 'features'], ['Pricing', 'pricing'], ['Browse Jobs', 'jobs'], ['FAQ', 'faq']] }];
 
   const social = (p) => <svg width="22" height="22" viewBox="0 0 18 18" fill="none">{p}</svg>;
   return (
