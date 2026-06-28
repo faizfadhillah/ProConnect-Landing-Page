@@ -178,9 +178,9 @@ function SolEmployers({ navigate }) {
 function SolSchools({ navigate }) {
   const mobile = useMobile(820);
   const rows = [
-    ['Cost to join', 'Free', PC.green],
+    ['Cost to join', 'Free', PC.blue],
     ['Time to verify a graduate', '~5 min', PC.dark],
-    ['Boost in employer interest', '3-5x', PC.green],
+    ['Boost in employer interest', '3-5x', PC.blue],
   ];
   const works = [
     { title: 'Join for Free', desc: 'Apply to become a verification partner. No subscription and no setup fees. We onboard your team in days.' },
@@ -196,10 +196,10 @@ function SolSchools({ navigate }) {
             <h1 style={{ fontSize: mobile ? 32 : 44, fontWeight: 800, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.15 }}>Become a Verification Partner. Get Your Graduates Hired Across ASEAN.</h1>
             <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 26px', lineHeight: 1.7 }}>Join ProConnect's education partner program, free for hospitality schools and training centers. Verify your students' skills, give them a trusted Skill Passport, and connect them directly with employers in all 10 ASEAN countries. No subscription. No agent fees.</p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-              <PCButton size="xl" onClick={() => navigate('contact')} style={{ background: PC.green, color: '#fff', border: 'none' }}>Become a Partner</PCButton>
+              <PCButton size="xl" onClick={() => navigate('contact')} style={{ background: PC.blue, color: '#fff', border: 'none' }}>Become a Partner</PCButton>
             </div>
           </div>
-          <div style={{ background: '#E6F6EC', borderRadius: 18, padding: mobile ? 20 : 28 }}>
+          <div style={{ background: PC.lightBlue, borderRadius: 18, padding: mobile ? 20 : 28 }}>
             <div style={{ fontSize: 16, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', textAlign: 'center', marginBottom: 18 }}>Education Partner Program</div>
             {rows.map(([l, v, col]) => (
               <div key={l} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#fff', borderRadius: 10, padding: '14px 16px', marginBottom: 10 }}>
@@ -209,17 +209,17 @@ function SolSchools({ navigate }) {
             ))}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#0E1726', borderRadius: 10, padding: '14px 16px', marginBottom: 12 }}>
               <span style={{ fontSize: 13, color: '#fff', fontFamily: 'Montserrat', fontWeight: 600 }}>Your verified graduates</span>
-              <span style={{ fontSize: 14, fontWeight: 800, color: '#4ADE80', fontFamily: 'Montserrat' }}>HIRED FASTER</span>
+              <span style={{ fontSize: 14, fontWeight: 800, color: '#7FB3FF', fontFamily: 'Montserrat' }}>HIRED FASTER</span>
             </div>
             <div style={{ background: '#fff', borderRadius: 10, padding: '12px 14px', display: 'flex', alignItems: 'center', gap: 8 }}>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill={PC.green} /><path d="M5.5 9l2.2 2.2L12.5 6.5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="8" fill={PC.blue} /><path d="M5.5 9l2.2 2.2L12.5 6.5" stroke="#fff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               <span style={{ fontSize: 13, color: PC.dark, fontFamily: 'Montserrat' }}>Optional <b>revenue share</b> when your verified graduates are placed.</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section style={{ background: PC.green, padding: mobile ? '48px 0' : '64px 0' }}>
+      <section style={{ background: PC.blue, padding: mobile ? '48px 0' : '64px 0' }}>
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px' }}>
           <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: '#fff', fontFamily: 'Montserrat', margin: '0 0 40px', textAlign: 'center' }}>How the Partnership Works</h2>
           <div style={{ display: 'grid', gridTemplateColumns: mobile ? '1fr' : 'repeat(4,1fr)', gap: 18 }}>
@@ -242,8 +242,8 @@ function SolSchools({ navigate }) {
         </div>
       </section>
 
-      <CTABand title="Help Build ASEAN's Most Trusted Hospitality Talent Pool" desc="Partner with ProConnect to verify your graduates and connect them with employers. Free to join." bg={PC.green}
-        btns={<PCButton variant="light" size="xl" onClick={() => navigate('contact')} style={{ background: '#fff', color: PC.green, border: 'none' }}>Become a Partner</PCButton>} />
+      <CTABand title="Help Build ASEAN's Most Trusted Hospitality Talent Pool" desc="Partner with ProConnect to verify your graduates and connect them with employers. Free to join." bg={PC.blue}
+        btns={<PCButton variant="light" size="xl" onClick={() => navigate('contact')} style={{ background: '#fff', color: PC.blue, border: 'none' }}>Become a Partner</PCButton>} />
     </div>
   );
 }
@@ -254,9 +254,9 @@ function SolJobSeekers({ navigate }) {
   const cats = ['Front Office', 'Food & Beverage', 'Room Service', 'Hotel Management', 'Sales & Marketing', 'Housekeeping', 'Human Resources', 'Procurement'];
   const ic = (p) => <svg width="22" height="22" viewBox="0 0 22 22" fill="none">{p}</svg>;
   const why = [
-    { title: 'Anywhere in ASEAN', desc: 'Your Skill Passport is recognized by employers in all 10 ASEAN countries. No more re-proving your qualifications at every border.', icon: ic(<path d="M5 11a3 3 0 100-2 3 3 0 100 2zm8 0a3 3 0 100-2 3 3 0 100 2z" stroke={PC.orange} strokeWidth="1.8" />) },
-    { title: 'Get Matched, Not Lost', desc: 'Our AI matches you to relevant hospitality jobs based on your actual skills, not just keywords, so you spend less time searching and more time interviewing.', icon: ic(<><circle cx="9" cy="9" r="6" stroke={PC.orange} strokeWidth="1.8" /><path d="M13.5 13.5L18 18" stroke={PC.orange} strokeWidth="1.8" strokeLinecap="round" /></>) },
-    { title: 'Track Your Applications', desc: 'Track the status of every application in real time, so you always know exactly where you stand.', icon: ic(<><path d="M11 3a8 8 0 108 8" stroke={PC.orange} strokeWidth="1.8" strokeLinecap="round" /><circle cx="11" cy="11" r="2.4" stroke={PC.orange} strokeWidth="1.8" /></>) },
+    { title: 'Anywhere in ASEAN', desc: 'Your Skill Passport is recognized by employers in all 10 ASEAN countries. No more re-proving your qualifications at every border.', icon: ic(<path d="M5 11a3 3 0 100-2 3 3 0 100 2zm8 0a3 3 0 100-2 3 3 0 100 2z" stroke={PC.blue} strokeWidth="1.8" />) },
+    { title: 'Get Matched, Not Lost', desc: 'Our AI matches you to relevant hospitality jobs based on your actual skills, not just keywords, so you spend less time searching and more time interviewing.', icon: ic(<><circle cx="9" cy="9" r="6" stroke={PC.blue} strokeWidth="1.8" /><path d="M13.5 13.5L18 18" stroke={PC.blue} strokeWidth="1.8" strokeLinecap="round" /></>) },
+    { title: 'Track Your Applications', desc: 'Track the status of every application in real time, so you always know exactly where you stand.', icon: ic(<><path d="M11 3a8 8 0 108 8" stroke={PC.blue} strokeWidth="1.8" strokeLinecap="round" /><circle cx="11" cy="11" r="2.4" stroke={PC.blue} strokeWidth="1.8" /></>) },
   ];
   const flags = [['🇧🇳', 'Brunei'], ['🇲🇲', 'Myanmar'], ['🇱🇦', 'Laos'], ['🇰🇭', 'Cambodia'], ['🇻🇳', 'Vietnam'], ['🇵🇭', 'Philippines'], ['🇹🇭', 'Thailand'], ['🇲🇾', 'Malaysia'], ['🇸🇬', 'Singapore'], ['🇮🇩', 'Indonesia']];
   return (
@@ -272,7 +272,7 @@ function SolJobSeekers({ navigate }) {
             </div>
           </div>
           {/* Skill passport card */}
-          <div style={{ background: '#FFF3DE', borderRadius: 18, padding: mobile ? 18 : 26 }}>
+          <div style={{ background: PC.lightBlue, borderRadius: 18, padding: mobile ? 18 : 26 }}>
             <div style={{ fontSize: 15, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', textAlign: 'center', marginBottom: 16 }}>Your Skill Passport</div>
             <div style={{ background: '#fff', borderRadius: 14, padding: 22 }}>
               <div style={{ textAlign: 'center', marginBottom: 14 }}>
@@ -304,8 +304,8 @@ function SolJobSeekers({ navigate }) {
           <div style={{ display: 'grid', gridTemplateColumns: mobile ? '1fr 1fr' : 'repeat(4,1fr)', gap: 16 }}>
             {cats.map(c => (
               <button key={c} onClick={() => navigate('jobs')} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '16px', borderRadius: 10, border: `1px solid ${PC.border}`, background: '#fff', cursor: 'pointer', fontFamily: 'Montserrat' }}>
-                <span style={{ width: 34, height: 34, borderRadius: 8, background: '#FFE9D6', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="5" width="12" height="9" rx="1.5" stroke={PC.orange} strokeWidth="1.5" /><path d="M6 5V4a1.5 1.5 0 013 0v1" stroke={PC.orange} strokeWidth="1.5" /></svg>
+                <span style={{ width: 34, height: 34, borderRadius: 8, background: PC.lightBlue, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="3" y="5" width="12" height="9" rx="1.5" stroke={PC.blue} strokeWidth="1.5" /><path d="M6 5V4a1.5 1.5 0 013 0v1" stroke={PC.blue} strokeWidth="1.5" /></svg>
                 </span>
                 <span style={{ flex: 1, textAlign: 'left', fontSize: 13.5, fontWeight: 600, color: PC.dark }}>{c}</span>
                 <span style={{ color: PC.medGray }}>›</span>
@@ -316,13 +316,13 @@ function SolJobSeekers({ navigate }) {
       </section>
 
       {/* Why (orange band) */}
-      <section style={{ background: PC.orange, padding: mobile ? '48px 0' : '64px 0' }}>
+      <section style={{ background: PC.blue, padding: mobile ? '48px 0' : '64px 0' }}>
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px' }}>
           <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: '#fff', fontFamily: 'Montserrat', margin: '0 0 40px', textAlign: 'center' }}>Why Hospitality Professionals Love ProConnect</h2>
           <div style={{ display: 'grid', gridTemplateColumns: mobile ? '1fr' : 'repeat(3,1fr)', gap: 22 }}>
             {why.map(w => (
               <div key={w.title} style={{ background: '#fff', borderRadius: 14, padding: '28px 24px' }}>
-                <div style={{ width: 46, height: 46, borderRadius: 11, background: '#FFE9D6', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>{w.icon}</div>
+                <div style={{ width: 46, height: 46, borderRadius: 11, background: PC.lightBlue, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>{w.icon}</div>
                 <h3 style={{ fontSize: 18, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 10px' }}>{w.title}</h3>
                 <p style={{ fontSize: 13.5, color: PC.gray, fontFamily: 'Montserrat', margin: 0, lineHeight: 1.6 }}>{w.desc}</p>
               </div>
@@ -334,7 +334,7 @@ function SolJobSeekers({ navigate }) {
       {/* Companies (flags) */}
       <section style={{ background: '#fff', padding: mobile ? '48px 0' : '64px 0' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 32px', textAlign: 'center' }}>Companies That Trust ProConnect</h2>
+          <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 32px', textAlign: 'center' }}>Available Across All 10 ASEAN Countries</h2>
           <div style={{ display: 'grid', gridTemplateColumns: mobile ? 'repeat(2,1fr)' : 'repeat(6,1fr)', gap: 12 }}>
             {flags.map(([f, n]) => (
               <div key={n} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 14px', borderRadius: 10, background: '#fff', border: `1px solid ${PC.border}` }}>
@@ -345,8 +345,8 @@ function SolJobSeekers({ navigate }) {
         </div>
       </section>
 
-      <CTABand title="Your Next Hospitality Career Starts Here" desc="Create your free Skill Passport in under 10 minutes." bg={PC.orange}
-        btns={<><PCButton variant="light" size="xl" onClick={() => navigate('jobs')} style={{ background: '#fff', color: PC.orange, border: 'none' }}>Create Free Profile</PCButton><PCButton size="xl" onClick={() => navigate('jobs')} style={{ background: PC.blue, color: '#fff', border: 'none' }}>Browse Jobs First</PCButton></>} />
+      <CTABand title="Your Next Hospitality Career Starts Here" desc="Create your free Skill Passport in under 10 minutes." bg={PC.blue}
+        btns={<><PCButton variant="light" size="xl" onClick={() => navigate('jobs')} style={{ background: '#fff', color: PC.blue, border: 'none' }}>Create Free Profile</PCButton><PCButton variant="secondary" size="xl" onClick={() => navigate('jobs')} style={{ background: 'transparent', color: '#fff', borderColor: 'rgba(255,255,255,0.7)' }}>Browse Jobs First</PCButton></>} />
     </div>
   );
 }
