@@ -57,7 +57,6 @@ All the Tools You Need,<br />Without the Clutter.
             const text = (
               <div key="t">
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <PCTag color={['blue', 'green', 'orange'][i]}>{f.tag}</PCTag>
                   <StatusBadge title={f.title} />
                 </div>
                 <h2 style={{ fontSize: mobile ? 24 : 28, fontWeight: 700, fontFamily: 'Montserrat', color: PC.dark, margin: '14px 0 14px', lineHeight: 1.25 }}>{f.title}</h2>
