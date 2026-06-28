@@ -350,6 +350,41 @@ function HPTestimonials() {
 
 }
 
+// ── FAQ ────────────────────────────────────────────────────────────────────
+function HPFaq() {
+  const mobile = useMobile(820);
+  const [open, setOpen] = React.useState(0);
+  const items = [
+    { q: 'What is ProConnect?', a: 'ProConnect is a hospitality and tourism job platform that connects skilled professionals with verified employers across ASEAN. We make it easier to showcase verified skills, find the right roles, and hire faster.' },
+    { q: 'Which countries does ProConnect support?', a: 'ProConnect serves the ASEAN region. We are currently focused on Indonesia and expanding to Thailand, Vietnam, Malaysia, Cambodia, Singapore, and the Philippines.' },
+    { q: 'Is ProConnect free for job seekers?', a: 'Yes. Job seekers use ProConnect for free, including search, your profile, the Skill Passport, and job applications.' },
+    { q: 'What is a Skill Passport?', a: 'A Skill Passport is your verified, portable record of skills and credentials, aligned to the ASEAN MRA-TP standard, so employers across the region can trust your qualifications at a glance.' },
+    { q: 'How do I apply for jobs?', a: 'Create a free profile, build your Skill Passport, and apply to roles that match your skills. You can track every application in real time.' },
+    { q: 'How can my company post jobs?', a: 'Employers sign up, add a company profile, and post unlimited jobs from a built-in applicant tracking system. Only hiring managers need a paid seat; team members join free.' },
+    { q: 'Can I use ProConnect on mobile?', a: 'Yes. ProConnect works in any modern browser, and an Android app is available on Google Play.' },
+    { q: 'How are skills verified?', a: 'Skills are verified through accredited assessments and partner education providers, so every candidate is benchmarked against recognized ASEAN standards.' },
+  ];
+  return (
+    <section style={{ background: PC.bg, padding: mobile ? '48px 0' : '72px 0' }}>
+      <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px' }}>
+        <h2 style={{ fontSize: mobile ? 26 : 34, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 12px', textAlign: 'center' }}>Frequently Asked Questions</h2>
+        <p style={{ fontSize: 15, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 36px' }}>Everything you need to know about hiring and getting hired on ProConnect.</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+          {items.map((it, i) => (
+            <div key={i} style={{ border: `1px solid ${PC.border}`, borderRadius: 12, overflow: 'hidden', background: '#fff' }}>
+              <button onClick={() => setOpen(open === i ? -1 : i)} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, padding: '18px 20px', background: '#fff', border: 'none', cursor: 'pointer', textAlign: 'left' }}>
+                <span style={{ fontSize: 15, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat' }}>{it.q}</span>
+                <span style={{ fontSize: 12, color: PC.gray, transform: open === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.15s' }}>▼</span>
+              </button>
+              {open === i && <div style={{ padding: '0 20px 20px', fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', lineHeight: 1.65 }}>{it.a}</div>}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>);
+
+}
+
 // ── CTA ────────────────────────────────────────────────────────────────────
 function HPCTA({ navigate }) {
   const mobile = useMobile(820);
@@ -453,6 +488,7 @@ function HomePage({ navigate }) {
       <HPCompanies />
       <HPStakeholders navigate={go} />
       <HPTestimonials />
+      <HPFaq />
       <HPCTA navigate={go} />
       <HPFooter navigate={go} />
     </div>);
