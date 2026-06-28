@@ -22,6 +22,7 @@ function HPNav({ navigate, activePage = 'home' }) {
   { label: 'Browse Jobs', page: 'jobs' },
   { label: 'Solution', page: 'solution', caret: true },
   { label: 'About us', page: 'about' },
+  { label: 'FAQ', page: 'faq' },
   { label: 'Contact Us', page: 'contact' }];
 
   const go = (p) => {navigate(p);setOpen(false);window.scrollTo(0, 0);};
