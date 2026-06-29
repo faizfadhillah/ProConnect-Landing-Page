@@ -463,17 +463,20 @@ function CompaniesScroll({ navigate, heading = 'Companies That Trust ProConnect'
       <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 24px' }}>
         <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 8px', textAlign: 'center' }}>{heading}</h2>
         {subtitle && <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 26px' }}>{subtitle}</p>}
-        <div style={{ display: 'flex', gap: 14, overflowX: 'auto', padding: '4px 2px 14px', WebkitOverflowScrolling: 'touch' }}>
-          {companies.map(c => (
-            <button key={c.id} onClick={() => openCompany(c)} title={`See jobs at ${c.name}`}
-              style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: 12, padding: '12px 18px', borderRadius: 12, border: `1px solid ${PC.border}`, background: '#fff', cursor: 'pointer', fontFamily: 'Montserrat', whiteSpace: 'nowrap', transition: 'all 0.15s' }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor = PC.blue; e.currentTarget.style.background = PC.lightBlue; }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor = PC.border; e.currentTarget.style.background = '#fff'; }}>
-              {c.logo && <img src={c.logo} alt="" onError={e => { e.currentTarget.style.display = 'none'; const s = e.currentTarget.nextSibling; if (s) s.style.display = 'flex'; }} style={{ width: 40, height: 40, borderRadius: 8, objectFit: 'contain', background: '#fff', flexShrink: 0, display: 'block' }} />}
-              <span style={{ display: c.logo ? 'none' : 'flex', width: 40, height: 40, borderRadius: 8, background: PC.lightBlue, color: PC.blue, alignItems: 'center', justifyContent: 'center', fontSize: 13, fontWeight: 800, flexShrink: 0 }}>{initialsOf(c.name)}</span>
-              <span style={{ fontSize: 14, fontWeight: 600, color: PC.dark }}>{c.name}</span>
-            </button>
-          ))}
+        <div style={{ overflow: 'hidden', padding: '4px 0 14px', WebkitMaskImage: 'linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)', maskImage: 'linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)' }}>
+          <style>{`@keyframes pc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.pc-marquee-track{animation:pc-marquee var(--pc-mq-dur,40s) linear infinite}.pc-marquee-track:hover{animation-play-state:paused}@media (prefers-reduced-motion: reduce){.pc-marquee-track{animation:none}}`}</style>
+          <div className="pc-marquee-track" style={{ display: 'flex', gap: 14, width: 'max-content', '--pc-mq-dur': Math.max(18, companies.length * 4.5) + 's' }}>
+            {[...companies, ...companies].map((c, i) => (
+              <button key={c.id + '-' + i} onClick={() => openCompany(c)} title={`See jobs at ${c.name}`} aria-hidden={i >= companies.length}
+                style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: 12, padding: '12px 18px', borderRadius: 12, border: `1px solid ${PC.border}`, background: '#fff', cursor: 'pointer', fontFamily: 'Montserrat', whiteSpace: 'nowrap', transition: 'border-color 0.15s, background 0.15s' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = PC.blue; e.currentTarget.style.background = PC.lightBlue; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = PC.border; e.currentTarget.style.background = '#fff'; }}>
+                {c.logo && <img src={c.logo} alt="" onError={e => { e.currentTarget.style.display = 'none'; const s = e.currentTarget.nextSibling; if (s) s.style.display = 'flex'; }} style={{ width: 40, height: 40, borderRadius: 8, objectFit: 'contain', background: '#fff', flexShrink: 0, display: 'block' }} />}
+                <span style={{ display: c.logo ? 'none' : 'flex', width: 40, height: 40, borderRadius: 8, background: PC.lightBlue, color: PC.blue, alignItems: 'center', justifyContent: 'center', fontSize: 13, fontWeight: 800, flexShrink: 0 }}>{initialsOf(c.name)}</span>
+                <span style={{ fontSize: 14, fontWeight: 600, color: PC.dark }}>{c.name}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>);
