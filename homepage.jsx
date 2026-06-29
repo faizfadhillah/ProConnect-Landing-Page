@@ -195,7 +195,7 @@ function HPFeatureCards({ navigate }) {
             <img src={`assets/home_${c.img}.png`} alt="" style={{ width: '100%', borderRadius: 10, display: 'block', aspectRatio: '588/320', objectFit: 'cover' }} />
             <h3 style={{ fontSize: 21, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '20px 0 10px' }}>{c.title}</h3>
             <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', margin: '0 0 18px', lineHeight: 1.65 }}>{c.desc}</p>
-            <PCButton variant="primary" size="md" onClick={() => {window.__solutionTab = c.tab;navigate('solution');window.scrollTo(0, 0);}}>Learn More →</PCButton>
+            <PCButton variant="primary" size="md" onClick={() => {navigate('solution-' + c.tab);window.scrollTo(0, 0);}}>Learn More →</PCButton>
           </div>
         )}
       </div>
@@ -332,7 +332,7 @@ function HPStakeholders({ navigate }) {
               <div style={{ width: 56, height: 56, borderRadius: 14, background: c.bg, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{c.icon}</div>
               <h3 style={{ fontSize: 21, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: 0 }}>{c.title}</h3>
               <p style={{ fontSize: 14, color: PC.gray, fontFamily: 'Montserrat', margin: 0, lineHeight: 1.65, flex: 1 }}>{c.desc}</p>
-              <a href="#" onClick={(e) => {e.preventDefault();window.__solutionTab = c.tab;navigate('solution');window.scrollTo(0, 0);}} style={{ fontSize: 14, fontWeight: 700, color: PC.blue, fontFamily: 'Montserrat', textDecoration: 'none' }}>Learn More →</a>
+              <a href="#" onClick={(e) => {e.preventDefault();navigate('solution-' + c.tab);window.scrollTo(0, 0);}} style={{ fontSize: 14, fontWeight: 700, color: PC.blue, fontFamily: 'Montserrat', textDecoration: 'none' }}>Learn More →</a>
             </div>
           )}
         </div>
@@ -438,7 +438,7 @@ function HPFooter({ navigate }) {
   const go = (p) => {(navigate || (() => {}))(p);window.scrollTo(0, 0);};
   const cols = [
   { head: 'COMPANY', links: [['About Us', 'about'], ['Contact Us', 'contact'], ['Blog', 'contact'], ['Terms of Service', 'tos'], ['Privacy Policy', 'privacy']] },
-  { head: 'SOLUTIONS', links: [['For Employers', 'employer'], ['For Schools', 'solution'], ['For Job Seekers', 'jobs']] },
+  { head: 'SOLUTIONS', links: [['For Employers', 'solution-employers'], ['For Schools', 'solution-schools'], ['For Job Seekers', 'solution-jobseekers']] },
   { head: 'PLATFORM', links: [['Features', 'features'], ['Pricing', 'pricing'], ['Browse Jobs', 'jobs'], ['FAQ', 'faq']] }];
 
   const social = (p) => <svg width="22" height="22" viewBox="0 0 18 18" fill="none">{p}</svg>;

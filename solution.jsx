@@ -340,17 +340,18 @@ function SolJobSeekers({ navigate }) {
   );
 }
 
-function SolutionPage({ navigate }) {
+function SolutionPage({ navigate, initialTab }) {
   const mobile = useMobile(820);
-  const [tab, setTab] = React.useState(window.__solutionTab || 'employers');
+  const tab = initialTab || window.__solutionTab || 'employers';
   React.useEffect(() => { if (window.__solutionTab) window.__solutionTab = null; }, []);
   const tabs = [['employers', 'For Employers'], ['schools', 'For Schools'], ['jobseekers', 'For Job Seekers']];
+  const goTab = (id) => { navigate('solution-' + id); window.scrollTo(0, 0); };
   return (
     <InnerPage navigate={navigate} activePage="solution">
       <div style={{ background: '#fff', borderBottom: `1px solid ${PC.border}`, position: 'sticky', top: 72, zIndex: 50 }}>
         <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 24px', display: 'flex', gap: mobile ? 4 : 8, justifyContent: 'center', overflowX: 'auto' }}>
           {tabs.map(([id, label]) => (
-            <button key={id} onClick={() => { setTab(id); window.scrollTo(0, 0); }}
+            <button key={id} onClick={() => goTab(id)}
               style={{ padding: mobile ? '14px 12px' : '16px 22px', border: 'none', background: 'none', cursor: 'pointer', fontFamily: 'Montserrat', fontSize: 14, fontWeight: tab === id ? 700 : 500, color: tab === id ? PC.blue : PC.gray, borderBottom: tab === id ? `2.5px solid ${PC.blue}` : '2.5px solid transparent', whiteSpace: 'nowrap' }}>{label}</button>
           ))}
         </div>
