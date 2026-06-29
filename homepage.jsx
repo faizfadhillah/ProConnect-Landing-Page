@@ -510,7 +510,7 @@ function HomePage({ navigate }) {
       <HPStats />
       <HPFeaturesGrid />
       <HPRecruitment />
-      <HPCompanies />
+      <CompaniesScroll navigate={go} />
       <HPStakeholders navigate={go} />
       <HPTestimonials />
       <HPFaq />

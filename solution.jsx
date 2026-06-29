@@ -331,19 +331,8 @@ function SolJobSeekers({ navigate }) {
         </div>
       </section>
 
-      {/* Companies (flags) */}
-      <section style={{ background: '#fff', padding: mobile ? '48px 0' : '64px 0' }}>
-        <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 32px', textAlign: 'center' }}>Available Across All 10 ASEAN Countries</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: mobile ? 'repeat(2,1fr)' : 'repeat(6,1fr)', gap: 12 }}>
-            {flags.map(([f, n]) => (
-              <div key={n} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '12px 14px', borderRadius: 10, background: '#fff', border: `1px solid ${PC.border}` }}>
-                <span style={{ fontSize: 20 }}>{f}</span><span style={{ fontSize: 13, fontWeight: 600, color: PC.dark, fontFamily: 'Montserrat' }}>{n}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Companies that trust ProConnect (real logos from the jobs API) */}
+      <CompaniesScroll navigate={navigate} />
 
       <CTABand title="Your Next Hospitality Career Starts Here" desc="Create your free Skill Passport in under 10 minutes." bg={PC.blue}
         btns={<><PCButton variant="light" size="xl" onClick={() => navigate('jobs')} style={{ background: '#fff', color: PC.blue, border: 'none' }}>Create Free Profile</PCButton><PCButton variant="secondary" size="xl" onClick={() => navigate('jobs')} style={{ background: 'transparent', color: '#fff', borderColor: 'rgba(255,255,255,0.7)' }}>Browse Jobs First</PCButton></>} />

@@ -276,6 +276,7 @@ function mapApiJob(j) {
   const emp = Array.isArray(j.employment_status) ? j.employment_status : [];
   return {
     id: j.id,
+    companyId: j.company_id || null,
     title: j.title || 'Untitled role',
     company: j.company_name || '',
     legal: j.company_name || '',
@@ -431,6 +432,54 @@ function Pagination({ page, setPage, totalPages }) {
 
 const PAGE_SIZE = 6;
 
+// Reusable horizontal-scroll strip of real companies pulled from the public
+// jobs API (same logos shown on Browse Jobs). Each card links to Browse Jobs
+// pre-filtered to that company via window.__jobsCompany.
+function CompaniesScroll({ navigate, heading = 'Companies That Trust ProConnect', subtitle = 'Hospitality and tourism teams hiring with ProConnect right now.' }) {
+  const mobile = useMobile(820);
+  const [companies, setCompanies] = React.useState([]);
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`${API_BASE}/jobs/public/all?page=1&limit=100`, { headers: { Accept: 'application/json' } });
+        if (!res.ok) return;
+        const data = await res.json();
+        const items = Array.isArray(data && data.items) ? data.items : (Array.isArray(data) ? data : []);
+        const seen = {};
+        for (const j of items) {
+          const cid = j.company_id;
+          if (cid && !seen[cid]) seen[cid] = { id: cid, name: j.company_name || 'Company', logo: resolveLogo(j.company_logo_url) };
+        }
+        if (!cancelled) setCompanies(Object.values(seen));
+      } catch (e) { /* hide section if the API is unreachable */ }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+  if (!companies.length) return null;
+  const openCompany = (c) => { window.__jobsCompany = { id: c.id, name: c.name }; navigate('jobs'); window.scrollTo(0, 0); };
+  return (
+    <section style={{ background: '#fff', padding: mobile ? '40px 0' : '56px 0' }}>
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 24px' }}>
+        <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 8px', textAlign: 'center' }}>{heading}</h2>
+        {subtitle && <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 26px' }}>{subtitle}</p>}
+        <div style={{ display: 'flex', gap: 14, overflowX: 'auto', padding: '4px 2px 14px', WebkitOverflowScrolling: 'touch' }}>
+          {companies.map(c => (
+            <button key={c.id} onClick={() => openCompany(c)} title={`See jobs at ${c.name}`}
+              style={{ flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: 12, padding: '12px 18px', borderRadius: 12, border: `1px solid ${PC.border}`, background: '#fff', cursor: 'pointer', fontFamily: 'Montserrat', whiteSpace: 'nowrap', transition: 'all 0.15s' }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = PC.blue; e.currentTarget.style.background = PC.lightBlue; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = PC.border; e.currentTarget.style.background = '#fff'; }}>
+              {c.logo && <img src={c.logo} alt="" onError={e => { e.currentTarget.style.display = 'none'; const s = e.currentTarget.nextSibling; if (s) s.style.display = 'flex'; }} style={{ width: 40, height: 40, borderRadius: 8, objectFit: 'contain', background: '#fff', flexShrink: 0, display: 'block' }} />}
+              <span style={{ display: c.logo ? 'none' : 'flex', width: 40, height: 40, borderRadius: 8, background: PC.lightBlue, color: PC.blue, alignItems: 'center', justifyContent: 'center', fontSize: 13, fontWeight: 800, flexShrink: 0 }}>{initialsOf(c.name)}</span>
+              <span style={{ fontSize: 14, fontWeight: 600, color: PC.dark }}>{c.name}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>);
+
+}
+
 function JobsPage({ navigate }) {
   const mobile = useMobile(900);
   const [jobs, setJobs] = React.useState(JOBS);
@@ -444,6 +493,8 @@ function JobsPage({ navigate }) {
   const [arrangement, setArrangement] = React.useState('All Arrangements');
   const [sort, setSort] = React.useState('Most Recent');
   const [page, setPage] = React.useState(1);
+  const [companyFilter, setCompanyFilter] = React.useState(typeof window !== 'undefined' ? (window.__jobsCompany || null) : null);
+  React.useEffect(() => { if (typeof window !== 'undefined' && window.__jobsCompany) { window.__jobsCompany = null; } }, []);
 
   // Fetch real jobs from the public API; keep the sample list as a fallback
   // (e.g. before the public all-jobs API change is deployed, or if offline).
@@ -485,12 +536,13 @@ function JobsPage({ navigate }) {
       const cMatch = !country || (j.country || COUNTRY_OF[j.loc]) === country;
       const tMatch = workType === 'All Types' || j.type === workType;
       const aMatch = arrangement === 'All Arrangements' || j.arrangement === arrangement;
-      return qMatch && cMatch && tMatch && aMatch && catMatch(j);
+      const compMatch = !companyFilter || j.companyId === companyFilter.id;
+      return qMatch && cMatch && tMatch && aMatch && compMatch && catMatch(j);
     });
     if (sort === 'Title A-Z') list = [...list].sort((a, b) => a.title.localeCompare(b.title));
     else if (sort === 'Oldest') list = [...list].reverse();
     return list;
-  }, [jobs, search, country, category, workType, arrangement, sort]);
+  }, [jobs, search, country, category, workType, arrangement, sort, companyFilter]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const curPage = Math.min(page, totalPages);
@@ -535,6 +587,12 @@ function JobsPage({ navigate }) {
             <FilterPill label="Work Arrangement" value={arrangement} options={ARRANGEMENTS} onChange={setArrangement} />
             <FilterPill label="Sort by" value={sort} options={SORTS} onChange={setSort} />
           </div>
+          {companyFilter && (
+            <div style={{ marginTop: 16, display: 'inline-flex', alignItems: 'center', gap: 10, padding: '8px 8px 8px 16px', borderRadius: 24, background: '#fff', fontFamily: 'Montserrat' }}>
+              <span style={{ fontSize: 13.5, fontWeight: 700, color: PC.navy }}>Showing jobs at {companyFilter.name}</span>
+              <button onClick={() => setCompanyFilter(null)} title="Clear company filter" style={{ width: 24, height: 24, borderRadius: '50%', border: 'none', background: PC.lightBlue, color: PC.blue, cursor: 'pointer', fontSize: 13, fontWeight: 700, lineHeight: 1 }}>✕</button>
+            </div>
+          )}
         </div>
       </div>
 
