@@ -488,9 +488,15 @@ function CompaniesScroll({ navigate, heading = 'Companies That Trust ProConnect'
 // and has website/logo data, the fetch fails or returns nothing and the whole
 // section is hidden -- so no placeholder/fake data is ever shown. Each card
 // links out to the school's own website.
+// Seed list shown now (real, clickable). Replaced automatically once the public
+// schools API returns data. Logos use the site favicon, with initials fallback.
+const SCHOOL_FALLBACK = [
+  { id: 'nhi', name: 'Politeknik Pariwisata NHI Bandung', website: 'https://poltekpar-nhi.ac.id/', logo: 'https://www.google.com/s2/favicons?domain=poltekpar-nhi.ac.id&sz=128' },
+  { id: 'kemenpar', name: 'Kementerian Pariwisata Republik Indonesia', website: 'https://www.kemenpar.go.id/', logo: 'https://www.google.com/s2/favicons?domain=kemenpar.go.id&sz=128' },
+];
 function SchoolsScroll({ heading = 'Schools That Trust ProConnect', subtitle = 'Hospitality schools and training centers verifying graduates with ProConnect.' }) {
   const mobile = useMobile(820);
-  const [schools, setSchools] = React.useState([]);
+  const [schools, setSchools] = React.useState(SCHOOL_FALLBACK);
   React.useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -509,13 +515,13 @@ function SchoolsScroll({ heading = 'Schools That Trust ProConnect', subtitle = '
           if (site && !/^https?:\/\//.test(site)) site = 'https://' + site;
           out.push({ id, name: it.name || it.school_name || 'School', logo: resolveLogo(it.logo_url || it.logo || it.image_url || ''), website: site });
         }
-        if (!cancelled) setSchools(out);
+        if (!cancelled && out.length) setSchools(out);
       } catch (e) { /* hide section if unreachable */ }
     })();
     return () => { cancelled = true; };
   }, []);
   if (!schools.length) return null;
-  const card = (sch, i) => {
+  const card = (sch, i, clone) => {
     const inner = (
       <React.Fragment>
         {sch.logo && <img src={sch.logo} alt="" onError={e => { e.currentTarget.style.display = 'none'; const n = e.currentTarget.nextSibling; if (n) n.style.display = 'flex'; }} style={{ width: 40, height: 40, borderRadius: 8, objectFit: 'contain', background: '#fff', flexShrink: 0, display: 'block' }} />}
@@ -526,8 +532,8 @@ function SchoolsScroll({ heading = 'Schools That Trust ProConnect', subtitle = '
     const st = { flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: 12, padding: '12px 18px', borderRadius: 12, border: `1px solid ${PC.border}`, background: '#fff', cursor: 'pointer', fontFamily: 'Montserrat', whiteSpace: 'nowrap', textDecoration: 'none', transition: 'border-color 0.15s, background 0.15s' };
     const hov = { enter: e => { e.currentTarget.style.borderColor = PC.blue; e.currentTarget.style.background = PC.lightBlue; }, leave: e => { e.currentTarget.style.borderColor = PC.border; e.currentTarget.style.background = '#fff'; } };
     return sch.website
-      ? <a key={sch.id + '-' + i} href={sch.website} target="_blank" rel="noopener noreferrer" title={`Visit ${sch.name}`} aria-hidden={i >= schools.length} style={st} onMouseEnter={hov.enter} onMouseLeave={hov.leave}>{inner}</a>
-      : <div key={sch.id + '-' + i} aria-hidden={i >= schools.length} style={{ ...st, cursor: 'default' }}>{inner}</div>;
+      ? <a key={sch.id + '-' + i} href={sch.website} target="_blank" rel="noopener noreferrer" title={`Visit ${sch.name}`} aria-hidden={clone} tabIndex={clone ? -1 : 0} style={st} onMouseEnter={hov.enter} onMouseLeave={hov.leave}>{inner}</a>
+      : <div key={sch.id + '-' + i} aria-hidden={clone} style={{ ...st, cursor: 'default' }}>{inner}</div>;
   };
   return (
     <section style={{ background: '#fff', padding: mobile ? '40px 0' : '56px 0' }}>
@@ -536,9 +542,16 @@ function SchoolsScroll({ heading = 'Schools That Trust ProConnect', subtitle = '
         {subtitle && <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 26px' }}>{subtitle}</p>}
         <div style={{ overflow: 'hidden', padding: '4px 0 14px', WebkitMaskImage: 'linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)', maskImage: 'linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)' }}>
           <style>{`@keyframes pc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.pc-marquee-track{animation:pc-marquee var(--pc-mq-dur,40s) linear infinite}.pc-marquee-track:hover{animation-play-state:paused}@media (prefers-reduced-motion: reduce){.pc-marquee-track{animation:none}}`}</style>
-          <div className="pc-marquee-track" style={{ display: 'flex', gap: 14, width: 'max-content', '--pc-mq-dur': Math.max(18, schools.length * 4.5) + 's' }}>
-            {[...schools, ...schools].map((sch, i) => card(sch, i))}
-          </div>
+          {(() => {
+            const reps = Math.max(1, Math.ceil(6 / schools.length));
+            const half = []; for (let r = 0; r < reps; r++) half.push(...schools);
+            const full = [...half, ...half];
+            return (
+              <div className="pc-marquee-track" style={{ display: 'flex', gap: 14, width: 'max-content', '--pc-mq-dur': Math.max(18, half.length * 4.5) + 's' }}>
+                {full.map((sch, i) => card(sch, i, i >= half.length))}
+              </div>
+            );
+          })()}
         </div>
       </div>
     </section>);
