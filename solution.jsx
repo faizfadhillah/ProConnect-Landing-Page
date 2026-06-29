@@ -233,14 +233,8 @@ function SolSchools({ navigate }) {
         </div>
       </section>
 
-      <section style={{ background: '#fff', padding: mobile ? '48px 0' : '64px 0' }}>
-        <div style={{ maxWidth: 1000, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 32px', textAlign: 'center' }}>Schools That Trust ProConnect</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
-            {Array.from({ length: 11 }).map((_, i) => <div key={i} style={{ width: mobile ? 'calc(33% - 12px)' : 130, height: 60, borderRadius: 10, background: '#EFF1F2', border: `1px solid ${PC.border}` }} />)}
-          </div>
-        </div>
-      </section>
+      {/* Schools that trust ProConnect (auto-scroll marquee, real data once the public schools API exists) */}
+      <SchoolsScroll />
 
       <CTABand title="Help Build ASEAN's Most Trusted Hospitality Talent Pool" desc="Partner with ProConnect to verify your graduates and connect them with employers. Free to join." bg={PC.blue}
         btns={<PCButton variant="light" size="xl" onClick={() => navigate('contact')} style={{ background: '#fff', color: PC.blue, border: 'none' }}>Become a Partner</PCButton>} />

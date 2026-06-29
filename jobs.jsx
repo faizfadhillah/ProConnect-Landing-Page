@@ -483,6 +483,68 @@ function CompaniesScroll({ navigate, heading = 'Companies That Trust ProConnect'
 
 }
 
+// Auto-scrolling marquee of partner schools, fetched from a public schools
+// endpoint (planned: GET /mst-schools/public/all). Until that endpoint exists
+// and has website/logo data, the fetch fails or returns nothing and the whole
+// section is hidden -- so no placeholder/fake data is ever shown. Each card
+// links out to the school's own website.
+function SchoolsScroll({ heading = 'Schools That Trust ProConnect', subtitle = 'Hospitality schools and training centers verifying graduates with ProConnect.' }) {
+  const mobile = useMobile(820);
+  const [schools, setSchools] = React.useState([]);
+  React.useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`${API_BASE}/mst-schools/public/all?page=1&limit=100`, { headers: { Accept: 'application/json' } });
+        if (!res.ok) return;
+        const data = await res.json();
+        const items = Array.isArray(data && data.items) ? data.items : (Array.isArray(data && data.data) ? data.data : (Array.isArray(data) ? data : []));
+        const out = [];
+        const seen = {};
+        for (const it of items) {
+          const id = it.id || it.school_id || it.name;
+          if (!id || seen[id]) continue;
+          seen[id] = 1;
+          let site = it.website || it.website_url || it.url || it.site || '';
+          if (site && !/^https?:\/\//.test(site)) site = 'https://' + site;
+          out.push({ id, name: it.name || it.school_name || 'School', logo: resolveLogo(it.logo_url || it.logo || it.image_url || ''), website: site });
+        }
+        if (!cancelled) setSchools(out);
+      } catch (e) { /* hide section if unreachable */ }
+    })();
+    return () => { cancelled = true; };
+  }, []);
+  if (!schools.length) return null;
+  const card = (sch, i) => {
+    const inner = (
+      <React.Fragment>
+        {sch.logo && <img src={sch.logo} alt="" onError={e => { e.currentTarget.style.display = 'none'; const n = e.currentTarget.nextSibling; if (n) n.style.display = 'flex'; }} style={{ width: 40, height: 40, borderRadius: 8, objectFit: 'contain', background: '#fff', flexShrink: 0, display: 'block' }} />}
+        <span style={{ display: sch.logo ? 'none' : 'flex', width: 40, height: 40, borderRadius: 8, background: PC.lightBlue, color: PC.blue, alignItems: 'center', justifyContent: 'center', fontSize: 13, fontWeight: 800, flexShrink: 0 }}>{initialsOf(sch.name)}</span>
+        <span style={{ fontSize: 14, fontWeight: 600, color: PC.dark }}>{sch.name}</span>
+      </React.Fragment>
+    );
+    const st = { flex: '0 0 auto', display: 'inline-flex', alignItems: 'center', gap: 12, padding: '12px 18px', borderRadius: 12, border: `1px solid ${PC.border}`, background: '#fff', cursor: 'pointer', fontFamily: 'Montserrat', whiteSpace: 'nowrap', textDecoration: 'none', transition: 'border-color 0.15s, background 0.15s' };
+    const hov = { enter: e => { e.currentTarget.style.borderColor = PC.blue; e.currentTarget.style.background = PC.lightBlue; }, leave: e => { e.currentTarget.style.borderColor = PC.border; e.currentTarget.style.background = '#fff'; } };
+    return sch.website
+      ? <a key={sch.id + '-' + i} href={sch.website} target="_blank" rel="noopener noreferrer" title={`Visit ${sch.name}`} aria-hidden={i >= schools.length} style={st} onMouseEnter={hov.enter} onMouseLeave={hov.leave}>{inner}</a>
+      : <div key={sch.id + '-' + i} aria-hidden={i >= schools.length} style={{ ...st, cursor: 'default' }}>{inner}</div>;
+  };
+  return (
+    <section style={{ background: '#fff', padding: mobile ? '40px 0' : '56px 0' }}>
+      <div style={{ maxWidth: 1180, margin: '0 auto', padding: '0 24px' }}>
+        <h2 style={{ fontSize: mobile ? 24 : 32, fontWeight: 700, color: PC.dark, fontFamily: 'Montserrat', margin: '0 0 8px', textAlign: 'center' }}>{heading}</h2>
+        {subtitle && <p style={{ fontSize: 14.5, color: PC.gray, fontFamily: 'Montserrat', textAlign: 'center', margin: '0 0 26px' }}>{subtitle}</p>}
+        <div style={{ overflow: 'hidden', padding: '4px 0 14px', WebkitMaskImage: 'linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)', maskImage: 'linear-gradient(to right, transparent, #000 6%, #000 94%, transparent)' }}>
+          <style>{`@keyframes pc-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.pc-marquee-track{animation:pc-marquee var(--pc-mq-dur,40s) linear infinite}.pc-marquee-track:hover{animation-play-state:paused}@media (prefers-reduced-motion: reduce){.pc-marquee-track{animation:none}}`}</style>
+          <div className="pc-marquee-track" style={{ display: 'flex', gap: 14, width: 'max-content', '--pc-mq-dur': Math.max(18, schools.length * 4.5) + 's' }}>
+            {[...schools, ...schools].map((sch, i) => card(sch, i))}
+          </div>
+        </div>
+      </div>
+    </section>);
+
+}
+
 function JobsPage({ navigate }) {
   const mobile = useMobile(900);
   const [jobs, setJobs] = React.useState(JOBS);
